@@ -167,6 +167,15 @@ Wave 1 work already in progress.
   landed, to confirm its storage location and route documentation are compliant. Not treating this as
   something to "undo" — per system guidance, it's the current, deliberate state.
 
+### `flow-trialist` (follow-up on `SELECT-FLOW-SOUL-POOLED-2026` relay)
+
+- Declines ownership: lane `02_trialist_statistics` is scoped strictly to FLOW trial anatomy/endpoints/
+  statistics per role brief; the SELECT/FLOW/SOUL pooled post-FLOW analysis is out of scope. Noted
+  "outstanding, owned by flow-methodologist" in its lane file for reconciliation visibility. **Wave 1 lane
+  memo (`lanes/02_trialist_statistics.md`) is now complete.**
+- **Director action:** sent `flow-methodologist` a follow-up confirming sole ownership of
+  `SELECT-FLOW-SOUL-POOLED-2026` by default — no further coordination needed with trialist on this item.
+
 ## Director actions this turn
 
 1. Relayed `flow-trialist`'s FLOW Table 2 extraction-defect flag to `flow-source-librarian` (own the source
@@ -182,6 +191,9 @@ Wave 1 work already in progress.
    10.1016/S2213-8587(26)00134-8 — bibliographic identity confirmed, results not yet retrieved) to both
    `flow-trialist` and `flow-methodologist`, asking them to coordinate so only one lane chases the full text
    before Wave 3 and the other notes it as outstanding/owned-by-peer.
+4. After `flow-trialist` declined (out of scope) and named `flow-methodologist` as owner in its lane file,
+   sent `flow-methodologist` a follow-up confirming sole ownership by default — closes the coordination loop
+   on this item without director adjudication.
 
 These are coordination relays only (naming exact files/sources per the ORCHESTRATION.md message protocol) —
 no claim adjudication, no numbered-deliverable writing.
@@ -190,18 +202,18 @@ no claim adjudication, no numbered-deliverable writing.
 
 - **State:** All six Wave 0 CROSS_SESSION_TEST messages dispatched. 5/6 replies received
   (`flow-trialist`, `flow-endocrinologist`, `flow-nephrologist`, `flow-ckm`, `flow-source-librarian`), all
-  READY=yes with confirmed paths — `flow-source-librarian` additionally reports its lane file
-  (`lanes/01_source_librarian.md`) already written and complete. Four cross-lane-relevant items surfaced and
-  relayed: (a) FLOW Table 2 OCR-scramble, independently corroborated by two lanes with converging
-  composite-level numbers, now folded into the librarian's lane §5; (b) pre-FLOW glycemia/BP-mediation
-  evidence vs FLOW's own "modestly mediated" language — nephrology and endocrinology aligned on grading it
-  suggestive-at-best/unquantified per CLAUDE.md rule 7, methodologist still to weigh in; (c) three 2026
-  guideline/regulatory items CKM could not quote-verify (KDIGO 2026 draft, ADA 2026 CKD chapter, AHA/ACC/ADA/
-  ASN CKM guideline sequencing text) — flagged as a verification-access gap for the librarian/red-team; (d)
-  `SELECT-FLOW-SOUL-POOLED-2026` pooled-analysis fulltext not yet retrieved — relayed to trialist and
-  methodologist to divide ownership. 1/6 replies still pending (`flow-methodologist`, who has now also
-  received two relays — mediation-analysis overlap and the SELECT-FLOW-SOUL fulltext gap — and may fold both
-  into a single reply).
+  READY=yes with confirmed paths — `flow-trialist` and `flow-source-librarian` both report their lane files
+  (`lanes/02_trialist_statistics.md`, `lanes/01_source_librarian.md`) already written and complete. Four
+  cross-lane-relevant items surfaced and relayed: (a) FLOW Table 2 OCR-scramble, independently corroborated
+  by two lanes with converging composite-level numbers, now folded into the librarian's lane §5; (b) pre-FLOW
+  glycemia/BP-mediation evidence vs FLOW's own "modestly mediated" language — nephrology and endocrinology
+  aligned on grading it suggestive-at-best/unquantified per CLAUDE.md rule 7, methodologist still to weigh in;
+  (c) three 2026 guideline/regulatory items CKM could not quote-verify (KDIGO 2026 draft, ADA 2026 CKD
+  chapter, AHA/ACC/ADA/ASN CKM guideline sequencing text) — flagged as a verification-access gap for the
+  librarian/red-team; (d) `SELECT-FLOW-SOUL-POOLED-2026` pooled-analysis fulltext — trialist declined
+  (out of scope) and named methodologist as sole owner; director confirmed that assignment. 1/6 replies still
+  pending (`flow-methodologist`, who now holds the original ask plus two relays — mediation-analysis overlap
+  and confirmed sole ownership of the SELECT-FLOW-SOUL fulltext gap).
 - **CLAUDE.md updated mid-Wave-0** (on disk, after this director's original dispatch): adds MCP
   source-discovery preference, no-Sci-Hub rule, `sources/retrieved/cache/` convention, and an API-key handling
   rule for LlamaParse. This session is operating under the updated file; flagged in the librarian reply entry
