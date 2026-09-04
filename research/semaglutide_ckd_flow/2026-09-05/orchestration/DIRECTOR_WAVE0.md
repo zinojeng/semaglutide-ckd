@@ -30,7 +30,7 @@ At dispatch time, `lanes/` was empty (no Wave 1 memos yet written) in the main c
 | 3 | `flow-nephrologist` | `c77be6` | `lanes/03_nephrology.md` | `f33a377f-96b3-4994-994e-f386c2db0998` | ✅ | ✅ received |
 | 4 | `flow-endocrinologist` | `5d09cb` | `lanes/04_endocrinology.md` | `142bdc1b-9946-48bb-b187-3d459fd26eea` | ✅ | ✅ received |
 | 5 | `flow-ckm` | `be1796` | `lanes/05_ckm_combinations.md` | `b543368a-2c45-46cb-88e4-20ad5a4fc7ef` | ✅ | ✅ received |
-| 6 | `flow-methodologist` | `b4cc2f` | `lanes/06_methods_mechanisms.md` | `8ec02c50-d55a-40ba-ab78-42d33ff7c99b` | ✅ | ⏳ pending |
+| 6 | `flow-methodologist` | `b4cc2f` | `lanes/06_methods_mechanisms.md` | `8ec02c50-d55a-40ba-ab78-42d33ff7c99b` | ✅ | ✅ received |
 
 Each message asked for: (1) READY confirmation against CLAUDE.md / master prompt / ORCHESTRATION.md / own role
 prompt; (2) confirmation of owned Wave 1 output path (plus any role-prefixed `sources/retrieved/` notes);
@@ -176,6 +176,53 @@ Wave 1 work already in progress.
 - **Director action:** sent `flow-methodologist` a follow-up confirming sole ownership of
   `SELECT-FLOW-SOUL-POOLED-2026` by default — no further coordination needed with trialist on this item.
 
+### `flow-methodologist` (received — 6th and final Wave 0 reply)
+
+- **READY:** Yes — confirms reading CLAUDE.md, master prompt, ORCHESTRATION.md, role prompt
+  `06_methods_mechanisms.md`.
+- **Path:** Confirmed `lanes/06_methods_mechanisms.md` — **written, committed, and pushed** on branch
+  `worktree-flow-methodologist-lane06` (confirms the same per-session worktree-isolation pattern this director
+  is using). Retrieved-source note added at `sources/retrieved/methodologist_web_sources_2026-09-05.md`
+  (role-prefixed; documents route/access status for 5 non-local sources: Badve 2025, Pyke 2014, Hinrichs 2024,
+  Mann 2021, and the SELECT/FLOW/SOUL 2026 pooled analysis).
+- **Highest-priority item — now resolved, not open:** independently retrieved Mann et al. 2021 full text
+  (PMC8453827, DOI 10.1111/dom.14443) and resolved the mediation-analysis flag relayed earlier from
+  endocrinology/nephrology. Exact figures: HbA1c mediated 25% (LEADER, 95% CI −7.1 to 67.3) / 26% (SUSTAIN-6,
+  CI noncalculable); systolic BP 9% (LEADER, CI 2.8–22.7) / 22% (SUSTAIN-6, CI noncalculable); body weight 9%
+  (LEADER, CI −7.9 to 35.5) / 0% (SUSTAIN-6 — no detectable mediation in the semaglutide-specific arm). Source
+  paper's own conclusion is "only a modest portion" (FLOW's paraphrase not inaccurate), but point estimates too
+  large / CIs too wide/noncalculable to license an unqualified "independent of glycemia" claim — graded
+  **suggestive**, not strongly supported, in §3/§6/§7. Explicit caveat: this is a LEADER/SUSTAIN-6 pooled
+  analysis with a **different (CV-death-excluded) kidney composite than FLOW's own** — not a FLOW-specific
+  mediation analysis. Requested the director relay the exact numbers (not FLOW's one-line paraphrase) to
+  endocrinology and nephrology — **done this turn** (see Director actions below).
+- **Also picked up `SELECT-FLOW-SOUL-POOLED-2026`** after trialist declined it: retrieved a structured abstract
+  via `mcp__paper-search__search_pubmed` (PMID 42567173, cross-confirmed via CrossRef, no Sci-Hub). Key
+  numbers (abstract-level only, full tables/appendix not retrieved): pooled N=30,787; primary kidney composite
+  973 vs 1,134 events, HR 0.84 (95% CI 0.77–0.91); kidney-specific (CV-death-excluded) composite 347 vs 416
+  events, HR 0.80 (0.69–0.92). Graded the abstract's own "not explained only by glycaemic/weight effects"
+  claim as hypothesis-generating (cross-trial-consistency argument), while treating the HRs themselves as
+  established pooled-RCT evidence. Flagged for lane 02/trialist to cross-check independently if full text is
+  retrieved — relayed this turn (see Director actions below; optional/FYI given trialist's lane is already
+  complete).
+- Confirms not touching 01-16 or `SOURCE_LEDGER.csv`. Notes it is standing by for Wave 2 (peer cross-review per
+  ORCHESTRATION.md) — **not actioned by the director this turn**; Wave 2 pairing assignment is out of scope
+  for this Wave 0/1 coordination task and will be handled separately.
+
+### Follow-up acks (post-relay, both received)
+
+- **`flow-nephrologist`:** incorporated the resolved Mann 2021 figures into `lanes/03_nephrology.md` §2.5 and
+  §7.4, cited with the composite-definition caveat, graded suggestive/not-strongly-supported, noted as
+  second-hand (via director relay from methodologist, not independently verified by this lane). Flag closed;
+  nothing further needed before Wave 2.
+- **`flow-trialist`:** staying within declared scope — not retrieving the SELECT-FLOW-SOUL pooled full text
+  itself (methodologist owns it). Added a short cross-reference note to `lanes/02_trialist_statistics.md`
+  relaying the abstract-level numbers for Wave 3 traceability, explicitly marked methodologist-owned/not
+  independently verified, with a suggestion that whoever writes deliverables 14/15 get one independent
+  full-text check before treating the pooled HR as headline-load-bearing (abstract-only sourcing is
+  provisional per CLAUDE.md). Pushed as commit `6065ece` on `worktree-trialist-stats-lane`. Lane memo
+  otherwise unchanged and complete.
+
 ## Director actions this turn
 
 1. Relayed `flow-trialist`'s FLOW Table 2 extraction-defect flag to `flow-source-librarian` (own the source
@@ -192,36 +239,54 @@ Wave 1 work already in progress.
    `flow-trialist` and `flow-methodologist`, asking them to coordinate so only one lane chases the full text
    before Wave 3 and the other notes it as outstanding/owned-by-peer.
 4. After `flow-trialist` declined (out of scope) and named `flow-methodologist` as owner in its lane file,
-   sent `flow-methodologist` a follow-up confirming sole ownership by default — closes the coordination loop
-   on this item without director adjudication.
+   sent `flow-methodologist` a follow-up confirming sole ownership by default — closed that coordination loop
+   without director adjudication.
+5. On receiving `flow-methodologist`'s resolved Mann et al. 2021 mediation figures, relayed the exact numbers
+   (HbA1c 25%/26%, SBP 9%/22%, weight 9%/0% by trial, with CIs and the CV-death-excluded-composite caveat) to
+   `flow-endocrinologist` and `flow-nephrologist`, instructing both to cite the figures directly rather than
+   FLOW's paraphrase — closes the mediation-analysis coordination loop opened at item 2.
+6. Relayed `flow-methodologist`'s `SELECT-FLOW-SOUL-POOLED-2026` structured-abstract numbers (N=30,787;
+   primary kidney composite HR 0.84 [0.77–0.91]; kidney-specific composite HR 0.80 [0.69–0.92]; PMID 42567173)
+   to `flow-trialist` as an optional cross-check, explicitly not reopening trialist's earlier scope decision.
 
 These are coordination relays only (naming exact files/sources per the ORCHESTRATION.md message protocol) —
 no claim adjudication, no numbered-deliverable writing.
 
 ## Status / handoff
 
-- **State:** All six Wave 0 CROSS_SESSION_TEST messages dispatched. 5/6 replies received
-  (`flow-trialist`, `flow-endocrinologist`, `flow-nephrologist`, `flow-ckm`, `flow-source-librarian`), all
-  READY=yes with confirmed paths — `flow-trialist` and `flow-source-librarian` both report their lane files
-  (`lanes/02_trialist_statistics.md`, `lanes/01_source_librarian.md`) already written and complete. Four
-  cross-lane-relevant items surfaced and relayed: (a) FLOW Table 2 OCR-scramble, independently corroborated
-  by two lanes with converging composite-level numbers, now folded into the librarian's lane §5; (b) pre-FLOW
-  glycemia/BP-mediation evidence vs FLOW's own "modestly mediated" language — nephrology and endocrinology
-  aligned on grading it suggestive-at-best/unquantified per CLAUDE.md rule 7, methodologist still to weigh in;
-  (c) three 2026 guideline/regulatory items CKM could not quote-verify (KDIGO 2026 draft, ADA 2026 CKD
-  chapter, AHA/ACC/ADA/ASN CKM guideline sequencing text) — flagged as a verification-access gap for the
-  librarian/red-team; (d) `SELECT-FLOW-SOUL-POOLED-2026` pooled-analysis fulltext — trialist declined
-  (out of scope) and named methodologist as sole owner; director confirmed that assignment. 1/6 replies still
-  pending (`flow-methodologist`, who now holds the original ask plus two relays — mediation-analysis overlap
-  and confirmed sole ownership of the SELECT-FLOW-SOUL fulltext gap).
+- **State: Wave 0 CROSS_SESSION_TEST complete — 6/6 replies received**
+  (`flow-trialist`, `flow-endocrinologist`, `flow-nephrologist`, `flow-ckm`, `flow-source-librarian`,
+  `flow-methodologist`), all READY=yes with confirmed owned paths. `flow-source-librarian` (01),
+  `flow-trialist` (02), and `flow-methodologist` (06) each report their Wave 1 lane file already written,
+  committed, and (for librarian/methodologist, per their own reports) pushed on session-specific worktree
+  branches (methodologist: `worktree-flow-methodologist-lane06`) — the same isolation pattern this director
+  session is using. Nephrologist, endocrinologist, and CKM confirmed READY and were continuing their memos as
+  of their replies; no completion report received from those three yet.
+- **Cross-lane items surfaced and closed out or handed off this wave:**
+  (a) **FLOW Table 2 OCR-scramble** — independently hit by trialist and nephrologist, converging on the same
+  PDF-page-transcribed numbers; relayed to librarian and folded into lane 01 §5. Resolved/tracked.
+  (b) **Pre-FLOW glycemia/BP/weight mediation** — resolved by methodologist with exact Mann et al. 2021
+  figures (see actions 5 above) and relayed to endocrinology + nephrology; both already leaning toward
+  "suggestive, not strongly supported" per CLAUDE.md rule 7, now with numbers to cite directly. Closed.
+  (c) **Three unverified 2026 guideline items** (KDIGO 2026 draft, ADA 2026 CKD chapter wording, AHA/ACC/ADA/
+  ASN CKM guideline sequencing text) — flagged by CKM as fetch-blocked; open, appropriate for librarian/
+  Wave 5 red-team follow-up with alternate fetch routes, not a numeric conflict.
+  (d) **`SELECT-FLOW-SOUL-POOLED-2026` fulltext** — trialist declined (scope), methodologist picked it up and
+  retrieved a structured abstract (N=30,787; primary composite HR 0.84 [0.77–0.91]; kidney-specific composite
+  HR 0.80 [0.69–0.92]; PMID 42567173) with its own interpretive claim graded hypothesis-generating; relayed to
+  trialist as an optional cross-check (action 6). Abstract-level only — full tables/appendix still
+  unretrieved; open for Wave 3 if a lane pulls the full text.
 - **CLAUDE.md updated mid-Wave-0** (on disk, after this director's original dispatch): adds MCP
   source-discovery preference, no-Sci-Hub rule, `sources/retrieved/cache/` convention, and an API-key handling
   rule for LlamaParse. This session is operating under the updated file; flagged in the librarian reply entry
   above for visibility to any lane that cached a source before the update landed.
-- **Next action for this (director) session:** on resume, capture `flow-methodologist`'s reply (and its
-  responses to the two pending relays) below, watch for all six lane files landing before assigning Wave 2
-  cross-examination pairs, and note any READY=no, path mismatch, or unresolved conflict that needs early
-  attention.
+- **Next action for this (director) session:** on resume, confirm the remaining three lane files
+  (nephrology 03, endocrinology 04, CKM 05) have landed, verify the two open items above ((c) guideline
+  fetch-blocks, (d) pooled-abstract full text) at Wave 3, and — once all six lanes are confirmed complete —
+  prepare Wave 2 cross-examination pairing per the fixed assignments in `ORCHESTRATION.md` (trialist↔
+  nephrology, endocrinology↔CKM, methodologist on combination/causal claims, librarian auditing citations
+  across all lanes). Wave 2 assignment itself was explicitly out of scope for this turn and has not been
+  dispatched.
 - **Not yet done (by design, out of scope for Wave 0/1):** no numbered deliverables (01-16), no
   `SOURCE_LEDGER.csv`, no conflict resolution/adjudication, no synthesis. `12_EVIDENCE_GAPS_AND_CONTROVERSIES.md`
   and `15_CLAIM_EVIDENCE_MAP.md` remain for Wave 3 once all lane memos and Wave 2 cross-reviews exist.
