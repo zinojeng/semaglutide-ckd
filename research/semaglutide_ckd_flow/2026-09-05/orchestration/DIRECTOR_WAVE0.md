@@ -223,6 +223,72 @@ Wave 1 work already in progress.
   provisional per CLAUDE.md). Pushed as commit `6065ece` on `worktree-trialist-stats-lane`. Lane memo
   otherwise unchanged and complete.
 
+### `flow-endocrinologist` — lane complete
+
+- Incorporated the relayed Mann 2021 figures into source table, pre-FLOW arc section, and the glycemia/weight/
+  BP independence-grading table in `lanes/04_endocrinology.md` (exact percentages + composite-definition
+  caveat); closed that item in its own unresolved-conflicts log.
+- **`lanes/04_endocrinology.md` is now complete**: cross-trial arc (SUSTAIN-6/PIONEER-6 → FLOW → SELECT/SOUL →
+  FLOW-CKD-severity), SOUL-vs-FLOW divergence explanation, SELECT's glucose-independence limits, the
+  HbA1c/weight/BP independence grading table, "compelling at HbA1c goal" section, obesity/ASCVD/glycemic
+  phenotype positioning, CKD-specific safety (retinopathy/hypoglycemia/GI/AKI/gallbladder-pancreatitis/
+  gastroparesis/dialysis gap), and five evidence-graded patient vignettes (A-E) with nephrology-sensitive
+  caveats.
+- **Flags for Wave 3:** (1) no usable numbers from `SELECT-FLOW-SOUL-POOLED-2026` — correctly deferred, per
+  this director's Wave 0 relay, to trialist/methodologist ownership; nothing cited from it. (2)
+  `FLOW-CKD-SEVERITY-2026` (PMID 41706532, likely the JACC 2026 CV-by-CKD-severity subgroup paper from master
+  prompt §III.8) is abstract-level only on endocrinology's end, exact journal/volume/page unconfirmed —
+  possible overlap with "Mahaffey 2025 (CV-by-CKD-severity)," which both `flow-nephrologist` and `flow-ckm`
+  independently cited from local `fulltext/` in their Wave 0 replies.
+- **Director action:** relayed the citation-reconciliation question — is `Mahaffey 2025` the same paper as
+  `FLOW-CKD-SEVERITY-2026`/PMID 41706532? — to both `flow-nephrologist` and `flow-ckm`, asking whichever has
+  a clean local citation to confirm/supersede endocrinology's abstract-level one before Wave 3.
+
+### Resolution: three distinct FLOW subgroup-analysis papers (superseded once, now settled)
+
+Initial pass (from `flow-nephrologist`) suggested two distinct papers with a tentative, unconfirmed PMID→DOI
+guess. `flow-ckm` then independently verified (WebSearch + PubMed record + CJASN publisher page + Healio + an
+institutional research-portal record — 4 independent sources agreeing) that there are **three** distinct
+papers, and corrected the PMID mapping. Settled state:
+
+1. **Mahaffey 2025** (held locally by nephrology + CKM, `fulltext/glp1_cardiorenal_Mahaffey_2025.md`, the only
+   one of the three fulltext-verified this session): Mahaffey KW, Tuttle KR, Arici M, et al. "Cardiovascular
+   outcomes with semaglutide by severity of chronic kidney disease in type 2 diabetes: the FLOW trial."
+   *European Heart Journal* 2025;46(12):1096–1108. DOI 10.1093/eurheartj/ehae613. PMID 39211948. Master prompt
+   III.5; CV composite + all-cause mortality, stratified by eGFR/UACR/KDIGO risk.
+2. **PMID 41706532 = CJASN 2026 (endocrinology's actual source, master prompt III.8)** — NOT the JACC paper as
+   first guessed: Tuttle KR, Mann JFE, Mayrdorfer MM, et al. "Kidney and Survival Outcomes with Semaglutide by
+   CKD Severity in the FLOW Trial." *Clinical Journal of the American Society of Nephrology (CJASN)*
+   2026;21(5):841–851 (online 2026-02-18). DOI appears to be 10.2215/CJN.0000000974 (seen in a URL slug —
+   **unverified against the DOI resolver, flagged for librarian**). Kidney composite + all-cause death by
+   eGFR/albuminuria strata.
+3. **`FLOW-CVPHENOTYPE-2026`** (CKM's source, held only at abstract level): "Kidney and Survival Benefits of
+   Semaglutide in Diabetes With Chronic Kidney Disease: FLOW Trial Cardiovascular Subgroup Analyses." *JACC*
+   2026. DOI 10.1016/j.jacc.2026.02.5125. **PMID 42233552** (this, not 41706532, is the JACC paper's PMID).
+   Stratifies by CV phenotype (ASCVD/HF/no-CVD-high-PREVENT-risk).
+
+- **Director actions:** relayed the corrected three-paper mapping to `flow-endocrinologist` (keep PMID
+  41706532 but fix journal/DOI to CJASN, not JACC), `flow-nephrologist` (their JACC guess pointed at the wrong
+  second paper — the "different paper" instinct was right), and `flow-source-librarian` (track all three as
+  separate ledger rows, #2's DOI needs resolver verification, #2 and #3 are candidates for a full-text pull).
+  Acknowledged `flow-ckm`'s verification and confirmed no further action needed on their end.
+- **Follow-up acks:** `flow-nephrologist` confirms its lane file never actually cited either the CJASN or JACC
+  paper by name (only speculated about the match in a cross-session reply, not in `lanes/03_nephrology.md`
+  itself) — so no correction needed to that lane file. `flow-ckm` acknowledged the loop is closed.
+- **CJASN DOI now confirmed:** `flow-source-librarian` verified 10.2215/CJN.0000000974 via doi.org redirect +
+  exact CrossRef metadata match (vol 21, issue 5, pp. 841–851, 2026-02-18) and pulled abstract-level numbers
+  (primary composite HR 0.76 [0.66–0.88]; all-cause death HR 0.80 [0.67–0.95]; consistent across eGFR/UACR
+  strata; an exploratory UACR≥2000-mg/g death-HR subgroup finding, HR 0.47, P-interaction 0.02 — flagged
+  exploratory-only per CLAUDE.md rule 5). Tracked by librarian as `FLOW-CKDSEVERITY-2026-CJASN` (master prompt
+  III.7). Full text still not obtained (CJASN direct fetch hit HTTP 402 paywall) — abstract-level only.
+  Relayed to `flow-endocrinologist` (update citation to CJASN + these numbers, abstract-level caveat) and
+  `flow-nephrologist` (FYI, may be useful for advanced-CKD/UACR context).
+- **Still open for Wave 3:** endocrinology has not yet confirmed it updated `lanes/04_endocrinology.md`'s
+  citation from JACC to CJASN 2026 for PMID 41706532 (two relays sent, no reply received as of this writing);
+  full text of paper #2 (CJASN) remains unobtained (402 paywall); and papers #2/#3 stay abstract/
+  secondary-source level pending any future full-text pull — only paper #1 (Mahaffey 2025) is fulltext-verified
+  this session.
+
 ## Director actions this turn
 
 1. Relayed `flow-trialist`'s FLOW Table 2 extraction-defect flag to `flow-source-librarian` (own the source
@@ -248,6 +314,16 @@ Wave 1 work already in progress.
 6. Relayed `flow-methodologist`'s `SELECT-FLOW-SOUL-POOLED-2026` structured-abstract numbers (N=30,787;
    primary kidney composite HR 0.84 [0.77–0.91]; kidney-specific composite HR 0.80 [0.69–0.92]; PMID 42567173)
    to `flow-trialist` as an optional cross-check, explicitly not reopening trialist's earlier scope decision.
+7. On `flow-endocrinologist` reporting completion, relayed its `FLOW-CKD-SEVERITY-2026`/PMID 41706532 citation
+   gap and its possible identity with "Mahaffey 2025 (CV-by-CKD-severity)" to both `flow-nephrologist` and
+   `flow-ckm` (both hold that source locally), asking whichever can confirm to supersede endocrinology's
+   abstract-level citation before Wave 3.
+8. After `flow-ckm` independently verified via 4 sources that item 7's question resolves to THREE distinct
+   papers (not two, and with a corrected PMID→journal mapping), relayed the corrected mapping to
+   `flow-endocrinologist`, `flow-nephrologist`, and `flow-source-librarian`, and confirmed closure with
+   `flow-ckm` — see "Resolution" subsection above for full detail.
+9. On `flow-source-librarian` confirming the CJASN DOI and pulling abstract-level numbers, relayed both to
+   `flow-endocrinologist` (citation fix + numbers to use) and `flow-nephrologist` (FYI).
 
 These are coordination relays only (naming exact files/sources per the ORCHESTRATION.md message protocol) —
 no claim adjudication, no numbered-deliverable writing.
@@ -256,12 +332,12 @@ no claim adjudication, no numbered-deliverable writing.
 
 - **State: Wave 0 CROSS_SESSION_TEST complete — 6/6 replies received**
   (`flow-trialist`, `flow-endocrinologist`, `flow-nephrologist`, `flow-ckm`, `flow-source-librarian`,
-  `flow-methodologist`), all READY=yes with confirmed owned paths. `flow-source-librarian` (01),
-  `flow-trialist` (02), and `flow-methodologist` (06) each report their Wave 1 lane file already written,
-  committed, and (for librarian/methodologist, per their own reports) pushed on session-specific worktree
-  branches (methodologist: `worktree-flow-methodologist-lane06`) — the same isolation pattern this director
-  session is using. Nephrologist, endocrinologist, and CKM confirmed READY and were continuing their memos as
-  of their replies; no completion report received from those three yet.
+  `flow-methodologist`), all READY=yes with confirmed owned paths. **4/6 lane files reported complete:**
+  `flow-source-librarian` (01), `flow-trialist` (02, commit `6065ece` on `worktree-trialist-stats-lane`),
+  `flow-endocrinologist` (04), and `flow-methodologist` (06, pushed on `worktree-flow-methodologist-lane06`) —
+  each on session-specific worktree branches, the same isolation pattern this director session is using.
+  `flow-nephrologist` (03) and `flow-ckm` (05) confirmed READY and were continuing their memos as of their
+  replies; no completion report received from those two yet.
 - **Cross-lane items surfaced and closed out or handed off this wave:**
   (a) **FLOW Table 2 OCR-scramble** — independently hit by trialist and nephrologist, converging on the same
   PDF-page-transcribed numbers; relayed to librarian and folded into lane 01 §5. Resolved/tracked.
@@ -280,13 +356,14 @@ no claim adjudication, no numbered-deliverable writing.
   source-discovery preference, no-Sci-Hub rule, `sources/retrieved/cache/` convention, and an API-key handling
   rule for LlamaParse. This session is operating under the updated file; flagged in the librarian reply entry
   above for visibility to any lane that cached a source before the update landed.
-- **Next action for this (director) session:** on resume, confirm the remaining three lane files
-  (nephrology 03, endocrinology 04, CKM 05) have landed, verify the two open items above ((c) guideline
-  fetch-blocks, (d) pooled-abstract full text) at Wave 3, and — once all six lanes are confirmed complete —
-  prepare Wave 2 cross-examination pairing per the fixed assignments in `ORCHESTRATION.md` (trialist↔
-  nephrology, endocrinology↔CKM, methodologist on combination/causal claims, librarian auditing citations
-  across all lanes). Wave 2 assignment itself was explicitly out of scope for this turn and has not been
-  dispatched.
+- **Next action for this (director) session:** on resume, confirm the remaining two lane files (nephrology 03,
+  CKM 05) have landed complete (endocrinology 04 already reported complete but has an outstanding citation fix
+  to confirm — see the PMID 41706532 resolution above), verify the open items above at Wave 3 — (c) guideline
+  fetch-blocks, (d) SELECT-FLOW-SOUL pooled-abstract full text, (e) CJASN DOI resolver check — and once all six
+  lanes are confirmed complete, prepare Wave 2 cross-examination pairing per the fixed assignments in
+  `ORCHESTRATION.md` (trialist↔nephrology, endocrinology↔CKM, methodologist on combination/causal claims,
+  librarian auditing citations across all lanes). Wave 2 assignment itself was explicitly out of scope for
+  this turn and has not been dispatched.
 - **Not yet done (by design, out of scope for Wave 0/1):** no numbered deliverables (01-16), no
   `SOURCE_LEDGER.csv`, no conflict resolution/adjudication, no synthesis. `12_EVIDENCE_GAPS_AND_CONTROVERSIES.md`
   and `15_CLAIM_EVIDENCE_MAP.md` remain for Wave 3 once all lane memos and Wave 2 cross-reviews exist.
