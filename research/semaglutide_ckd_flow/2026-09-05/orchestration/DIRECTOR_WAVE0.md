@@ -357,6 +357,32 @@ CKM's §1.2 SGLT2i-subgroup analysis independently converges with methodologist'
 before either read the other) — good calibration signal; all overlapping numeric figures between the two
 lanes (SGLT2i HRs, Badve 2025 meta-analysis) match exactly, no conflicts.
 
+#### `flow-ckm` accepted both CHALLENGEs — exact wording logged here for Wave 3
+
+`flow-ckm` accepted both corrections but is scoped this turn to not edit `lanes/05_ckm_combinations.md`
+(user-instructed for this turn: "do not edit lane files or numbered deliverables"). Per ORCHESTRATION.md, Wave
+2 writes only to `cross_reviews/` anyway — lane files are Wave-1 snapshots. Logging the accepted exact
+replacement wording here (zh-TW, as CKM will ultimately publish it) so Wave 3 reconciliation — or a future CKM
+turn if authorized to edit lanes — can apply it verbatim:
+
+1. **§6.1 point 3 downgrade (accepted):** replace with —
+   > 效益在已有 RASi±SGLT2i 背景下，於 eGFR slope、UACR、MACE、全因死亡等確認性次要終點上方向一致地保留
+   > （strongly supported，因這些終點的組間差異信賴區間未跨越無效值）；但主要複合終點本身在 SGLT2i 亞組的點估計為
+   > HR 1.07（95% CI 0.69–1.67，事件數僅79例），信賴區間大幅跨越無效線，『疊加使用不互相抵銷』一詞若指主要複合終點
+   > 本身，證據等級應為 suggestive，而非 strongly supported——此處更正以與本備忘錄§1.4之既有措辭保持一致。
+2. **§6.2 point 4 clarification (accepted):** replace with —
+   > 此步驟不需等待『血糖未達標』才啟用——此處僅指 FLOW 收案條件本身未要求 HbA1c 已達不良控制（HbA1c ≤10% 為收案
+   > 上限，非下限；`FLOW-SUPP-2024` l.385），故臨床上不必以血糖未達標作為啟用門檻；此點不代表、也不應被讀作
+   > 『semaglutide 之腎臟效益已被證實與降血糖效果無關』——後者為一獨立、僅部分獲支持的因果問題（依 Mann 2021
+   > mediation 分析，HbA1c 路徑約中介 25–26%，CI 寬或無法計算），不可由收案條件寬鬆此一事實直接推論。
+3. **`SELECT-FLOW-SOUL-POOLED-2026` GAP acknowledged:** genuinely absent from CKM's inventory (CKM never had
+   access, same status as endocrinology originally reported); CKM agrees this doesn't affect its "no direct
+   combination-therapy RCT" §1/§3 conclusion, which doesn't depend on SELECT/SOUL data.
+
+**Director action:** relayed acceptance + closure to `flow-methodologist`. Not applying this wording to the
+lane file myself — out of scope for a director in Wave 0/1/2 (only Wave 3 reconciliation or CKM's own
+authorized edit should touch `lanes/05_ckm_combinations.md`).
+
 ## Director actions this turn
 
 1. Relayed `flow-trialist`'s FLOW Table 2 extraction-defect flag to `flow-source-librarian` (own the source
@@ -400,6 +426,9 @@ lanes (SGLT2i HRs, Badve 2025 meta-analysis) match exactly, no conflicts.
 12. On `flow-methodologist` completing its self-initiated Wave 2 review of CKM, relayed both CHALLENGEs (SGLT2i
     layering grading downgrade; HbA1c-independence conflation) plus the missing locator and the
     SELECT-FLOW-SOUL absence flag to `flow-ckm`.
+13. On `flow-ckm` accepting both CHALLENGEs with exact zh-TW replacement wording (but declining to edit its
+    lane file per its current turn's scope), logged the wording verbatim for Wave 3 and relayed acceptance/
+    closure back to `flow-methodologist`.
 
 These are coordination relays only (naming exact files/sources per the ORCHESTRATION.md message protocol) —
 no claim adjudication, no numbered-deliverable writing.
