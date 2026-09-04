@@ -1,0 +1,48 @@
+# Retrieved-source note — flow-methodologist (lane 06)
+
+Date: 2026-09-05
+Session role: `flow-methodologist`
+Purpose: document non-local sources used in `lanes/06_methods_mechanisms.md`, their retrieval route, and access/license status, per CLAUDE.md's file-and-collaboration contract. No PDFs were downloaded or cached by this session; all retrieval below was via WebSearch (result snippets) and/or WebFetch (page-to-markdown + prompted extraction), not via research_hub/paper-search/google-scholar MCPs or Sci-Hub. This session did not use LlamaParse and did not obtain or need any credentialed PDF.
+
+---
+
+## 1. Badve SV, et al. Effects of GLP-1 receptor agonists on kidney and cardiovascular disease outcomes: a meta-analysis of randomised controlled trials. Lancet Diabetes Endocrinol 2025;13:15–28.
+
+- DOI: 10.1016/S2213-8587(24)00271-7 · PMID: 39608381 · PROSPERO CRD42024528864
+- Route: WebSearch (multiple queries) + WebFetch of a PMC review (PMC12941783) that cites this paper's Table 2/characteristics. The publisher page (thelancet.com) returned HTTP 403; PubMed abstract page returned only a cookie-consent shell via WebFetch.
+- Access/license status: **Not independently retrieved in full text.** Headline numbers (composite kidney outcome HR 0.82, 95% CI 0.73–0.93; kidney failure HR 0.84, 0.72–0.99; MACE HR 0.87, 0.81–0.93; all-cause death HR 0.88, 0.83–0.93; N=85,373 total/67,769 T2D; 11 trials) were cross-checked across two independent secondary sources (a WebSearch AI summary drawing on the PubMed/ScienceDirect/Lancet abstract pages, and a separate PMC review article's citation) and are internally consistent, but **this lane did not read the primary paper's own tables or appendix.**
+- Outstanding: per-molecule (semaglutide/liraglutide/dulaglutide/efpeglenatide/exenatide/lixisenatide) heterogeneity, serious-adverse-event and discontinuation data, and the exact trial list beyond the six named (FLOW, LEADER, REWIND, SUSTAIN-6, SELECT post hoc, AMPLITUDE-O) were not retrievable via the sources used. Flagged to `flow-source-librarian` for full-text retrieval via an authorized route before `SOURCE_LEDGER.csv` finalization.
+
+## 2. Pyke C, et al. GLP-1 Receptor Localization in Monkey and Human Tissue: Novel Distribution Revealed With Extensively Validated Monoclonal Antibody. Endocrinology 2014;155(4):1280–1290.
+
+- DOI: 10.1210/en.2013-1934 · PMID: 24467746
+- Route: WebSearch only (result snippets + AI summary of publicly indexed abstract/secondary description). No WebFetch of the Oxford Academic full-text page was attempted (not needed for the abstract-level finding used).
+- Access/license status: Abstract-level claim only ("GLP-1R exclusively in smooth muscle cells of arterial/arteriolar walls in kidney cortex; not in glomeruli, tubules, or veins" across human/monkey/rat/mouse tissue using a validated monoclonal antibody). Full text/figures not retrieved.
+- Used for: §2 of the lane memo (human renal GLP-1 receptor localization uncertainty), cross-checked against a second, independent source (`GLP1-RENAL-CROSSTALK-2024`, below) which itself cites Pyke 2014 alongside conflicting reports (Schlatter et al., proximal tubular overlap with DPP-4; Wei et al.; Körner et al.).
+
+## 3. Hinrichs GR, Hovind P, Asmar A. The GLP-1-mediated gut-kidney cross talk in humans: mechanistic insight. Am J Physiol Cell Physiol 2024.
+
+- DOI: 10.1152/ajpcell.00476.2023 · PMCID: PMC11193450
+- Route: WebSearch (author identification) + WebFetch of the PMC mirror (PMC11193450). The primary journal page (journals.physiology.org) returned HTTP 403 on WebFetch.
+- Access/license status: PMC full text was summarized by WebFetch's extraction model (a prompted summary of the fetched page, not this session's own line-by-line read of the PDF). Treat all quoted figures/quotes (e.g., Gutzwiller 2004, Skov 2013 JCEM 98:E664, Asmar 2019 JCEM 104:2509 findings; Pyke/Schlatter/Wei/Körner localization discordance) as **secondary extraction**, not independently re-checked against the original PDF by this session.
+- Used for: §1 (human mechanistic evidence layer for natriuresis/RAAS pathway) and §2 (localization discordance) of the lane memo.
+
+## 4. Mann JFE, Buse JB, Idorn T, et al. Potential kidney protection with liraglutide and semaglutide: exploratory mediation analysis. Diabetes Obes Metab 2021;23:2058–2066.
+
+- DOI: 10.1111/dom.14443 · PMCID: PMC8453827
+- Route: WebSearch (two queries) + WebFetch of the open-access PMC full text (PMC8453827). This retrieval was prompted by a Wave-0 coordination relay from `flow-director`/`flow-endocrinologist` flagging a possible understatement in this lane's initial (secondhand, via-FLOW-citation) characterization of this paper.
+- Access/license status: PMC full text (open access) summarized via WebFetch's prompted extraction (not this session's own paragraph-by-paragraph read of the PDF), covering: kidney composite definition (new-onset persistent macroalbuminuria; persistent doubling of serum creatinine to eGFR ≤45; continuous RRT; kidney death — note this differs from FLOW's own primary composite, which has no macroalbuminuria component and does include CV death); mediation percentages and 95% CIs for HbA1c, systolic BP, and body weight in LEADER (n=9,340, 605 kidney events) and SUSTAIN-6 (n=3,297, 162 kidney events) separately; the authors' own "only a modest portion" conclusion; and confirmation this is a post hoc/exploratory analysis of prespecified secondary trial outcomes, not a FLOW-specific or prespecified-for-this-purpose analysis.
+- Used for: §1, §3, §6, §7, and §8 of the lane memo — this is the single most consequential source retrieved mid-session, materially sharpening (not reversing) this lane's grading of the glucose-/weight-independence claims from "suggestive, per FLOW's paraphrase" to "suggestive, with specific numeric point estimates and their (often wide) precision now stated explicitly."
+
+---
+
+## 5. SELECT/FLOW/SOUL pooled kidney-outcomes analysis — Mann JFE, Badve SV, Baeres FMM, et al. Effect of semaglutide on kidney outcomes in the SELECT, FLOW, and SOUL trials: a prespecified pooled analysis. Lancet Diabetes Endocrinol 2026. DOI 10.1016/S2213-8587(26)00134-8. PMID 42567173.
+
+- Flagged by `flow-source-librarian` (bibliographic identity confirmed via CrossRef) and, after `flow-trialist` declined it as out of scope, reassigned to this lane by `flow-director` mid-session.
+- **First route attempted (unsuccessful):** WebSearch (no indexed abstract/summary found — consistent with a very recent online-first publication with no volume/page assigned yet at the time); direct DOI resolution via `https://doi.org/10.1016/S2213-8587(26)00134-8`, which resolved (302 redirect to `https://linkinghub.elsevier.com/retrieve/pii/S2213858726001348`) but the Elsevier landing page required JavaScript/paywall access and returned no extractable content via WebFetch.
+- **Second route attempted (successful):** `mcp__paper-search__get_crossref_paper_by_doi` (exact DOI) returned full bibliographic metadata — title, complete 20-author list (Mann, Badve, Baeres, Belmar, Brown-Frandsen, Buse, Colhoun, Deanfield, Engelmann, Hovingh, Idorn, Lincoff, Lingvay, Mahaffey, McGuire, Pratley, Rasmussen, Rossing, Sattar, Tuttle, Perkovic), journal (Lancet Diabetes & Endocrinology, Elsevier), CrossRef published-date 2026-08-01, empty volume/issue/page (confirms online-first status) — but an empty abstract field. `mcp__paper-search__search_pubmed` (query: exact title) then returned PMID 42567173 with a **full structured abstract** including exact numeric results (see below), matching DOI and author list exactly against the CrossRef record.
+- Access/license status: **Retrieved at abstract level via a CLAUDE.md-preferred MCP (paper-search → PubMed), no Sci-Hub or other circumvention route used, no PDF downloaded or cached.** Full text/tables/appendix (component-level breakdowns, per-trial HRs, subgroup data) were not retrieved and remain a gap for a future session with fuller access.
+- **Key verified numbers (PMID 42567173 structured abstract):** N=30,787 pooled (FLOW + SELECT + SOUL); mean follow-up 39.5–47.5 months; primary kidney composite (5-component, CV-death-inclusive, same structure as FLOW's own primary outcome) 973 events (semaglutide) vs. 1,134 (placebo), HR 0.84 (95% CI 0.77–0.91); narrower kidney-specific composite (CV death excluded) 347 vs. 416 events, HR 0.80 (95% CI 0.69–0.92); safety broadly similar, serious adverse events numerically lower with semaglutide; authors' own limitation statement: differences in baseline characteristics, dose (1.0 mg SC / 2.4 mg SC / 14 mg oral), and route across the three pooled trials.
+- Used for: §0 (source table), §3a (full causal-inference critique of the abstract's "might not be explained only by glycaemic effects, weight-management effects, or both" interpretive claim), §6, §7, and §8 of the lane memo.
+
+**General caveat:** entries 1–4 above were retrieved via WebSearch/WebFetch, not the CLAUDE.md-preferred `research_hub`/`paper-search`/`google-scholar` MCPs (a preference added to CLAUDE.md partway through this session, after entries 1–4 were already retrieved). Entry 5 (SELECT/FLOW/SOUL pooled analysis) was retrieved via `mcp__paper-search__search_pubmed` and `mcp__paper-search__get_crossref_paper_by_doi` once this lane loaded those tools, consistent with the updated preference. No Sci-Hub or other circumvention route was used for any entry. If the source librarian re-retrieves entries 1–4 via the preferred MCP path and finds a material discrepancy with the numbers recorded here, that retrieval should supersede this note.
