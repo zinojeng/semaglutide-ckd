@@ -1,0 +1,8 @@
+.DS_Store
+.metadata_cache/
+.claude/worktrees/
+# Local article copies may be publisher-copyrighted; keep them out of the public repo.
+fulltext/
+research/**/orchestration/logs/*.ansi
+research/**/orchestration/logs/*.tmp
+tmp/
