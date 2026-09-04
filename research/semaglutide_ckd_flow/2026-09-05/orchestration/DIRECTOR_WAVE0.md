@@ -25,7 +25,7 @@ At dispatch time, `lanes/` was empty (no Wave 1 memos yet written) in the main c
 
 | # | Recipient session | ListAgents ref | Owned Wave 1 path | msg_id | Sent | Reply received |
 |---|---|---|---|---|---|---|
-| 1 | `flow-source-librarian` | `e04063` | `lanes/01_source_librarian.md` | `a8e46a7f-adb3-4b0b-9b36-75681c43c8b0` | ✅ | ⏳ pending |
+| 1 | `flow-source-librarian` | `e04063` | `lanes/01_source_librarian.md` | `a8e46a7f-adb3-4b0b-9b36-75681c43c8b0` | ✅ | ✅ received |
 | 2 | `flow-trialist` | `31743f` | `lanes/02_trialist_statistics.md` | `198ca981-c96e-4ce2-854a-877fa59f112a` | ✅ | ✅ received |
 | 3 | `flow-nephrologist` | `c77be6` | `lanes/03_nephrology.md` | `f33a377f-96b3-4994-994e-f386c2db0998` | ✅ | ✅ received |
 | 4 | `flow-endocrinologist` | `5d09cb` | `lanes/04_endocrinology.md` | `142bdc1b-9946-48bb-b187-3d459fd26eea` | ✅ | ✅ received |
@@ -135,9 +135,37 @@ Wave 1 work already in progress.
   `flow-source-librarian` to track and for Wave 5 red-team to re-attempt with different fetch routes before
   any CKM-guideline-sequencing claim is finalized at Wave 3.
 
-### `flow-methodologist`
+### `flow-source-librarian` (received)
 
-- ⏳ No reply yet as of this writing. Will append when received.
+- **READY:** Yes — confirms reading CLAUDE.md (including an on-disk update received mid-Wave-0 adding the
+  `research_hub`/`paper-search`/`google-scholar` MCP preference, a no-Sci-Hub rule, and the
+  `sources/retrieved/cache/` convention — see note below), the full master prompt, ORCHESTRATION.md, and role
+  prompt `01_source_librarian.md`.
+- **Path:** Confirmed `lanes/01_source_librarian.md` — **written and complete this turn** (source inventory
+  table with stable IDs, claim-support mapping, exact local FLOW-number locators, draft `SOURCE_LEDGER.csv`
+  row block, missing/inaccessible sources + bibliographic inconsistencies, review/editorial exclusion list,
+  handoff summary). No `sources/retrieved/` notes added — no PDFs downloaded/cached this turn; web
+  verification was bibliographic-only (paper-search MCP / CrossRef / PubMed / Europe PMC / WebSearch, no
+  Sci-Hub). Incorporated the director's Table 2 OCR-scramble relay and the trialist's transcribed component
+  counts into lane §5, attributed to `flow-trialist`/`flow-nephrologist` pending their own clean
+  re-verification.
+- **Highest-priority uncertainty:** `SELECT-FLOW-SOUL-POOLED-2026` (*Lancet Diabetes Endocrinol* 2026, DOI
+  10.1016/S2213-8587(26)00134-8, "Effect of semaglutide on kidney outcomes in the SELECT, FLOW, and SOUL
+  trials: a prespecified pooled analysis") — bibliographic identity (title/authors/DOI) confirmed verbatim via
+  CrossRef and matches the master prompt, but abstract/results not retrievable this session (no volume/page
+  yet, consistent with very recent online-first). Flagged as a master-prompt "high-priority current source"
+  for Section V; librarian can vouch only for bibliographic identity, not the numbers — whoever owns that
+  content (trialist or methodologist) should fetch full text before Wave 3.
+- **Note on mid-Wave-0 CLAUDE.md update:** `CLAUDE.md` changed on disk after this director's Wave 0 dispatch,
+  adding: MCP source-discovery preference (`research_hub`/`paper-search`/`google-scholar` first;
+  `openevidence` orientation-only, never a primary-source substitute); an explicit no-Sci-Hub rule; a
+  `sources/retrieved/cache/` (gitignored) convention for downloaded PDFs/parses, with only metadata/provenance/
+  short notes going to the public repo; an API-key handling rule for the LlamaParse MCP; and `llamaparse`
+  restricted to lawfully-obtained PDFs with route/license recorded. This session (director) is now working
+  under the updated file. Flagging for the record since it postdates this director's original Wave 0
+  dispatch messages — worth a quick note to any lane that already downloaded/cached a PDF before the update
+  landed, to confirm its storage location and route documentation are compliant. Not treating this as
+  something to "undo" — per system guidance, it's the current, deliberate state.
 
 ## Director actions this turn
 
@@ -150,25 +178,38 @@ Wave 1 work already in progress.
    `flow-methodologist` so they can coordinate mediation-strength language ahead of Wave 2 and avoid
    duplicated retrieval of Mann et al. 2021 (DOI 10.1111/dom.14443). `flow-nephrologist` acknowledged and
    will grade consistently with CLAUDE.md rule 7 (see above).
+3. Relayed `flow-source-librarian`'s `SELECT-FLOW-SOUL-POOLED-2026` fulltext gap (DOI
+   10.1016/S2213-8587(26)00134-8 — bibliographic identity confirmed, results not yet retrieved) to both
+   `flow-trialist` and `flow-methodologist`, asking them to coordinate so only one lane chases the full text
+   before Wave 3 and the other notes it as outstanding/owned-by-peer.
 
 These are coordination relays only (naming exact files/sources per the ORCHESTRATION.md message protocol) —
 no claim adjudication, no numbered-deliverable writing.
 
 ## Status / handoff
 
-- **State:** All six Wave 0 CROSS_SESSION_TEST messages dispatched. 4/6 replies received
-  (`flow-trialist`, `flow-endocrinologist`, `flow-nephrologist`, `flow-ckm`), all READY=yes with confirmed
-  paths. Three cross-lane-relevant items surfaced and relayed: (a) FLOW Table 2 OCR-scramble, now
-  independently corroborated by two lanes with converging composite-level numbers; (b) pre-FLOW
-  glycemia/BP-mediation evidence vs FLOW's own "modestly mediated" language — nephrology and endocrinology
-  now aligned on grading it suggestive-at-best/unquantified per CLAUDE.md rule 7, methodologist still to weigh
-  in; (c) three 2026 guideline/regulatory items CKM could not quote-verify (KDIGO 2026 draft, ADA 2026 CKD
-  chapter, AHA/ACC/ADA/ASN CKM guideline sequencing text) — flagged as a verification-access gap for the
-  librarian/red-team, not a numeric conflict. 2/6 replies still pending (`flow-source-librarian`,
-  `flow-methodologist`).
-- **Next action for this (director) session:** on resume, check for further queued replies, append them below
-  with the same structure, relay any new cross-lane flags, and note any READY=no, path mismatch, or unresolved
-  conflict that needs early attention before Wave 2 cross-examination assignments go out.
+- **State:** All six Wave 0 CROSS_SESSION_TEST messages dispatched. 5/6 replies received
+  (`flow-trialist`, `flow-endocrinologist`, `flow-nephrologist`, `flow-ckm`, `flow-source-librarian`), all
+  READY=yes with confirmed paths — `flow-source-librarian` additionally reports its lane file
+  (`lanes/01_source_librarian.md`) already written and complete. Four cross-lane-relevant items surfaced and
+  relayed: (a) FLOW Table 2 OCR-scramble, independently corroborated by two lanes with converging
+  composite-level numbers, now folded into the librarian's lane §5; (b) pre-FLOW glycemia/BP-mediation
+  evidence vs FLOW's own "modestly mediated" language — nephrology and endocrinology aligned on grading it
+  suggestive-at-best/unquantified per CLAUDE.md rule 7, methodologist still to weigh in; (c) three 2026
+  guideline/regulatory items CKM could not quote-verify (KDIGO 2026 draft, ADA 2026 CKD chapter, AHA/ACC/ADA/
+  ASN CKM guideline sequencing text) — flagged as a verification-access gap for the librarian/red-team; (d)
+  `SELECT-FLOW-SOUL-POOLED-2026` pooled-analysis fulltext not yet retrieved — relayed to trialist and
+  methodologist to divide ownership. 1/6 replies still pending (`flow-methodologist`, who has now also
+  received two relays — mediation-analysis overlap and the SELECT-FLOW-SOUL fulltext gap — and may fold both
+  into a single reply).
+- **CLAUDE.md updated mid-Wave-0** (on disk, after this director's original dispatch): adds MCP
+  source-discovery preference, no-Sci-Hub rule, `sources/retrieved/cache/` convention, and an API-key handling
+  rule for LlamaParse. This session is operating under the updated file; flagged in the librarian reply entry
+  above for visibility to any lane that cached a source before the update landed.
+- **Next action for this (director) session:** on resume, capture `flow-methodologist`'s reply (and its
+  responses to the two pending relays) below, watch for all six lane files landing before assigning Wave 2
+  cross-examination pairs, and note any READY=no, path mismatch, or unresolved conflict that needs early
+  attention.
 - **Not yet done (by design, out of scope for Wave 0/1):** no numbered deliverables (01-16), no
   `SOURCE_LEDGER.csv`, no conflict resolution/adjudication, no synthesis. `12_EVIDENCE_GAPS_AND_CONTROVERSIES.md`
   and `15_CLAIM_EVIDENCE_MAP.md` remain for Wave 3 once all lane memos and Wave 2 cross-reviews exist.
