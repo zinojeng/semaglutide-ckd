@@ -334,8 +334,28 @@ Wave 3 that the primary verification sits with methodologist, not the two lanes 
 fixed assignments, this director session has treated peer-review-content relays (like the discontinuation
 correction above) the same way as Wave 1 cross-lane relays — naming exact files/locators, not adjudicating.
 Whether to formally dispatch the remaining Wave 2 pairs (endocrinology↔CKM, methodologist on combinations,
-librarian auditing citations) or let them arise organically as lanes complete is an open question for this
-session's next resumption / the user's guidance.
+librarian auditing citations) or let them arise organically as lanes complete is an open question raised to
+the user; awaiting reply, so this session is continuing the same conservative pattern (relay + log, no
+adjudication, no formal dispatch) in the meantime.
+
+### Second Wave 2 review, also self-initiated: `flow-methodologist` reviews `flow-ckm`
+
+`flow-methodologist` completed `cross_reviews/06_methodologist_reviews_combinations.md` (committed/pushed on
+`worktree-flow-methodologist-lane06`), reviewing CKM's lane per the fixed pairing (methodologist on
+combination/causal claims). Two CHALLENGEs with exact replacement wording, relayed to `flow-ckm` this turn:
+
+1. CKM §6.1 point 3 grades "no cancellation when layered on SGLT2i" as "strongly supported" — recommended
+   downgrade to "suggestive" (underlying SGLT2i-subgroup HR 1.07, 95% CI 0.69–1.67, crosses null); flagged as
+   inconsistent with CKM's own more careful §1.4 wording elsewhere in the same lane.
+2. CKM §6.2 point 4 conflates "FLOW's population wasn't restricted to uncontrolled HbA1c" (true, locator
+   supplied: FLOW-SUPP-2024 l.385) with "benefit is independent of glycemic effect" (not established, per the
+   same Mann 2021 HbA1c 25-26%-mediation figures already circulating across lanes).
+
+Also flagged: `SELECT-FLOW-SOUL-POOLED-2026` absent from CKM's evidence inventory (relevant but not
+conclusion-changing per methodologist), and a missing locator supplied for an uncited CKM claim. Positives:
+CKM's §1.2 SGLT2i-subgroup analysis independently converges with methodologist's own Wave 1 §4.4 (written
+before either read the other) — good calibration signal; all overlapping numeric figures between the two
+lanes (SGLT2i HRs, Badve 2025 meta-analysis) match exactly, no conflicts.
 
 ## Director actions this turn
 
@@ -377,6 +397,9 @@ session's next resumption / the user's guidance.
 11. On `flow-trialist` completing its self-initiated Wave 2 review of nephrology, relayed the one exact
     correction (AE-vs-overall discontinuation mislabel) to `flow-nephrologist`, along with two other review
     findings (Table 2 fully resolved; eGFR/UACR interaction-P GAP genuinely absent, recommend closing).
+12. On `flow-methodologist` completing its self-initiated Wave 2 review of CKM, relayed both CHALLENGEs (SGLT2i
+    layering grading downgrade; HbA1c-independence conflation) plus the missing locator and the
+    SELECT-FLOW-SOUL absence flag to `flow-ckm`.
 
 These are coordination relays only (naming exact files/sources per the ORCHESTRATION.md message protocol) —
 no claim adjudication, no numbered-deliverable writing.
