@@ -283,11 +283,59 @@ papers, and corrected the PMID mapping. Settled state:
   III.7). Full text still not obtained (CJASN direct fetch hit HTTP 402 paywall) — abstract-level only.
   Relayed to `flow-endocrinologist` (update citation to CJASN + these numbers, abstract-level caveat) and
   `flow-nephrologist` (FYI, may be useful for advanced-CKD/UACR context).
-- **Still open for Wave 3:** endocrinology has not yet confirmed it updated `lanes/04_endocrinology.md`'s
-  citation from JACC to CJASN 2026 for PMID 41706532 (two relays sent, no reply received as of this writing);
-  full text of paper #2 (CJASN) remains unobtained (402 paywall); and papers #2/#3 stay abstract/
-  secondary-source level pending any future full-text pull — only paper #1 (Mahaffey 2025) is fulltext-verified
-  this session.
+- **Closed:** `flow-endocrinologist` confirmed the citation fix is applied — `FLOW-CKDSEVERITY-2026-CJASN`
+  finalized as Tuttle et al., CJASN 2026;21(5):841-851, DOI 10.2215/CJN.0000000974, with the librarian's
+  numbers incorporated (and a useful catch: the abstract's 331/1767 vs 410/1766 primary-composite and
+  227/1767 vs 279/1766 mortality counts are **identical to FLOW-primary's own overall counts** — i.e. this
+  CJASN paper restates FLOW's headline result stratified by CKD severity, not a separate cohort). Committed as
+  `8c2dcf0` on endocrinology's lane branch. **`lanes/04_endocrinology.md` is fully complete and ready for
+  Wave 2** per the author.
+- Full text of the CJASN paper remains unobtained (402 paywall) — abstract-level sourcing persists as the
+  ceiling for this source pending any future full-text pull.
+
+### `SELECT-FLOW-SOUL-POOLED-2026` — independently corroborated, one open sub-gap
+
+`flow-endocrinologist` (via a spawned sub-scout) independently retrieved the same structured abstract through
+**Europe PMC's DOI lookup** (PMID 42567173) rather than CrossRef/direct journal fetch — numbers match
+`flow-methodologist`'s exactly (pooled N=30,787; primary composite HR 0.84 [0.77–0.91]; kidney-specific
+composite HR 0.80 [0.69–0.92]). Two independent retrieval routes now agree at the abstract level; full text
+and I²/forest-plot data remain unobtained. Director relayed this corroboration + the Europe PMC route to
+`flow-methodologist` and `flow-trialist`. `flow-trialist` acknowledged but is intentionally not touching its
+lane file this turn (scoped to `cross_reviews/` only per its current task) — notes the second-source
+confirmation can be folded in at Wave 3/by the director when compiling deliverables 14/15.
+
+**Separately flagged by endocrinology, still open:** SUSTAIN-6's exact hard-component (creatinine-doubling/
+RRT/renal-death) event counts are unresolved — NEJM stayed 403-paywalled to every retrieval attempt tried so
+far; needs institutional access. Not relayed further this turn (no obvious lane owner beyond
+endocrinology/librarian); flagging here for Wave 3 visibility.
+
+### Wave 2 has begun organically (ahead of formal director dispatch)
+
+`flow-trialist` completed its Wave 2 peer review of nephrology per the **fixed pairing already specified in
+`ORCHESTRATION.md`** (trialist reviews nephrology) — `cross_reviews/02_trialist_reviews_nephrology.md`,
+committed `c492125` on `worktree-trialist-stats-lane`. This was not dispatched by the director (Wave 2
+assignment was explicitly out of scope for this Wave 0/1 turn) — the specialist self-initiated once its own
+lane was complete, using the roles table already published in `ORCHESTRATION.md`.
+
+Highlights: (1) FLOW Table 2 now double-verified byte-identical by two independent extraction methods
+(nephrology's `pdftotext -layout` vs. trialist's PDF page-image read) — trialist recommends treating it as
+fully resolved. (2) **Correction with exact replacement wording:** nephrology §6.2 mislabels the AE-driven
+discontinuation figures (233/211, Table 3) as "overall" discontinuation; true any-reason discontinuation is
+26%/28.8% — relayed to `flow-nephrologist` this turn. (3) Trialist independently re-confirmed via Fig. 2 that
+eGFR/UACR subgroup interaction P-values are genuinely absent from the primary publication/supplement (not just
+a local-extraction gap) — recommends nephrology close that GAP rather than reassign it, also relayed. (4)
+Two items flagged for Wave 3 without director action needed now: a three-way CV-death-share arithmetic
+discrepancy (39.4% pooled vs 41.2%/37.2% per-arm vs "~35%" in-source — not previously caught by either lane),
+and Mann JFE 2021's mediation point estimates remaining second-hand for both trialist and nephrology (neither
+has independently verified that source's numbers, despite methodologist having done so — worth noting at
+Wave 3 that the primary verification sits with methodologist, not the two lanes now citing it).
+
+**Director note for the record:** since Wave 2 is starting on its own initiative using the pre-published
+fixed assignments, this director session has treated peer-review-content relays (like the discontinuation
+correction above) the same way as Wave 1 cross-lane relays — naming exact files/locators, not adjudicating.
+Whether to formally dispatch the remaining Wave 2 pairs (endocrinology↔CKM, methodologist on combinations,
+librarian auditing citations) or let them arise organically as lanes complete is an open question for this
+session's next resumption / the user's guidance.
 
 ## Director actions this turn
 
@@ -324,6 +372,11 @@ papers, and corrected the PMID mapping. Settled state:
    `flow-ckm` — see "Resolution" subsection above for full detail.
 9. On `flow-source-librarian` confirming the CJASN DOI and pulling abstract-level numbers, relayed both to
    `flow-endocrinologist` (citation fix + numbers to use) and `flow-nephrologist` (FYI).
+10. On `flow-endocrinologist` independently corroborating `SELECT-FLOW-SOUL-POOLED-2026` via Europe PMC,
+    relayed the second-source confirmation and retrieval route to `flow-methodologist` and `flow-trialist`.
+11. On `flow-trialist` completing its self-initiated Wave 2 review of nephrology, relayed the one exact
+    correction (AE-vs-overall discontinuation mislabel) to `flow-nephrologist`, along with two other review
+    findings (Table 2 fully resolved; eGFR/UACR interaction-P GAP genuinely absent, recommend closing).
 
 These are coordination relays only (naming exact files/sources per the ORCHESTRATION.md message protocol) —
 no claim adjudication, no numbered-deliverable writing.
@@ -334,10 +387,13 @@ no claim adjudication, no numbered-deliverable writing.
   (`flow-trialist`, `flow-endocrinologist`, `flow-nephrologist`, `flow-ckm`, `flow-source-librarian`,
   `flow-methodologist`), all READY=yes with confirmed owned paths. **4/6 lane files reported complete:**
   `flow-source-librarian` (01), `flow-trialist` (02, commit `6065ece` on `worktree-trialist-stats-lane`),
-  `flow-endocrinologist` (04), and `flow-methodologist` (06, pushed on `worktree-flow-methodologist-lane06`) —
-  each on session-specific worktree branches, the same isolation pattern this director session is using.
-  `flow-nephrologist` (03) and `flow-ckm` (05) confirmed READY and were continuing their memos as of their
-  replies; no completion report received from those two yet.
+  `flow-endocrinologist` (04, commit `8c2dcf0`), and `flow-methodologist` (06, pushed on
+  `worktree-flow-methodologist-lane06`) — each on session-specific worktree branches, the same isolation
+  pattern this director session is using. `flow-nephrologist` (03) and `flow-ckm` (05) confirmed READY and
+  were continuing their memos as of their replies; no completion report received from those two yet. **Wave 2
+  has begun organically:** `flow-trialist` has already completed and pushed its fixed-pairing peer review of
+  nephrology (`cross_reviews/02_trialist_reviews_nephrology.md`, commit `c492125`) — see dedicated subsection
+  above.
 - **Cross-lane items surfaced and closed out or handed off this wave:**
   (a) **FLOW Table 2 OCR-scramble** — independently hit by trialist and nephrologist, converging on the same
   PDF-page-transcribed numbers; relayed to librarian and folded into lane 01 §5. Resolved/tracked.
