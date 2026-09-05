@@ -20,7 +20,11 @@ required=(
   research/semaglutide_ckd_flow/2026-09-05/SOURCE_LEDGER.csv
   research/semaglutide_ckd_flow/2026-09-05/articles_zh_tw/README.md
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/README.md
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/VISUAL_ASSET_CATALOG_ZH_TW.md
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/MANIFEST.json
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/source_figures/ATTRIBUTION.md
   scripts/source_corpus_guard.sh
+  scripts/generate_presentation_visuals.py
   scripts/verify_presentation_pack.sh
 )
 
@@ -50,13 +54,35 @@ if git grep -nI -E '/Users/|llx-[A-Za-z0-9_-]{10,}|sk-[A-Za-z0-9_-]{12,}|gh[pous
   failed=1
 fi
 
-allowed_visual='research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/FLOW_CKDSEVERITY_Mahaffey_Figure2.jpg'
+allowed_visuals=(
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/FLOW_CKDSEVERITY_Mahaffey_Figure2.jpg
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/source_figures/SELECT_KIDNEY_Colhoun_2024_Figure1_KM.png
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/01_flow_endpoints_forest_zh_tw.svg
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/01_flow_endpoints_forest_zh_tw@2x.png
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/02_flow_egfr_phases_zh_tw.svg
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/02_flow_egfr_phases_zh_tw@2x.png
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/03_flow_sglt2_subgroup_forest_zh_tw.svg
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/03_flow_sglt2_subgroup_forest_zh_tw@2x.png
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/04_flow_mra_subgroup_forest_zh_tw.svg
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/04_flow_mra_subgroup_forest_zh_tw@2x.png
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/05_select_soul_pooled_context_zh_tw.svg
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/05_select_soul_pooled_context_zh_tw@2x.png
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/06_flow_safety_dotplot_zh_tw.svg
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/06_flow_safety_dotplot_zh_tw@2x.png
+)
 while IFS= read -r visual; do
-  if [[ "$visual" != "$allowed_visual" ]]; then
+  approved=0
+  for allowed in "${allowed_visuals[@]}"; do
+    if [[ "$visual" == "$allowed" ]]; then
+      approved=1
+      break
+    fi
+  done
+  if [[ "$approved" -ne 1 ]]; then
     echo "PUBLIC_SNAPSHOT_UNAPPROVED_VISUAL $visual" >&2
     failed=1
   fi
-done < <(git ls-files '*.jpg' '*.jpeg' '*.png' '*.gif' '*.webp')
+done < <(git ls-files '*.jpg' '*.jpeg' '*.png' '*.gif' '*.webp' '*.svg')
 
 if [[ -x scripts/verify_presentation_pack.sh ]]; then
   scripts/verify_presentation_pack.sh

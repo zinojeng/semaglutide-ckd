@@ -79,6 +79,8 @@ FLOW 主要終點是首次發生以下任一事件：持續至少 28 天的 eGFR
 
 ## Slide 6｜主要結果必須成對報告
 
+**直接投影：** [FLOW endpoint/component forest PNG](./public_assets/redrawn/01_flow_endpoints_forest_zh_tw@2x.png)；需再編排時用 [SVG](./public_assets/redrawn/01_flow_endpoints_forest_zh_tw.svg)。
+
 **講稿（約 50 秒）**<br>
 五項主要複合終點發生於 331 對 410 人，HR 0.76，95% CI 0.66 至 0.88。排除 CV death 的四項腎臟專屬複合終點為 218 對 260 人，HR 0.79，95% CI 0.66 至 0.94。前者是確認性主要結果，後者是支持性結果，位於檢定階層之外。兩個數字同向，但推論地位不同。
 
@@ -90,6 +92,8 @@ FLOW 主要終點是首次發生以下任一事件：持續至少 28 天的 eGFR
 **建議頁腳引用：** `FLOW-PRIMARY-2024`, Table 2 and Results, journal pp.115–116；`FLOW-SUPPLEMENT-2024`, Tables S2–S3。
 
 ## Slide 7｜個別腎衰竭組成的推論上限
+
+**直接投影：** 沿用 [FLOW endpoint/component forest PNG](./public_assets/redrawn/01_flow_endpoints_forest_zh_tw@2x.png)，依序指向 eGFR<15、KRT 與腎因性死亡三列。
 
 **講稿（約 45 秒）**<br>
 持續 eGFR 低於 15 的 HR 為 0.80，開始慢性腎替代治療為 0.84，腎因性死亡為 0.97，三者信賴區間都跨越 1。持續 eGFR 下降至少 50% 的 HR 0.73 雖排除 1，也在確認性階層之外，只是 nominal／支持性組成，不能另做「降低 27%」headline。FLOW 未針對每一個腎衰竭組成配置足夠檢定力。因此可以說複合終點包含腎衰竭事件，不能說透析或 kidney failure 本身已被單獨證明下降；NNT 20 也只屬含 CV death 的五項主要終點。
@@ -114,6 +118,8 @@ FLOW 主要終點是首次發生以下任一事件：持續至少 28 天的 eGFR
 **建議頁腳引用：** `FLOW-SUPPLEMENT-2024`, Table S2 note, supplement p.24；`FLOW-PRIMARY-2024`, Table 2。
 
 ## Slide 9｜eGFR 斜率與 acute phase
+
+**直接投影：** [eGFR 三階段 PNG](./public_assets/redrawn/02_flow_egfr_phases_zh_tw@2x.png)；需再編排時用 [SVG](./public_assets/redrawn/02_flow_egfr_phases_zh_tw.svg)。
 
 **講稿（約 55 秒）**<br>
 總 eGFR 斜率為每年負 2.19 對負 3.36，組間差加 1.16 mL/min/1.73m²/年。基線到第 12 週兩組都下降約 1.06，組間差只有負 0.03，因此不是「完全沒有急性下降」，而是**至第 12 週**沒有 semaglutide 特異的額外 acute dip；沒有更早 FLOW 時點，不能排除此前已消退的短暫變化。第 12 週後慢性斜率差為加 0.94。Creatinine 與 cystatin-C 的第 104 週結果相近，只降低純肌肉量改變造成肌酸酐生成假象的疑慮；兩估計差值 CI 未報告，不能量化一致性強度或證明體重獨立。斜率也不能換算成延後洗腎幾年。
@@ -163,6 +169,8 @@ MACE 的 HR 為 0.82，全因死亡為 0.80，兩者依序通過確認性階層�
 
 ## Slide 13｜CKD 嚴重度與絕對效益仍有空白
 
+**來源圖／appendix：** [Mahaffey Figure 2](./public_assets/FLOW_CKDSEVERITY_Mahaffey_Figure2.jpg)；公開投影須保留 [CC BY 4.0 attribution](./public_assets/ATTRIBUTION.md)。
+
 **講稿（約 50 秒）**<br>
 主要終點依 eGFR 與 UACR 分層，interaction P 值分別為 0.83 與 0.42，未偵測到異質性。基線再分類的 UACR 低於 100 次族群只有 350 人，HR 0.70，CI 0.34 至 1.44，不能建立正常白蛋白尿 CKD 的療效。已發表的三年 NNT 只來自含 CV death 五項終點的三種心血管表現型：HF 13、高風險但無已確立 CVD 17、ASCVD 22。其差異在數學上可由基線風險不同造成，現有資料未完成幅度分解，不能解讀為某表現型療效較強，也不能外推為 CKD 嚴重度 NNT。
 
@@ -174,6 +182,8 @@ MACE 的 HR 為 0.82，全因死亡為 0.80，兩者依序通過確認性階層�
 **建議頁腳引用：** `FLOW-CKDSEVERITY-2026-CJASN`, Figures 1–2 and 5；`FLOW-CVPHENOTYPE-2026`, PubMed structured abstract Results, PMID 42233552。
 
 ## Slide 14｜SGLT2i 背景次族群不能證明加成性
+
+**直接投影：** [SGLT2i subgroup forest PNG](./public_assets/redrawn/03_flow_sglt2_subgroup_forest_zh_tw@2x.png)；需再編排時用 [SVG](./public_assets/redrawn/03_flow_sglt2_subgroup_forest_zh_tw.svg)。
 
 **講稿（約 60 秒）**<br>
 基線 SGLT2i 使用者只有 550 人，共 79 例主要事件。預設 creatinine-based 五項主要複合終點 HR 為 1.07，四項腎臟專屬複合終點為 1.18，信賴區間都很寬；與未使用者的 interaction P 值為 0.109 與 0.100。事後修改的 cystatin-C 五項終點 HR 則為 0.74；它和 1.07 的標記與終點定義不同，不得平均、拼成區間或互相推翻，反而顯示效果量未被現有分析識別。單一持續 eGFR 下降至少 50% 的 interaction P 值 0.023 是未校正多重比較的孤立訊號。整體資料既不能證明傷害，也不能證明額外硬腎臟效益。
@@ -187,6 +197,8 @@ MACE 的 HR 為 0.82，全因死亡為 0.80，兩者依序通過確認性階層�
 
 ## Slide 15｜MRA 次族群不是 finerenone 證據
 
+**直接投影：** [MRA subgroup forest PNG](./public_assets/redrawn/04_flow_mra_subgroup_forest_zh_tw@2x.png)；需再編排時用 [SVG](./public_assets/redrawn/04_flow_mra_subgroup_forest_zh_tw.svg)。
+
 **講稿（約 55 秒）**<br>
 FLOW 基線 MRA 使用者只有 257 人，主要是 spironolactone 與 eplerenone，finerenone 為零。MRA 使用者的主要終點 HR 0.51，看起來有利，但 interaction P 值為 0.12，且只有 59 例事件。腎替代治療的 interaction P 值 0.027 更只建立在 11 例事件上。這些探索性結果不能證明 MRA 加成性，更不能換名為 semaglutide 加 finerenone 的證據。
 
@@ -199,15 +211,17 @@ FLOW 基線 MRA 使用者只有 257 人，主要是 spironolactone 與 eplerenon
 
 ## Slide 16｜FLOW、SELECT、SOUL 回答不同問題
 
+**直接投影：** 主畫面使用 [SELECT／SOUL／pooled 分隔式比較 PNG](./public_assets/redrawn/05_select_soul_pooled_context_zh_tw@2x.png)；appendix 可放 [SELECT Figure 1](./public_assets/source_figures/SELECT_KIDNEY_Colhoun_2024_Figure1_KM.png)，並保留相鄰 attribution。
+
 **講稿（約 60 秒）**<br>
-FLOW 使用 1.0 mg SC，對象是 T2D 加白蛋白尿性 CKD，主要複合 HR 0.76。SELECT 使用 2.4 mg SC，對象是無糖尿病診斷的肥胖加 ASCVD 族群，腎臟次要複合 HR 0.78，但包含新發巨量白蛋白尿。SOUL 使用 14 mg 口服，在 T2D 加 ASCVD 或 CKD 族群的五項 kidney/CV-death composite（含 CV death）HR 0.91，P 0.19；排除 CV death 的四項腎臟專屬複合 HR 0.86，其斜率因階層中止而屬形式上探索性。另有 pooled aggregate HR 0.84 與 0.80，但 retrieved abstract 未列完整 components，**不要把 pooled、FLOW、SOUL 的三數排成 like-for-like 比較**；三個 trial-specific estimate 應分開呈現。
+FLOW 使用 1.0 mg SC，對象是 T2D 加白蛋白尿性 CKD，主要複合 HR 0.76。SELECT 使用 2.4 mg SC，對象是無糖尿病診斷的肥胖加 ASCVD 族群，腎臟次要複合 HR 0.78，但包含新發巨量白蛋白尿。SOUL 使用 14 mg 口服，在 T2D 加 ASCVD 或 CKD 族群的五項 kidney/CV-death composite（含 CV death）HR 0.91，P 0.19；排除 CV death 的四項腎臟專屬複合 HR 0.86，其斜率因階層中止而屬形式上探索性。另有 pooled aggregate HR 0.84 與 0.80；PubMed Methods 已核實主要複合含 ≥50% eGFR 下降、腎衰竭、腎因性死亡或 CV death，較窄複合則排除 CV death。**但 pooled HR 已包含三個母試驗，不要把 pooled、FLOW、SOUL 排成三個獨立數值作效果排名**。
 
 **腎臟科視角：** 終點結構與基線腎風險不同，不能只按 HR 大小排序。<br>
 **內分泌科視角：** 跨族群方向一致增加信心，但 FLOW、SELECT、SOUL 的劑量與劑型不能互換。<br>
 **可能提問：** SOUL 未顯著是否代表口服 semaglutide 沒有腎臟作用？<br>
 **校準回答：** 不能這樣推論。SOUL 腎風險與事件率較低，且劑量、途徑、族群與事件組成都不同，無法分離單一原因。<br>
 **轉場：** 跨試驗一致性也帶出另一個問題：這是 semaglutide 還是整個 GLP-1RA 類別的效果？<br>
-**建議頁腳引用：** `SELECT-KIDNEY-2024`, Table 1 and Figures 1–5；`SOUL-PRIMARY-2025` and `SOUL-KIDNEY-2026`, PubMed Results；`SELECT-FLOW-SOUL-POOLED-2026`, PubMed Findings, PMID 42567173。
+**建議頁腳引用：** `SELECT-KIDNEY-2024`, Table 1 and Figures 1–5；`SOUL-PRIMARY-2025` and `SOUL-KIDNEY-2026`, PubMed Results；`SELECT-FLOW-SOUL-POOLED-2026`, PubMed Methods/Findings, PMID 42567173。
 
 ## Slide 17｜類別訊號不等於分子等效
 
@@ -234,6 +248,8 @@ FLOW 同時看到 HbA1c、體重與收縮壓下降，這些路徑很可能有貢
 **建議頁腳引用：** `FLOW-PRIMARY-2024`, Table 2 and Other Outcomes；`SUSTAIN6-MEDIATION-2021`, Figure 1；`GLP1R-LOCALIZATION-2014`, Methods and Results；`GLP1-RENAL-CROSSTALK-2024`, human physiology sections。
 
 ## Slide 19｜FLOW 的整體安全性與停藥
+
+**直接投影：** [FLOW safety dot plot PNG](./public_assets/redrawn/06_flow_safety_dotplot_zh_tw@2x.png)；需再編排時用 [SVG](./public_assets/redrawn/06_flow_safety_dotplot_zh_tw.svg)。
 
 **講稿（約 50 秒）**<br>
 整體嚴重不良事件為 49.6% 對 53.8%。因任何不良事件永久停藥為 13.2% 對 11.9%，其中 GI 特定停藥為 4.5% 對 1.1%。嚴重不良事件 preferred term 的 AKI 為 7.0% 對 7.0%，脫水為 0.6% 對 0.6%。試驗平均未見 AKI 數值增加，但臨床上仍要防範噁心、嘔吐或腹瀉造成容積耗竭與腎前性 AKI。

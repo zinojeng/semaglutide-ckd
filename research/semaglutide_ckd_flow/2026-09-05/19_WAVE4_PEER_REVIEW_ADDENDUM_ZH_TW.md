@@ -180,9 +180,11 @@
 | 哪個 eGFR、UACR 或 KDIGO 表現型有最大絕對腎臟獲益 | **未知**；沒有已發表的分層 ARR／NNT。 |
 | HF 13、高風險但無已確立 CVD 17、ASCVD 22 的三年 NNT | **描述性 CV 表現型結果**，終點仍是含 CV death 的 FLOW 五項複合終點；三數差異在數學上可完全由設計上不同的基線風險造成，但現有資料未完成實證分解，不能由此宣稱 HF 是「最佳腎臟反應者」。 |
 | 沒有顯著交互作用證明所有表現型療效等同 | **未確立**；現有結果只表示未偵測到差異，也不能反向聲稱已證實同質性。 |
-| SELECT、FLOW、SOUL pooled HR 代表三個試驗使用完全相同的腎臟終點 | **未驗證**。已取回的 structured abstract 可支持 pooled aggregate HR 0.84（含 CV death 標籤）與 0.80（排除 CV death 標籤），但沒有列出完整組成，不能把它們與 FLOW 0.76／0.79、SOUL 0.91／0.86 排成「同終點三數對照」。 |
+| SELECT、FLOW、SOUL pooled HR 代表三個可獨立排名的試驗估計 | **否**。PubMed structured abstract Methods 已核實 pooled endpoint 定義：主要複合含持續 ≥50% eGFR 下降、腎衰竭、腎因性死亡或 CV death；次要較窄複合排除 CV death。但 pooled HR 已包含 FLOW、SELECT、SOUL 資料，與母試驗統計相依，不能與 FLOW 0.76／0.79、SOUL 0.91／0.86 當成三個獨立數值比較或排名。 |
 | pooled analysis 證明跨劑量、途徑、糖尿病狀態的等效性 | **未確立**；pooled aggregate 估計本身可視為**已確立**，但異質性消失、機轉獨立與劑量／途徑等效都不是由該 aggregate HR 證明。 |
 | SELECT 與 SOUL 可分別如何讀 | SELECT 為不同族群、2.4 mg SC，複合終點包含新發持續性 macroalbuminuria，效果主要來自 macroalbuminuria 與 ≥50% eGFR decline，移除 macroalbuminuria 後的複合分析未達顯著；SOUL 的硬腎臟複合終點未達顯著，且在階層閘門失敗後的斜率屬正式探索性。兩者都不能單獨歸因於劑量或途徑。 |
+
+**來源校正（2026-09-06）：** Wave 4 對 pooled endpoint 的原始「組成未核實」判斷已被官方 PubMed structured abstract 的 Methods 取代；上表保留跨試驗推論護欄，但把理由改為 pooled estimate 與母試驗的統計相依性及臨床異質性。這是來源層級的更正，不是新的同儕共識。
 
 FLOW 的四項腎臟專屬結果與 SOUL 的腎臟結果都不是確認性陽性結論，但原因不同：前者是 nominal CI 未跨 1、卻位於確認性階層外的支持性分析；後者是第一個確認性腎臟複合終點未達顯著，令後續斜率正式降為探索性。不能只用「都不是 confirmatory」抹平兩者差異。
 
@@ -190,7 +192,7 @@ FLOW 的四項腎臟專屬結果與 SOUL 的腎臟結果都不是確認性陽性
 
 ### 建議採用的繁中表述
 
-> 對符合 FLOW 收案條件的 T2D＋albuminuric CKD 病人，1.0 mg 皮下注射 semaglutide 的整體試驗效益已確立；但目前無法指出哪個 eGFR、UACR 或 KDIGO 層級具有最大絕對腎臟獲益。已發表的 NNT 13、17、22 只對應三種 CV 表現型與含 CV death 的五項複合終點，其差異在數學上可完全由不同基線風險造成，現有資料並未完成對三個數值的實證分解。FLOW、SELECT、SOUL 應各自按族群、劑量、途徑、終點組成與檢定階層解讀；pooled HR 可作跨試驗 aggregate 訊號，但在完整組成未核實前，不應與各母試驗排成同終點三數對照，也不能證明等效性。
+> 對符合 FLOW 收案條件的 T2D＋albuminuric CKD 病人，1.0 mg 皮下注射 semaglutide 的整體試驗效益已確立；但目前無法指出哪個 eGFR、UACR 或 KDIGO 層級具有最大絕對腎臟獲益。已發表的 NNT 13、17、22 只對應三種 CV 表現型與含 CV death 的五項複合終點，其差異在數學上可完全由不同基線風險造成，現有資料並未完成對三個數值的實證分解。Pooled endpoint 定義已由 PubMed Methods 核實，但 pooled HR 包含各母試驗資料，與之統計相依；因此 FLOW、SELECT、SOUL 應各自按族群、劑量、途徑、終點組成與檢定階層解讀，pooled HR 作整合估計，不與母試驗當成三個獨立數值排名，也不能證明劑量或途徑等效性。
 
 ### 穩定來源與精確定位
 
@@ -198,7 +200,7 @@ FLOW 的四項腎臟專屬結果與 SOUL 的腎臟結果都不是確認性陽性
 - `FLOW-CKDSEVERITY-2026-CJASN`：Figures 1–2 及 Results（eGFR／UACR 分層 HR 與交互作用；未提供對應 ARR／NNT）；[DOI 10.2215/CJN.0000000974](https://doi.org/10.2215/CJN.0000000974)；[PubMed 41706532](https://pubmed.ncbi.nlm.nih.gov/41706532/)；[PMCID PMC13143484](https://pmc.ncbi.nlm.nih.gov/articles/PMC13143484/)。
 - `SELECT-KIDNEY-2024`：Abstract；Results「Effect of semaglutide on the main kidney endpoint」；Methods；Table 1 與 Figures 1–5（不同終點組成及 macroalbuminuria 驅動性）；[DOI 10.1038/s41591-024-03015-5](https://doi.org/10.1038/s41591-024-03015-5)；[PubMed 38796653](https://pubmed.ncbi.nlm.nih.gov/38796653/)；[PMCID PMC11271413](https://pmc.ncbi.nlm.nih.gov/articles/PMC11271413/)。
 - `SOUL-KIDNEY-2026`：PubMed structured abstract「Research Design and Methods」及「Results」（五項／四項複合終點與 eGFR 斜率）；[DOI 10.2337/dc25-1080](https://doi.org/10.2337/dc25-1080)；[PubMed 41380027](https://pubmed.ncbi.nlm.nih.gov/41380027/)。檢定階層另見 `SOUL-PROTOCOL-2021` §10.3.2.1，p.50（[ClinicalTrials.gov NCT03914326](https://clinicaltrials.gov/study/NCT03914326) 所附 protocol）。
-- `SELECT-FLOW-SOUL-POOLED-2026`：PubMed structured abstract「Findings」（兩個 pooled aggregate HR）；[DOI 10.1016/S2213-8587(26)00134-8](https://doi.org/10.1016/S2213-8587%2826%2900134-8)；[PubMed 42567173](https://pubmed.ncbi.nlm.nih.gov/42567173/)。全文、表格與附錄未取得，完整複合終點組成在本輪可用來源中未獲核實。
+- `SELECT-FLOW-SOUL-POOLED-2026`：PubMed structured abstract「Methods」（兩個 pooled endpoint 定義）與「Findings」（事件數、HR）；[DOI 10.1016/S2213-8587(26)00134-8](https://doi.org/10.1016/S2213-8587%2826%2900134-8)；[PubMed 42567173](https://pubmed.ncbi.nlm.nih.gov/42567173/)。全文、表格與附錄未取得，故未擴張至摘要未報告之 component-level treatment effects 或試驗間異質性。
 
 ### 受影響的文章與投影片
 
@@ -225,7 +227,7 @@ FLOW 的四項腎臟專屬結果與 SOUL 的腎臟結果都不是確認性陽性
 2. semaglutide 在已使用 SGLT2i 者的增量硬腎臟效益，以及與 finerenone 併用的隨機硬終點加成性。
 3. 哪一個 eGFR、UACR 或 KDIGO 分層具有最大絕對腎臟獲益；目前沒有相應的 ARR／NNT。
 4. FLOW 族群內體重、HbA1c、血壓與 UACR 對臨床結果的正式因果中介比例，以及直接人類腎臟細胞／組織機轉。
-5. pooled SELECT／FLOW／SOUL 複合終點的完整逐項組成，以及可否進行可靠的母試驗 endpoint-matched 比較；在全文與附錄取得前維持 **unverified**。
+5. pooled SELECT／FLOW／SOUL 中摘要未報告的 component-level treatment effects、trial-level heterogeneity，以及各劑量／途徑的獨立效應；後兩者不能由一個包含母試驗的 pooled HR 推導。
 6. 透析後持續治療的真正療效與長期耐受性；現有小型、事後且經選擇的資料不足以回答。
 
 ## 使用這份增補時的底線

@@ -1,6 +1,6 @@
 # 03｜FLOW 之外：SELECT、SOUL、類別效應與腎臟機轉
 
-> 範圍：依 SHA-256 `75368cba…98cd56` 的凍結總論精煉；證據截止 2026-09-05。本文是臨床學術整理，不是個人化醫療建議。
+> 範圍：依 SHA-256 `3bd619ee…3bf1e4` 的凍結總論精煉；證據截止 2026-09-05。本文是臨床學術整理，不是個人化醫療建議。
 
 ## 一句話先說結論
 
@@ -46,9 +46,9 @@ SOUL 平均基線 eGFR 73.8，沒有收集 UACR；其安慰劑組腎臟複合事
 
 預先設定的 SELECT＋FLOW＋SOUL 參與者層級彙總共 30,787 人。結構化摘要將兩個 aggregate outcome 標示為含 CV death 的主要彙總複合終點（973 對 1,134 例，HR 0.84〔0.77–0.91〕），以及排除 CV death 的腎臟專屬複合終點（347 對 416 例，HR 0.80〔0.69–0.92〕）。
 
-本專案取得的摘要未列舉 pooled composite 的完整組成，全文、表格與附錄也未取得，因此 component-by-component matching 尚未核實。兩個 pooled HR 可各自報告，但不可把 pooled 0.84／FLOW 0.76／SOUL 0.91 或 pooled 0.80／FLOW 0.79／SOUL 0.86 排成看似 like-for-like 的三數。各試驗估計應分開呈現並附自己的已核實定義。彙總結果提高整體估計精確度，卻沒有把三個不同族群、劑量與途徑變成同一個介入，也不是血糖／體重中介分析。
+PubMed 結構化摘要的 Methods 已明定 pooled composite 組成：主要終點包含持續 ≥50% eGFR 下降、腎衰竭（持續 eGFR<15 或 KRT）、腎因性死亡或 CV death；較窄的次要終點則排除 CV death。因此定義不再是未核實缺口。但 pooled estimate 本身已包含 FLOW、SELECT 與 SOUL 參與者，與各母試驗估計統計相依；不可把 pooled 0.84／FLOW 0.76／SOUL 0.91 或 pooled 0.80／FLOW 0.79／SOUL 0.86 排成三個獨立數值作效果排名。彙總結果提高整體估計精確度，卻沒有把三個不同族群、劑量與途徑變成同一個介入，也不是血糖／體重中介分析。
 
-定位：`SELECT-FLOW-SOUL-POOLED-2026` PubMed structured abstract／Findings，PMID 42567173；全文未取得，因此不推論摘要未報告的試驗間異質性，也不假定完整 endpoint matching 已完成。
+定位：`SELECT-FLOW-SOUL-POOLED-2026` PubMed structured abstract／Methods／Findings，PMID 42567173；全文未取得，因此不推論摘要未報告的試驗間異質性或 component-level treatment effects。
 
 ## 是 semaglutide 效應，還是 GLP-1RA 類別效應
 
@@ -101,10 +101,10 @@ SUSTAIN-6 的 semaglutide 體重中介點估計為 0%，但 CI 無法計算，�
 | SELECT continuous outcomes | `SELECT-KIDNEY-2024` Table 1；Figs.4–5；PMCID PMC11271413 | 重繪 week-104 eGFR、total/chronic slope、UACR | SELECT 不是專屬非糖尿病 CKD hard-outcome trial。 |
 | SELECT weight mediation | `SELECT-KIDNEY-2024` Methods「Correlation and mediation analysis」／Results | 畫估計對象框：week-104 eGFR change | 81%（41–120%）不適用於 slope 或 hard composite。 |
 | SOUL hierarchy | `SOUL-KIDNEY-2026` PubMed Methods／Results；`SOUL-PROTOCOL-2021` §10.3.2.1 p.50 | 自製 gate 圖，不使用受限原圖 | 五項複合未顯著後，斜率僅名目顯著、形式上探索性。 |
-| 三試驗 pooled | `SELECT-FLOW-SOUL-POOLED-2026` PubMed Findings，PMID 42567173 | 只重繪兩個 pooled aggregate；不與 FLOW／SOUL 排成 matched triplet | 完整 component definitions 未由摘要核實；提高精確度不代表 endpoint、族群、劑量或途徑等效。 |
+| 三試驗 pooled | `SELECT-FLOW-SOUL-POOLED-2026` PubMed Methods／Findings，PMID 42567173 | 只重繪兩個 pooled aggregate；不與 FLOW／SOUL 排成三個獨立估計作排名 | Endpoint definitions 已結構化協調；pooled estimate 含母試驗資料、與之統計相依。提高精確度不代表族群、劑量或途徑等效。 |
 | 類別與機轉 | `GLP1-CLASSMETA-BADVE-2025` PubMed Findings；`GLP1R-LOCALIZATION-2014` Methods／Results | 自製 evidence ladder | 類別訊號受支持；直接腎元 GLP-1R 路徑未確立。 |
 
-完整圖說、30 秒口述與授權模板見 [`../presentation_zh_tw/ARTICLE_REFERENCE_GUIDE.md`](../presentation_zh_tw/ARTICLE_REFERENCE_GUIDE.md)。
+完整 reference 放置方式見 [`ARTICLE_REFERENCE_GUIDE.md`](../presentation_zh_tw/ARTICLE_REFERENCE_GUIDE.md)；可直接插入的繁中圖表、圖說與 30 秒講稿見 [`VISUAL_ASSET_CATALOG_ZH_TW.md`](../presentation_zh_tw/VISUAL_ASSET_CATALOG_ZH_TW.md)。
 
 ## 權利與再利用界線
 

@@ -1,7 +1,7 @@
 background,endpoint,users_n,users_effect,users_ci,nonusers_n,nonusers_effect,nonusers_ci,p_interaction,events_note,inference,source_id,locator
-SGLT2i,"五項主要複合（含 CV death）",550,1.07,"0.69–1.67",2983,0.73,"0.63–0.85",0.109,"users 41/277 vs 38/273","未證明增量硬腎臟效益；亦不證明傷害",FLOW-SGLT2-2024,"Figure 1；Table 1；Results"
-SGLT2i,"四項腎臟專屬複合",550,1.18,"0.71–1.98",2983,0.75,"0.61–0.90",0.100,,"支持性；CI 寬；未證明加成性",FLOW-SGLT2-2024,"Figure 1；Results"
-SGLT2i,"持續 ≥50% eGFR 下降 component",550,1.30,"0.76–2.26",2983,0.66,"0.53–0.83",0.023,"users 30/277 vs 23/273; nonusers 135/1489 vs 190/1493","孤立、名目、未校正多重比較；不是傷害或 effect-modification 證明",FLOW-SGLT2-2024,"Figure 2；Results"
+SGLT2i,"五項主要複合（含 CV death）",550,1.07,"0.69–1.67",2983,0.73,"0.63–0.85",0.109,"使用者 41/277 vs 38/273；未使用者 290/1490 vs 372/1493","未證明增量硬腎臟效益；亦不證明傷害",FLOW-SGLT2-2024,"Figure 1；Table 1；Results"
+SGLT2i,"四項腎臟專屬複合",550,1.18,"0.71–1.98",2983,0.75,"0.61–0.90",0.100,"使用者 32/277 vs 27/273；未使用者 186/1490 vs 233/1493","支持性；CI 寬；未證明加成性",FLOW-SGLT2-2024,"Figure 1；Results"
+SGLT2i,"持續 ≥50% eGFR 下降 component",550,1.30,"0.76–2.26",2983,0.66,"0.53–0.83",0.023,"使用者 30/277 vs 23/273；未使用者 135/1489 vs 190/1493","孤立、名目、未校正多重比較；不是傷害或 effect-modification 證明",FLOW-SGLT2-2024,"Figure 2；Results"
 MRA,"五項主要複合（含 CV death）",257,0.51,"0.30–0.86",3276,0.79,"0.68–0.92",0.12,"users 59 events; nonusers 682 events","探索性；finerenone users=0；非 finerenone 組合證據",FLOW-MRA-2025,"Figure 1；Tables 1–2；Results"
 MRA,"四項腎臟專屬複合",257,0.38,"0.15–0.84",3276,0.82,"0.68–0.99",0.068,,"探索性；未偵測到 interaction",FLOW-MRA-2025,"Figure 1；Results"
 MRA,"RRT initiation component",257,0.18,"0.03–0.71",3276,0.91,"0.68–1.23",0.027,"MRA-user subgroup only 11 total events","孤立、名目、未校正多重比較；不證明加成性",FLOW-MRA-2025,"Figure 2；Results"

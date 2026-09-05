@@ -1,6 +1,6 @@
 # 01｜FLOW 到底證明了什麼？從試驗設計、主要結果到 CV death
 
-> 範圍：依 SHA-256 `75368cba…98cd56` 的凍結總論精煉；證據截止 2026-09-05。本文是臨床學術整理，不是個人化醫療建議。
+> 範圍：依 SHA-256 `3bd619ee…3bf1e4` 的凍結總論精煉；證據截止 2026-09-05。本文是臨床學術整理，不是個人化醫療建議。
 
 ## 一句話先說結論
 
@@ -98,7 +98,7 @@ FLOW 原計畫至少累積 854 例主要事件；在約 570 例事件的預先�
 | eGFR 三段軌跡 | `FLOW-PRIMARY-2024` Table 2／Discussion，pp.116、119–120 | 三欄呈現 0–12 週、慢性、總斜率 | 只可說至第 12 週沒有 semaglutide 特異性 differential dip；不是完全沒有下降，也不能排除更早且已消退的 transient dip。 |
 | 提前停止 | `FLOW-SAP-2023` §§2.1/2.3.1/2.4.1；`FLOW-SUPPLEMENT-2024` PDF pp.16–17 | 重繪 854→約570→741 的時間線 | 約 570 事件跨界；741 是停試建議後最終鎖庫累積數。 |
 
-完整圖說、30 秒口述與授權模板見 [`../presentation_zh_tw/ARTICLE_REFERENCE_GUIDE.md`](../presentation_zh_tw/ARTICLE_REFERENCE_GUIDE.md)。
+完整 reference 放置方式見 [`ARTICLE_REFERENCE_GUIDE.md`](../presentation_zh_tw/ARTICLE_REFERENCE_GUIDE.md)；可直接插入的繁中圖表、圖說與 30 秒講稿見 [`VISUAL_ASSET_CATALOG_ZH_TW.md`](../presentation_zh_tw/VISUAL_ASSET_CATALOG_ZH_TW.md)。
 
 ## 權利與再利用界線
 

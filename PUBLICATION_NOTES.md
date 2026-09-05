@@ -7,8 +7,9 @@
 
 - The reconciled evidence chapters `01`–`16`, the public-safe Wave 4 cross-session peer-review addendum `19`, source inventory, and structured source ledger.
 - A five-part Traditional Chinese clinical series.
-- A Traditional Chinese presentation evidence pack: 25-slide storyboard, dual-specialty speaker notes, exact Table/Figure/page map, article reference guide, editable chart-data CSV files, and visual-rights guide.
-- One unmodified source figure whose CC BY 4.0 status and attribution were independently checked. Its attribution file records the work, DOI, PMCID, license, checksum, and modification status.
+- A Traditional Chinese presentation evidence pack: 25-slide storyboard, dual-specialty speaker notes, exact Table/Figure/page map, article reference guide, editable chart-data CSV files, visual-rights guide, and a visual catalog with captions and speaking cues.
+- Six original, reproducible slide graphics, each supplied as SVG and 3840×2160 PNG. They are newly designed from verified numerical facts and do not reproduce publisher figure or table layouts.
+- Two source figures whose CC BY 4.0 status and attribution were independently checked: an unmodified Mahaffey Figure 2 and a crop-only SELECT Figure 1. Their attribution files record the work, DOI, PMCID, license, checksum, and modification status.
 - Acquisition and rights-policy documentation, plus a high-level cross-session workflow description and de-identified clinical adjudication record.
 
 ## What is deliberately excluded
@@ -19,11 +20,11 @@
 - Internal agent transcripts, session UUIDs, transport receipts, worktrees, detailed dialogue/session logs, detailed workstream scratch files, and superseded development history from the curated `main` branch.
 - Original figures or tables for which public redistribution or adaptation was not verified.
 
-The excluded source-page screenshots remain local research aids only. Public slides should use the supplied editable CSV data or newly redrawn visuals unless the visual-rights guide explicitly authorizes reuse.
+The excluded source-page screenshots remain local research aids only. Public slides should use the supplied editable CSV data or newly redrawn visuals unless the visual-rights guide explicitly authorizes reuse. The private manifest records 20 local source-page assets, but neither those images nor their cache directory are part of the public snapshot.
 
 ## Rights and interpretation
 
-Publication of this synthesis does not transfer or expand rights in cited articles, guidelines, labels, protocols, figures, or tables. Third-party materials remain subject to their own terms. The only bundled source image is governed by the CC BY 4.0 license stated in its adjacent `ATTRIBUTION.md`; any crop, translation, annotation, or recoloring should be labeled as an adaptation.
+Publication of this synthesis does not transfer or expand rights in cited articles, guidelines, labels, protocols, figures, or tables. Third-party materials remain subject to their own terms. The two bundled source images are governed by the CC BY 4.0 licenses stated in their adjacent `ATTRIBUTION.md` files; any crop, translation, annotation, or recoloring beyond the recorded state should be labeled as an adaptation.
 
 Every numerical slide should retain its endpoint definition, inferential status, and source locator. In particular, FLOW's confirmatory five-component primary endpoint includes cardiovascular death; the kidney-specific four-component estimate is supportive and outside the confirmatory hierarchy. Subgroup analyses do not establish treatment additivity merely because an interaction test is nonsignificant.
 

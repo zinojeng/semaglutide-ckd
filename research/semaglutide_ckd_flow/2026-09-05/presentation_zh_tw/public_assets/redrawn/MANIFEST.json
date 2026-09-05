@@ -1,0 +1,80 @@
+{
+  "generator": "scripts/generate_presentation_visuals.py",
+  "evidence_cutoff": "2026-09-05",
+  "generated_for_release": "2026-09-06",
+  "canvas_inches": [
+    13.333333333333334,
+    7.5
+  ],
+  "preview_dpi": 144,
+  "png_dpi": 288,
+  "png_default_for_slides": true,
+  "outputs": [
+    {
+      "stem": "01_flow_endpoints_forest_zh_tw",
+      "svg": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/01_flow_endpoints_forest_zh_tw.svg",
+      "png": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/01_flow_endpoints_forest_zh_tw@2x.png",
+      "svg_sha256": "92e3388971a641c22f1f9ab245eea93b74e73150412ad51f1c15e2d43518ca79",
+      "png_sha256": "af3b2ef0211c339dd80575f99534ea816e2d5dca914e8071a2dc50fa85432e1f",
+      "png_pixels": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "stem": "02_flow_egfr_phases_zh_tw",
+      "svg": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/02_flow_egfr_phases_zh_tw.svg",
+      "png": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/02_flow_egfr_phases_zh_tw@2x.png",
+      "svg_sha256": "c4d0c4545f12d26dc4348db1ca57dca3a4ede8bec2907d7b77b3736e85e8e5c7",
+      "png_sha256": "dfb8a08f6a029195223a66f56cb021440e59f29b52b98c9ac810c311ab4f46d3",
+      "png_pixels": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "stem": "03_flow_sglt2_subgroup_forest_zh_tw",
+      "svg": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/03_flow_sglt2_subgroup_forest_zh_tw.svg",
+      "png": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/03_flow_sglt2_subgroup_forest_zh_tw@2x.png",
+      "svg_sha256": "96040789481e1d8c403118057e41d79247522edc62c7b1c4f11b45e248086cde",
+      "png_sha256": "0834e9ce2de91a34d39b577e35d07a57d95ce2b7419aa2664a7fff7ab9b8f285",
+      "png_pixels": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "stem": "04_flow_mra_subgroup_forest_zh_tw",
+      "svg": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/04_flow_mra_subgroup_forest_zh_tw.svg",
+      "png": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/04_flow_mra_subgroup_forest_zh_tw@2x.png",
+      "svg_sha256": "80a21c060d752b502fcd6af86f1d09f9295a68a454bf0999bf476ea0179ee34b",
+      "png_sha256": "b86fc7459cada91d6e3422d8b3359cf307cbfa9af29a08ca4b95076efad25946",
+      "png_pixels": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "stem": "05_select_soul_pooled_context_zh_tw",
+      "svg": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/05_select_soul_pooled_context_zh_tw.svg",
+      "png": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/05_select_soul_pooled_context_zh_tw@2x.png",
+      "svg_sha256": "11b3802a56f29a1d1ebdf6dcdf635199d17697c77e8e373b4c26d8374a191746",
+      "png_sha256": "510f38d7558ef00d19ec73cc6aa7d52382d8eb57e3baf033cc7ce158f0712487",
+      "png_pixels": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "stem": "06_flow_safety_dotplot_zh_tw",
+      "svg": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/06_flow_safety_dotplot_zh_tw.svg",
+      "png": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/06_flow_safety_dotplot_zh_tw@2x.png",
+      "svg_sha256": "fc2ab835d0d20714123592346dbe9f5e9cbc59b16d4969175dd2941fd85adebf",
+      "png_sha256": "2a80f88fe710f3b2ecb0696498fb8e305ff8fba63ee14376453949354aa570aa",
+      "png_pixels": [
+        3840,
+        2160
+      ]
+    }
+  ]
+}

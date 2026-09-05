@@ -2,6 +2,21 @@
 
 > 用途：供主流程把本檔各節追加到 `articles_zh_tw/01` 至 `05` 的文末，或拆成投影片來源表與 speaker notes。內容只沿用 `14_MASTER_EVIDENCE_TABLE.md`、`16_FINAL_SYNTHESIS_ZH_TW.md`、`SOURCE_LEDGER.csv` 與五篇文章已核實資料。證據截止日為 2026-09-05。
 
+## 已完成、可直接插入的公開視覺
+
+下列素材已把 source ID、精確 locator 與推論限制放入圖面；完整圖說與 30 秒講稿見 [`VISUAL_ASSET_CATALOG_ZH_TW.md`](./VISUAL_ASSET_CATALOG_ZH_TW.md)。
+
+| 文章／結果段 | 建議視覺 | 可直接使用檔案 | 最短 inline reference |
+|---|---|---|---|
+| 文章 01：五項 vs 四項、個別腎衰竭組成 | FLOW endpoint/component forest | [PNG](./public_assets/redrawn/01_flow_endpoints_forest_zh_tw@2x.png)／[SVG](./public_assets/redrawn/01_flow_endpoints_forest_zh_tw.svg) | `FLOW-PRIMARY-2024, Table 2, p.116` |
+| 文章 01：eGFR early／chronic／total | eGFR 三階段圖 | [PNG](./public_assets/redrawn/02_flow_egfr_phases_zh_tw@2x.png)／[SVG](./public_assets/redrawn/02_flow_egfr_phases_zh_tw.svg) | `FLOW-PRIMARY-2024, Fig.1D/Table 2, pp.114,116,119–120` |
+| 文章 02：基線 SGLT2i | 次族群 forest | [PNG](./public_assets/redrawn/03_flow_sglt2_subgroup_forest_zh_tw@2x.png)／[SVG](./public_assets/redrawn/03_flow_sglt2_subgroup_forest_zh_tw.svg) | `FLOW-SGLT2-2024, Figs.1–2/Table 1` |
+| 文章 02：MRA／finerenone 邊界 | 次族群 forest | [PNG](./public_assets/redrawn/04_flow_mra_subgroup_forest_zh_tw@2x.png)／[SVG](./public_assets/redrawn/04_flow_mra_subgroup_forest_zh_tw.svg) | `FLOW-MRA-2025, Figs.1–2/Tables 1–2` |
+| 文章 03：SELECT／SOUL／pooled | 分隔式脈絡圖 | [PNG](./public_assets/redrawn/05_select_soul_pooled_context_zh_tw@2x.png)／[SVG](./public_assets/redrawn/05_select_soul_pooled_context_zh_tw.svg) | `SELECT-KIDNEY-2024; SOUL-KIDNEY-2026; SELECT-FLOW-SOUL-POOLED-2026` |
+| 文章 04：安全性與停藥 | paired dot plot | [PNG](./public_assets/redrawn/06_flow_safety_dotplot_zh_tw@2x.png)／[SVG](./public_assets/redrawn/06_flow_safety_dotplot_zh_tw.svg) | `FLOW-PRIMARY-2024, Table 3 p.120; FLOW-SUPPLEMENT-2024, S4–S5` |
+| 文章 02：CKD 嚴重度下的 MACE | Mahaffey 原始 Figure 2 | [JPG](./public_assets/FLOW_CKDSEVERITY_Mahaffey_Figure2.jpg)／[署名](./public_assets/ATTRIBUTION.md) | `FLOW-CKDSEVERITY-2025, Fig.2 p.1103, CC BY 4.0` |
+| 文章 03：SELECT kidney composite | SELECT 原始 Figure 1 | [PNG](./public_assets/source_figures/SELECT_KIDNEY_Colhoun_2024_Figure1_KM.png)／[署名](./public_assets/source_figures/ATTRIBUTION.md) | `SELECT-KIDNEY-2024, Fig.1 p.2059, CC BY 4.0` |
+
 ## 使用與權利標記
 
 - `NR`：目前證據庫未報告，或本案未取得可核實的原始 Table／Figure／頁碼。不得自行補值。
@@ -205,11 +220,11 @@
 
 - **文章插入位置：**「彙總分析」段後。
 - **穩定 source ID：** `SELECT-FLOW-SOUL-POOLED-2026`。
-- **Exact locator：** PubMed structured abstract／Findings，PMID 42567173。全文 Table／Figure locator：`NR`。
-- **投影片視覺：** 自製兩列 forest：來源標示為含 CV death 的 pooled aggregate HR 0.84，以及來源標示為排除 CV death 的 aggregate HR 0.80。摘要未列完整 component definitions，故不畫 endpoint composition bars，也不與 FLOW／SOUL 排成 matched triplet。
-- **一句圖說：** 彙總分析增加估計精確度，但完整組成尚未逐項核實，且沒有消除三項試驗在族群、劑量與途徑上的異質性。
-- **30 秒口述：** 30,787 人的彙總中，來源標示為含 CV death 的事件為 973 對 1,134，HR 0.84；來源標示為排除 CV death 的事件為 347 對 416，HR 0.80。兩者只可作該彙總分析的 aggregate estimate；在取得完整全文／附錄並逐項核對組成前，不得與 FLOW 0.76／0.79 或 SOUL 0.91／0.86 排成看似同定義的三數，也不能當作血糖或體重中介分析。
-- **投影片頁腳短引：** Mann JFE, et al. *Lancet Diabetes Endocrinol*. Published online 2026-08-07. PubMed Findings. doi:10.1016/S2213-8587(26)00134-8. Abstract-level evidence。
+- **Exact locator：** PubMed structured abstract／Methods／Findings，PMID 42567173。全文 Table／Figure locator：`NR`。
+- **投影片視覺：** 自製兩列 forest：主要 pooled kidney/CV-death composite（持續 ≥50% eGFR 下降、腎衰竭、腎因性死亡或 CV death）HR 0.84；排除 CV death 的較窄次要複合 HR 0.80。終點定義可畫成對照條，但 pooled estimate 不與 FLOW／SOUL 排成三個獨立 HR 的 matched triplet。
+- **一句圖說：** 彙總分析使用結構上協調的終點並增加估計精確度，但 pooled HR 已包含三項母試驗，並未消除族群、劑量與途徑上的異質性。
+- **30 秒口述：** 30,787 人的彙總中，主要複合事件為 973 對 1,134，HR 0.84；排除 CV death 的較窄複合事件為 347 對 416，HR 0.80。Methods 已核實兩個終點定義，但 pooled estimate 含 FLOW、SELECT、SOUL 資料，與母試驗統計相依；不得把 pooled 0.84／0.80 與 FLOW 0.76／0.79 或 SOUL 0.91／0.86 當成三個獨立值作效果排名，也不能當作血糖或體重中介分析。
+- **投影片頁腳短引：** Mann JFE, et al. *Lancet Diabetes Endocrinol*. Published online 2026-08-07. PubMed Methods/Findings. doi:10.1016/S2213-8587(26)00134-8. Abstract-level evidence。
 - **授權／公開限制：** 摘要層級且無本案已核實全文重用授權。沒有原圖可用，公開版只重繪摘要明載數值。
 
 ### 03-F｜類別效應與機轉證據階梯

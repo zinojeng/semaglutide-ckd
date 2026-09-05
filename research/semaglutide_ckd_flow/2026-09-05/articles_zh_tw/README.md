@@ -5,7 +5,7 @@
 ## 證據凍結與用途
 
 - 唯一事實來源：`../16_FINAL_SYNTHESIS_ZH_TW.md`
-- 凍結稿 SHA-256：`75368cbaa0995ec4a811eaf724013a6037841b49ff3fe7630080cd87e998cd56`
+- 凍結稿 SHA-256：`3bd619ee5a2db8d40bc24a42bf5f5f664c905371a0bae83f1370c5e6e33bf1e4`
 - 證據截止日：2026-09-05
 - 用途：臨床學術整理與證據溝通，不是個人化醫療建議。
 - 分級詞：established（已確立）、strongly supported（強力支持）、suggestive（提示性）、hypothesis-generating（假說生成）、unknown（未知）。
@@ -27,7 +27,7 @@
 - **正在處理 ACEi/ARB＋SGLT2i＋finerenone：** 02 → 05。
 - **關心 eGFR<25、衰弱或透析：** 04 → 05。
 - **準備 journal club／跨科討論：** 01 → 02 → 03 → 04 → 05。
-- **準備演講投影片：** 先讀 [`../presentation_zh_tw/README.md`](../presentation_zh_tw/README.md)，再依 25 張 storyboard、source map、speaker notes 與每篇文末的 reference 快速索引製作。
+- **準備演講投影片：** 先讀 [`../presentation_zh_tw/README.md`](../presentation_zh_tw/README.md)，再打開 [`VISUAL_ASSET_CATALOG_ZH_TW.md`](../presentation_zh_tw/VISUAL_ASSET_CATALOG_ZH_TW.md) 取得 6 組重繪圖、2 張授權原圖、逐圖 caption 與 30 秒講稿；細部定位再回查 storyboard、source map、speaker notes 與每篇文末的 reference 快速索引。
 
 ## 引用與權利界線
 

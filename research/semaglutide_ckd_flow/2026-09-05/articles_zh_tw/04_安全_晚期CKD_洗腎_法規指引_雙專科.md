@@ -1,6 +1,6 @@
 # 04｜安全性與晚期 CKD：洗腎、法規指引，以及內分泌科與腎臟科的不同提問
 
-> 範圍：依 SHA-256 `75368cba…98cd56` 的凍結總論精煉；證據截止 2026-09-05。本文是臨床學術整理，不是個人化醫療建議。
+> 範圍：依 SHA-256 `3bd619ee…3bf1e4` 的凍結總論精煉；證據截止 2026-09-05。本文是臨床學術整理，不是個人化醫療建議。
 
 ## 一句話先說結論
 
@@ -122,7 +122,7 @@ FLOW 排除目前或近期透析者。後續 `FLOW-DIALYSIS-SAFETY-2026` 彙總 
 | 法規差異 | FDA USPI §1.1；EMA SmPC §§4.1/5.1；TFDA official indication／revision | 自製三法域矩陣，只短引官方文字 | 美國／台灣有獨立 CKD 條款；EMA 未新增獨立 indication。 |
 | 雙專科 lens | `13_CLINICAL_DECISION_FRAMEWORK.md` specialty-lens table；`16_FINAL_SYNTHESIS_ZH_TW.md` §16 | 使用原創三欄 bridge matrix | 不是專科對立，而是把代謝價值與腎 endpoint／生理儲備放在一起。 |
 
-完整圖說、30 秒口述與授權模板見 [`../presentation_zh_tw/ARTICLE_REFERENCE_GUIDE.md`](../presentation_zh_tw/ARTICLE_REFERENCE_GUIDE.md)。
+完整 reference 放置方式見 [`ARTICLE_REFERENCE_GUIDE.md`](../presentation_zh_tw/ARTICLE_REFERENCE_GUIDE.md)；可直接插入的繁中圖表、圖說與 30 秒講稿見 [`VISUAL_ASSET_CATALOG_ZH_TW.md`](../presentation_zh_tw/VISUAL_ASSET_CATALOG_ZH_TW.md)。
 
 ## 權利與再利用界線
 

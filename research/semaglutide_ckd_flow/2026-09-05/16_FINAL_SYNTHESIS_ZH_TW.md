@@ -330,11 +330,11 @@ N=9,650，T2D 合併 ASCVD 及／或 CKD，**口服 semaglutide 14 mg／日**。
 **FLOW 之「約 35%（組成）」與 SOUL 之「約 71%（複合終點事件）」定義並不相同，不可據此計算比值或精確跨試驗差異。** SOUL 作者將硬複合終點未達顯著歸因於較低之基線腎臟風險與較少事件數，「儘管追蹤期相似〔或更長〕」，並指出 eGFR 斜率訊號「可能尚無足夠時間轉化為硬腎臟結果的下降」。**本文不因此推論『注射型 semaglutide 有效、口服型無效』。** 劑量（1.0 mg SC 對 14 mg 口服）、途徑／生體可用率與族群風險在 FLOW 與 SOUL 之間同時存在差異，無法個別分離因果。校準陳述為：SOUL 之硬複合終點未達顯著；較低基線腎臟風險與較少硬事件是作者提出、合理但非因果分解之解釋；途徑、劑量、族群與事件組成無法彼此獨立判定因果。其名義顯著但形式上探索性之斜率結果支持一項腎功能相關訊號，但不足以確立硬終點效益或途徑特異性之等同／差異。
 
 ### 預先設定之 SELECT+FLOW+SOUL 彙總分析（`SELECT-FLOW-SOUL-POOLED-2026`，2026-08-07 線上發表）
-參與者層級彙總分析，**N=30,787**，涵蓋 FLOW（T2D+CKD，1.0 mg SC）、SELECT（已確立 ASCVD 無糖尿病，2.4 mg SC）、SOUL（T2D+ASCVD/CKD，14 mg 口服）。來源之結構化摘要將兩個 aggregate outcome 分別標示為**主要彙總腎臟複合終點（報告為含心血管死亡）**：973 對 1,134 事件，**HR 0.84（0.77–0.91）**；以及**腎臟專屬複合終點（報告為排除心血管死亡）**：347 對 416 事件，**HR 0.80（0.69–0.92）**。
+參與者層級彙總分析，**N=30,787**，涵蓋 FLOW（T2D+CKD，1.0 mg SC）、SELECT（已確立 ASCVD 無糖尿病，2.4 mg SC）、SOUL（T2D+ASCVD/CKD，14 mg 口服）。PubMed 結構化摘要 Methods 明定：**主要彙總 kidney/CV-death composite** 包含持續 ≥50% eGFR 下降、腎衰竭（持續 eGFR<15 或 KRT）、腎因性死亡或心血管死亡；973 對 1,134 事件，**HR 0.84（0.77–0.91）**。較窄的**次要腎臟專屬複合終點**排除心血管死亡；347 對 416 事件，**HR 0.80（0.69–0.92）**。
 
-終點對齊仍必須逐項核對組成，不能只按「是否含心血管死亡」分類。然而，本專案取得之結構化摘要**未列舉這兩個 pooled composite 的完整組成**，全文、表格與附錄亦未取得，因此目前無法完成 component-by-component matching。兩個 pooled HR 可各自作為來源標示之 aggregate estimate 報告，但**不得把「pooled 0.84／FLOW 0.76／SOUL 0.91」或「pooled 0.80／FLOW 0.79／SOUL 0.86」排成看似 like-for-like 的三數比較**；FLOW、SELECT、SOUL 的 trial-specific estimate 應分開報告，並附各自已核實的終點定義。此彙總估計反映的是基線腎臟風險、劑量與途徑皆不同之試驗，並非「三項試驗皆以 FLOW 幅度奏效」的證據。**因果推論警語：** 作者本身的詮釋句——此結果「可能無法僅以〔semaglutide〕血糖效應、體重管理效應或兩者解釋」——是一項**跨試驗一致性推論**，並非正式的試驗內中介分析。本文將此特定詮釋論斷評為假說生成層級；pooled aggregate HR 本身則為 established，但不建立 trial、劑量或途徑等效性。
+兩個 pooled endpoint 的結構已由摘要明確核實；真正的比較限制不是「組成未知」，而是**統計相依**與臨床異質性：pooled estimate 已包含 FLOW、SELECT、SOUL 的參與者，因此**不得把「pooled 0.84／FLOW 0.76／SOUL 0.91」或「pooled 0.80／FLOW 0.79／SOUL 0.86」排成三個獨立估計作排名**，也不可重複計票。應將彙總分析視為一個整合估計，母試驗則分開依各自族群與檢定階層報告。此彙總估計同時混合不同基線腎風險、劑量與途徑，並非「三項試驗皆以 FLOW 幅度奏效」的證據。**因果推論警語：** 作者本身的詮釋句——此結果「可能無法僅以〔semaglutide〕血糖效應、體重管理效應或兩者解釋」——是一項**跨試驗一致性推論**，並非正式的試驗內中介分析。本文將此特定詮釋論斷評為假說生成層級；pooled aggregate HR 本身則為 established，但不建立 trial、劑量或途徑等效性。
 
-（彙總定量定位：`SELECT-FLOW-SOUL-POOLED-2026` PubMed structured abstract／Findings，PMID [42567173](https://pubmed.ncbi.nlm.nih.gov/42567173/)；全文未取得，故不推論摘要未報告之試驗間異質性，亦不假定完整 component matching 已核實。）
+（彙總定量與定義定位：`SELECT-FLOW-SOUL-POOLED-2026` PubMed structured abstract／Methods／Findings，PMID [42567173](https://pubmed.ncbi.nlm.nih.gov/42567173/)；全文未取得，故不推論摘要未報告之試驗間異質性或 component-level treatment effects。）
 
 ### GLP-1 受體促效劑之類別效應（`GLP1-CLASSMETA-BADVE-2025`）
 10 項 T2D RCT 彙總分析（N=67,769；**事後加入 SELECT** 後 11 項，N=85,373）。腎臟複合終點（**排除心血管死亡**；腎衰竭〔KRT 或持續 eGFR<15〕、持續 ≥50% eGFR 下降或各試驗最接近門檻、或腎衰竭死亡）HR 0.82（0.73–0.93）；腎臟衰竭 HR 0.84（0.72–0.99，信賴區間上界僅勉強排除無效線）；MACE HR 0.87（0.81–0.93）；全因死亡 HR 0.88（0.83–0.93）。安全性整體估計為嚴重不良事件 RR 0.95（0.90–1.01），I²=88.5%；因不良事件停藥 RR 1.51（1.18–1.94），I²=96.3%，異質性高，不能以單一平均值取代分子與族群差異。**此彙總估計中，各分子之貢獻並非平均，而是高度受 FLOW／semaglutide 主導——因為在此彙總分析中，semaglutide 是唯一擁有專屬、預先設定硬腎臟結果試驗的分子。不可將此彙總類別層級 HR 均一套用於每一個 GLP-1 受體促效劑。**
@@ -610,7 +610,7 @@ FLOW 於設計上排除目前或近期（≤90 天）洗腎與曾接受／等待
 | 17 | Semaglutide 是否可於晚期 CKD 中持續使用？ | 「不需腎功能劑量調整」為藥物動力學陳述，對超出 FLOW 收案範圍者不含療效或耐受性資訊；需個別化臨床判斷。 |
 | 18 | 洗腎族群有什麼證據？ | 僅有描述性、初步且經 differential selection 的事後持續用藥資料（`FLOW-DIALYSIS-SAFETY-2026`）；可報事件率，不能宣稱 semaglutide 較 placebo 安全，亦無新開始用藥的療效證據。 |
 | 19 | 無糖尿病者是否有腎臟保護證據？ | 提示性（SELECT 腎臟複合終點 HR 0.78）、假說生成層級（SMART 之替代終點 UACR 下降）；兩者皆非專屬非糖尿病 CKD 硬終點試驗。 |
-| 20 | SELECT 與 SOUL 如何改變 FLOW 之詮釋？ | 兩者擴大跨劑量／途徑／族群之 aggregate evidence（來源標示 pooled HR 0.84/0.80），但 retrieved abstract 未列完整 pooled component definitions，故不得把 pooled／FLOW／SOUL HR 排成 endpoint-matched triplet。SOUL 複合終點未達顯著，斜率名義顯著但形式上探索性；風險、劑量、途徑、事件組成與檢定力無法跨試驗因果分離，pooling 亦非中介分析。 |
+| 20 | SELECT 與 SOUL 如何改變 FLOW 之詮釋？ | 兩者擴大跨劑量／途徑／族群之 aggregate evidence（pooled HR 0.84/0.80）；PubMed Methods 已明定含 CV death 與排除 CV death 的兩個 harmonized endpoint。由於 pooled estimate 已包含三個母試驗，它不是可與 FLOW／SOUL 並排排名的第三個獨立估計。SOUL 複合終點未達顯著，斜率名義顯著但形式上探索性；風險、劑量、途徑、事件組成與檢定力無法跨試驗因果分離，pooling 亦非中介分析。 |
 | 21 | 這是分子專屬效應還是 GLP-1RA 類別效應？ | Badve 彙總分析支持類別層級之整體訊號，但不支持均一之分子層級效應。semaglutide 之專屬 FLOW 證據，與 liraglutide／dulaglutide／efpeglenatide 之 CVOT 次要證據、exenatide／lixisenatide 之事後或白蛋白尿主導證據，以及 tirzepatide 之雙重促效劑／開放標籤事後證據，皆明確分開；在這些藥物中，僅 semaglutide 擁有專屬之腎臟結果 RCT。 |
 | 22 | FLOW 之後仍有哪些未解問題？ | 見上表與本節、第 18 節之缺口總表：eGFR<25、洗腎、非糖尿病 CKD、持續性低 UACR／正常白蛋白尿 CKD（儘管有一不精確之基線再分類次族群）、移植受贈者、FLOW 自身族群內血糖／體重／血壓／UACR 之正式中介分析、SUSTAIN-6 確切硬終點組成事件數、semaglutide 專屬之 SGLT2i／finerenone 加成性硬終點證據，以及 REMODEL 最終同儕審查結果。 |
 
@@ -667,7 +667,7 @@ FLOW 於設計上排除目前或近期（≤90 天）洗腎與曾接受／等待
 | **我們知道** | 美國與台灣具備獨立之 CKD 風險降低適應症；歐盟則無。ADA／CKM 2026 為最終版；KDIGO 2026 糖尿病／CKD 更新於截止日仍為公開審查草案。 | `FDA-OZEMPIC-USPI-S038-2026` Indications §1.1；`EMA-OZEMPIC-SMPC-2026` §§4.1、5.1；`TFDA-OZEMPIC-2026` official indication；`ADA-STANDARDS-2026` Recommendations 11.7a–b、9.10–9.11；`CKM-GUIDELINE-2026` AHA official status page；`KDIGO-DIABETES-CKD-UPDATE-2026-DRAFT` official public-review status page。 |
 | **我們認為** | 效益很可能為多因子，僅部分由血糖／血壓中介；SUSTAIN-6 的 semaglutide 體重中介點估計雖為 0%，其 CI 無法計算，故不具資訊量；FLOW 無專屬中介模型，體重獨立性為 unknown。 | `SUSTAIN6-MEDIATION-2021`；間接，不同複合終點／族群。 |
 | **我們認為** | 人體急性輸注資料使鈉排泄增加／RAAS 抑制之機轉具生物學合理性；FLOW 之「基線至第 12 週未見差異性急性下降／慢性期分離」模式無法指認唯一機轉，且不能排除更早已消退的 transient dip。 | `GLP1-RENAL-CROSSTALK-2024` 加上 FLOW 斜率資料。 |
-| **我們認為** | 彙總之 FLOW／SELECT／SOUL 結果提供跨情境 aggregate estimate；完整 pooled component definitions 未由 retrieved abstract 核實，故不可與各 trial HR 作 matched-triplet 展示。現有證據未確立跨試驗、劑量、途徑、族群、血糖或體重之同質性或等效性。 | `SELECT-FLOW-SOUL-POOLED-2026` PubMed structured abstract／Findings。 |
+| **我們認為** | 彙總之 FLOW／SELECT／SOUL 結果提供 endpoint 定義已協調的跨情境 aggregate estimate；但 pooled estimate 與母試驗統計相依，故不可與各 trial HR 當成三個獨立估計排名。現有證據未確立跨試驗、劑量、途徑、族群、血糖或體重之同質性或等效性。 | `SELECT-FLOW-SOUL-POOLED-2026` PubMed structured abstract／Methods／Findings。 |
 | **我們認為** | 類別層級之 GLP-1RA 腎臟效益於統合分析中存在，但分子層級之轉移仍不確定，且此結果高度受 FLOW／semaglutide 主導。 | `GLP1-CLASSMETA-BADVE-2025`。 |
 | **我們仍不知道** | 哪個 CKD 嚴重度表現型具有最大絕對效益。僅公布心血管表現型 NNT（心臟衰竭 13、高風險無 CVD 17、ASCVD 22）；無 eGFR/UACR/KDIGO 之 ARR/NNT。 | `FLOW-CVPHENOTYPE-2026`。 |
 | **我們仍不知道** | Semaglutide 是否獨立降低腎臟衰竭本身；血壓或 UACR 是否為因果性中介；加於 SGLT2i／finerenone 之上是否具加成性。 | 個別腎衰竭組成：`FLOW-PRIMARY-2024` Table 2／Discussion，journal pp.116、119–120；中介：`SUSTAIN6-MEDIATION-2021` Methods §2.2／Results Tables 2–3；併用：`FLOW-SGLT2-2024` Figure 1／Table 1、`FLOW-MRA-2025` Figure 1／Supplementary Tables 1–2。均缺充分檢定力之直接答案。 |
@@ -690,6 +690,6 @@ FLOW 於設計上排除目前或近期（≤90 天）洗腎與曾接受／等待
 2. 基線 SGLT2i 次族群未識別增量硬腎效益；FLOW 無 finerenone 使用者，不能證明固定順序或加成性。
 3. eGFR<25、維持透析起始療效仍 unknown；透析後續用資料僅屬經 differential selection 的描述性安全訊號；renal-dose PK 不是療效或耐受性證據。
 4. eGFR／UACR 是 outcome／marker 證據，不等於中介或直接腎元機轉；creatinine–cystatin-C 一致只降低特定 creatinine-generation artifact 疑慮，不能證明體重獨立。
-5. FLOW 型表現型的證據最直接，但「最大絕對獲益者」未知；跨試驗 pooled aggregate 不建立劑量、途徑、族群等效，完整 pooled component definition 未核實前不得作 matched-triplet 展示。
+5. FLOW 型表現型的證據最直接，但「最大絕對獲益者」未知；pooled endpoint 定義已協調，惟 pooled estimate 與母試驗統計相依，且不建立劑量、途徑、族群等效，因此不得作三個獨立估計的排名展示。
 
 公開版本不放置會話 UUID、transport ID、原始訊息或系統通知；完整且去識別化的各專科觀點、證據分級、原始論文定位及文章／投影片修改索引，另見 [`19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md`](19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md)。本次 Run 2 只重審已調和之 repo 證據，會話中沒有可讀的本機 primary fulltext，因此所有裁決屬 `[RECONCILED]`；此限制已在附錄明示，不將跨會話共識冒充新的原始證據。

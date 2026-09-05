@@ -19,6 +19,11 @@
 | `FLOW_SUPP_p30_TableS4_Dehydration.png` | `1bf367e2dd3b4b84771bc7cb62a82ba0eb204f35780a5c9f4c544d8f5d76f3f9` | Table S4 的 dehydration、hypoglycemia 與 eye-disorder 列 | 19–20 appendix | NEJM supplement；本機核對用，不公開 |
 | `FLOW_SUPP_p32_TableS5.png` | `1c654e1fa8cfc06aff7317fecc6e70b593c0e969fcbd7ec5e088438178b73c85` | permanent discontinuation | 19 appendix | NEJM supplement；本機核對用，不公開 |
 | `FLOW_CKDSEVERITY_p08_Figure2.png` | `eb3d9e1105ffcde188ba083e3d56cbe15461fd249160844d63e0fbaac2e7c9c1` | Mahaffey Figure 2 與同頁 Figure 3 | 12–13 appendix | 來源為 CC BY 4.0；公開資料夾另放官方未修改 Figure 2 與完整 attribution |
+| `FLOW_DESIGN_p04_Figure2_trial_design_300dpi.png` | `77d7b32c74e6e3a2ce6d7d5b86984c33f0315cca882a2f4b9fb7526c28fc8ba3` | FLOW Figure 2 試驗設計與劑量遞增時程，300 dpi figure crop | 3–4 appendix | CC BY-NC 4.0；僅非商業且完整署名可重製，公開／商業版本首選全新重繪 |
+| `FLOW_DESIGN_p05_Table1_eligibility_300dpi.png` | `022411ddbdc79d98bcc375faf79faecfb80e449082e6a1655817a16edbe84f88` | FLOW Table 1 收案與排除條件，300 dpi table crop | 3 appendix | CC BY-NC 4.0；保留本機供核對，公開／商業版本首選抽取必要事實後重繪 |
+| `SELECT_KIDNEY_p02_Figure1_kidney_composite_300dpi.png` | `07d63c4d58b1d395933a489535a797d125b0a2d5da84e1cac646d49a9fbfccc1` | SELECT Figure 1 五成分腎臟複合終點曲線、HR 與 number at risk，300 dpi figure crop | 16 appendix | CC BY 4.0；若外用須同頁署名、授權連結與裁切說明 |
+| `SELECT_KIDNEY_p06_Figure4_eGFR_UACR_300dpi.png` | `6a4678403f6b4dcd4b9eac6e819860ef3abab4a4e74b0c3348251e4ac52f09a8` | SELECT Figure 4 eGFR／UACR 軌跡與 number contributing，300 dpi figure crop | 16 appendix | CC BY 4.0；若外用須同頁署名、授權連結與裁切說明，並保留 156／208 週資料稀疏註記 |
+| `FLOW_CKDSEVERITY_p08_Figure2_MACE_forest_300dpi.png` | `f487d514534bb5fd8fdd9b73fa52c26191c111754ce3b49832b99ad6644cc3ca` | Mahaffey Figure 2 MACE 依 eGFR、UACR、KDIGO 分層之完整 forest，300 dpi figure crop | 12–13 appendix | CC BY 4.0；高解析本機版，若外用須標示 Adapted、裁切內容與授權連結 |
 
 ## 截圖旁的固定說明格式
 

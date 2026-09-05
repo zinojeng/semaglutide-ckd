@@ -1,6 +1,6 @@
 # 02｜次族群能不能回答合併治療？SGLT2i、MRA 與 finerenone
 
-> 範圍：依 SHA-256 `75368cba…98cd56` 的凍結總論精煉；證據截止 2026-09-05。本文是臨床學術整理，不是個人化醫療建議。
+> 範圍：依 SHA-256 `3bd619ee…3bf1e4` 的凍結總論精煉；證據截止 2026-09-05。本文是臨床學術整理，不是個人化醫療建議。
 
 ## 一句話先說結論
 
@@ -123,7 +123,7 @@ FIDELITY 的背景 GLP-1RA 次族群問的是「GLP-1RA 是否修飾 finerenone 
 | CKD severity | `FLOW-CKDSEVERITY-2026-CJASN` Figs.1–2,5；`FLOW-CKDSEVERITY-2025` Figs.2–4，pp.1103–1106 | 主頁放主要終點；死亡 interaction 放 appendix | 沒有已發表的 CKD 分層 ARR／NNT。 |
 | Comparator trials | `14_MASTER_EVIDENCE_TABLE.md` Contextual comparator tables 與逐列 primary locator | 自製 endpoint／eligibility matrix；禁止 league table | HR 只在各試驗內解讀，不能用大小排名藥物。 |
 
-完整圖說、30 秒口述與授權模板見 [`../presentation_zh_tw/ARTICLE_REFERENCE_GUIDE.md`](../presentation_zh_tw/ARTICLE_REFERENCE_GUIDE.md)。
+完整 reference 放置方式見 [`ARTICLE_REFERENCE_GUIDE.md`](../presentation_zh_tw/ARTICLE_REFERENCE_GUIDE.md)；可直接插入的繁中圖表、圖說與 30 秒講稿見 [`VISUAL_ASSET_CATALOG_ZH_TW.md`](../presentation_zh_tw/VISUAL_ASSET_CATALOG_ZH_TW.md)。
 
 ## 權利與再利用界線
 
