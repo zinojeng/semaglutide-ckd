@@ -1,0 +1,10 @@
+study,population,dose_route,outcome,sema_value,placebo_value,effect,ci,p_value,inference,source_id,locator
+SELECT,"obesity+ASCVD; without diagnosed diabetes; N=17604","2.4 mg SC","kidney composite incl new macroalbuminuria","1.8%","2.2%",0.78,"0.63–0.96",0.02,"次要腎臟複合；endpoint 與 FLOW 不同",SELECT-KIDNEY-2024,"Figure 1；Results"
+SELECT,"same","same","week-104 eGFR change","-0.86","-1.61","+0.75","0.43–1.06","<.001","prespecified continuous surrogate",SELECT-KIDNEY-2024,"Table 1"
+SELECT,"same","same","total eGFR slope","-0.78","-1.17","+0.39","0.30–0.48","<.001","mL/min/1.73m²/year",SELECT-KIDNEY-2024,"Table 1"
+SELECT,"same","same","week-104 UACR relative difference","+0.3%","+12.3%","-10.7%","-13.2 to -8.2","<.001","surrogate; population without diagnosed diabetes",SELECT-KIDNEY-2024,"Table 1"
+SOUL,"T2D+ASCVD/CKD; N=9650","14 mg oral","five-point kidney/CV-death composite incl CV death","403/4825","435/4825",0.91,"0.80–1.05",0.19,"first confirmatory kidney gate failed",SOUL-KIDNEY-2026,"Results"
+SOUL,"same","same","four-point kidney composite excl CV death","112/4825","129/4825",0.86,"0.66–1.10",0.22,"not confirmatory",SOUL-KIDNEY-2026,"Results"
+SOUL,"same","same","total eGFR slope","-1.67","-2.06","+0.40","0.27–0.53","nominal <.0001","formally exploratory after hierarchy gate failed",SOUL-KIDNEY-2026,"Results"
+"SELECT+FLOW+SOUL pooled","mixed populations; N=30787","mixed doses/routes","primary pooled kidney/CV-death composite incl CV death",973,1134,0.84,"0.77–0.91",,"prespecified pooled analysis; does not erase heterogeneity",SELECT-FLOW-SOUL-POOLED-2026,"PubMed Findings; PMID 42567173"
+"SELECT+FLOW+SOUL pooled","same","same","kidney-specific composite excl CV death",347,416,0.80,"0.69–0.92",,"pooled endpoint; not a dose/route comparison",SELECT-FLOW-SOUL-POOLED-2026,"PubMed Findings; PMID 42567173"

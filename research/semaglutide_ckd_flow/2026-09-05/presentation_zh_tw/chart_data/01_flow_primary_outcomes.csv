@@ -1,0 +1,10 @@
+display_order,outcome_zh,endpoint_boundary,sema_n,sema_pct,placebo_n,placebo_pct,effect_type,effect,ci_low,ci_high,p_value,nnt_3y,status,source_id,locator
+1,"五項主要複合終點（含 CV death）","確認性主要終點",331,18.7,410,23.2,HR,0.76,0.66,0.88,0.0003,"20 (14–40)","Established；來源未明示 NNT 計算方法",FLOW-PRIMARY-2024,"Table 2；Results Primary Outcomes；NEJM pp.115–116"
+2,"持續 ≥50% eGFR 下降","個別組成；非獨立確認",165,9.3,213,12.1,HR,0.73,0.59,0.89,,NE,"支持性 component；不可稱為主要終點 driver",FLOW-PRIMARY-2024,"Table 2；NEJM p.116"
+3,"持續 eGFR <15",個別組成；非獨立確認,92,5.2,110,6.2,HR,0.80,0.61,1.06,,NE,"CI 跨 1",FLOW-PRIMARY-2024,"Table 2；NEJM p.116"
+4,"開始慢性 KRT",個別組成；非獨立確認,87,4.9,100,5.7,HR,0.84,0.63,1.12,,NE,"CI 跨 1",FLOW-PRIMARY-2024,"Table 2；NEJM p.116"
+5,"腎因性死亡",個別組成；非獨立確認,5,0.3,5,0.3,HR,0.97,0.27,3.49,,NE,"事件極少；CI 寬",FLOW-PRIMARY-2024,"Table 2；NEJM p.116"
+6,"CV death",個別組成；位於主要複合內,123,7.0,169,9.6,HR,0.71,0.56,0.89,,NE,"不可把 component counts 換算成療效占比",FLOW-PRIMARY-2024,"Table 2；NEJM p.116"
+7,"四項腎臟專屬複合（排除 CV death）","支持性；確認性階層外",218,12.3,260,14.7,HR,0.79,0.66,0.94,,NE,"未校正多重比較；未發表 NNT",FLOW-PRIMARY-2024,"Table 2；NEJM p.116"
+8,MACE,"確認性次要終點",212,12.0,254,14.4,HR,0.82,0.68,0.98,0.029,"45 (23–623)","階層內；week-156 pseudo-observation RD/NNT","FLOW-PRIMARY-2024; FLOW-CKDSEVERITY-2025","events/HR/P: FLOW Table 2, NEJM p.116；week-156 RD/NNT: Mahaffey Results after Table 2, EHJ p.1104"
+9,"全因死亡","確認性次要終點",227,12.8,279,15.8,HR,0.80,0.67,0.95,0.01,"39 (21–238)","階層內；week-156 pseudo-observation RD/NNT","FLOW-PRIMARY-2024; FLOW-CKDSEVERITY-2025","events/HR/P: FLOW Table 2, NEJM p.116；week-156 RD/NNT: Mahaffey Results after Table 2, EHJ p.1104"

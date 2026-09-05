@@ -1,0 +1,8 @@
+outcome,sema_n,sema_pct,placebo_n,placebo_pct,effect,interpretation,source_id,locator
+"serious adverse events",877,49.6,950,53.8,,"trial-wide SAE; not proof of safety in every advanced-CKD phenotype",FLOW-PRIMARY-2024,"Table 3; NEJM p.120; local PDF p.12"
+"AE-driven permanent discontinuation",233,13.2,211,11.9,,"all adverse-event causes",FLOW-SUPPLEMENT-2024,"Table S5; PDF p.32"
+"GI-specific permanent discontinuation",79,4.5,20,1.1,,"subset of AE-driven discontinuation; do not add as separate denominator",FLOW-SUPPLEMENT-2024,"Table S5; PDF p.32"
+"serious-AE preferred-term acute kidney injury",124,7.0,123,7.0,,"overall numerical balance; not stratified by KDIGO",FLOW-SUPPLEMENT-2024,"Table S4; PDF p.29"
+"serious-AE preferred-term dehydration",10,0.6,10,0.6,,"clinical volume-depletion monitoring remains necessary",FLOW-SUPPLEMENT-2024,"Table S4; PDF p.30"
+"severe hypoglycemia participants",37,2.1,37,2.1,,"participant count; distinct from 47 vs 46 episodes",FLOW-PRIMARY-2024,"Table 3; NEJM p.120; local PDF p.12"
+"systematically collected diabetic retinopathy",402,22.8,398,22.5,,"trial excluded unstable retinopathy; does not cancel label warning",FLOW-PRIMARY-2024,"Table 3; NEJM p.120; local PDF p.12"

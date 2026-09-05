@@ -1,0 +1,5 @@
+display_order,measure,phase,sema_value,placebo_value,difference,ci_low,ci_high,p_value,unit,inference,source_id,locator
+1,eGFR,"baseline→week 12 absolute change",-1.07,-1.05,-0.03,-0.56,0.51,,"mL/min/1.73m²","兩組皆下降；沒有 semaglutide 特異性的 differential acute dip",FLOW-PRIMARY-2024,"Table 2；Discussion；NEJM pp.116,119–120"
+2,eGFR,"week 12→end chronic slope",-2.36,-3.30,0.94,0.62,1.26,,"mL/min/1.73m²/year","支持慢性 eGFR 流失較緩",FLOW-PRIMARY-2024,"Table 2；Discussion；NEJM pp.116,119–120"
+3,eGFR,"total slope",-2.19,-3.36,1.16,0.86,1.47,"<0.001","mL/min/1.73m²/year","確認性次要終點",FLOW-PRIMARY-2024,"Table 2；NEJM p.116"
+4,UACR,"week 104 ratio of ratios",0.60,0.88,0.68,0.62,0.75,,ratio,"組內 week-104/baseline ratios 為 0.60 vs 0.88；約 32% 相對下降；支持性、階層外，未證明中介","FLOW-PRIMARY-2024; FLOW-SUPPLEMENT-2024","FLOW Table 2, NEJM p.116；Supplement Figure S2A, PDF p.19"

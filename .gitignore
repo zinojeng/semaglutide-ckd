@@ -1,0 +1,21 @@
+.DS_Store
+.metadata_cache/
+.claude/worktrees/
+# Local article copies may be publisher-copyrighted; keep them out of the public repo.
+fulltext/
+research/**/sources/retrieved/cache/
+research/**/sources/retrieved/**/*.pdf
+research/**/presentation_zh_tw/workstreams/
+research/**/orchestration/SESSION_LOG.md
+research/**/orchestration/logs/*.ansi
+research/**/orchestration/logs/*.tmp
+tmp/
+
+# Never commit local secrets or provider credentials.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+*api_key*
