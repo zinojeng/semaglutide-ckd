@@ -8,14 +8,19 @@ This repository contains a source-grounded, multi-session clinical evidence revi
 - **[更新後完整繁中總論](./research/semaglutide_ckd_flow/2026-09-05/16_FINAL_SYNTHESIS_ZH_TW.md)**：FLOW、SELECT、SOUL、組合治療、安全性、機轉與雙專科觀點的整合文章。
 - **[五篇繁中系列文章](./research/semaglutide_ckd_flow/2026-09-05/articles_zh_tw/README.md)**：可分篇閱讀或用於教學與演講準備。
 - **[繁中演講投影片證據包](./research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/README.md)**：25 張投影片 storyboard、雙專科講稿、Table／Figure／page 定位、可編輯圖表資料與圖像授權指引。
-- **[繁中投影片視覺素材總目錄](./research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/VISUAL_ASSET_CATALOG_ZH_TW.md)**：6 組可直接投影的原創重繪圖、2 張 CC BY 4.0 出版圖，以及逐圖 caption、講稿、source locator 與不可越過的解讀邊界。
+- **[繁中投影片視覺素材總目錄](./research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/VISUAL_ASSET_CATALOG_ZH_TW.md)**：6 組可直接投影的繁中原創重繪圖，以及逐圖 caption、講稿、source locator 與不可越過的解讀邊界。
+- **[英文原文／重繪視覺指南](./research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/ENGLISH_ORIGINAL_VISUAL_GUIDE.md)**：6 組英文重繪圖、5 張可依法公開的原始英文 Figure，以及每張的來源原文、授權、圖說與 20–30 秒英文講稿。
 - **[結構化來源帳本](./research/semaglutide_ckd_flow/2026-09-05/SOURCE_LEDGER.csv)**：來源識別碼、研究設計、終點、結果、限制與證據分級。
 
 ### 投影片視覺預覽
 
 ![FLOW 五項主要終點、四項腎臟專屬終點與個別組成](./research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/01_flow_endpoints_forest_zh_tw@2x.png)
 
-公開簡報素材現含 6 組繁中原創重繪圖（SVG＋3840×2160 PNG）與 2 張逐圖核實為 CC BY 4.0 的出版圖。所有圖的建議投影片、繁中圖說、30 秒講稿、source locator、授權及「不可怎麼說」均收在[視覺素材總目錄](./research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/VISUAL_ASSET_CATALOG_ZH_TW.md)。
+公開簡報素材現含 6 組繁中與 6 組英文原創重繪圖（每組 SVG＋3840×2160 PNG），以及 5 張逐圖核實為 CC BY 4.0 的出版圖。繁中圖說與講稿見[視覺素材總目錄](./research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/VISUAL_ASSET_CATALOG_ZH_TW.md)；英文原文、Figure／Table 定位、rights boundary 與英文 speaker cue 見[英文視覺指南](./research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/ENGLISH_ORIGINAL_VISUAL_GUIDE.md)。
+
+### English visual preview
+
+![English redraw of FLOW primary, kidney-specific, and component outcomes](./research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/01_flow_endpoints_forest_en@2x.png)
 
 研究任務原始規格見 [`Semaglutide ckd and flow evidence prompt.md`](./Semaglutide%20ckd%20and%20flow%20evidence%20prompt.md)。
 

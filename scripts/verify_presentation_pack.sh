@@ -11,12 +11,16 @@ required=(
   FIGURE_TABLE_SOURCE_MAP.md
   ARTICLE_REFERENCE_GUIDE.md
   VISUAL_ASSET_CATALOG_ZH_TW.md
+  ENGLISH_ORIGINAL_VISUAL_GUIDE.md
   VISUAL_RIGHTS_GUIDE.md
   PRIVATE_ASSET_MANIFEST.md
   public_assets/ATTRIBUTION.md
   public_assets/FLOW_CKDSEVERITY_Mahaffey_Figure2.jpg
   public_assets/source_figures/ATTRIBUTION.md
   public_assets/source_figures/SELECT_KIDNEY_Colhoun_2024_Figure1_KM.png
+  public_assets/source_figures/FLOW_SGLT2_Mann_2024_Figure1.jpg
+  public_assets/source_figures/FLOW_SGLT2_Mann_2024_Figure2.jpg
+  public_assets/source_figures/FLOW_SGLT2_Mann_2024_Figure3.jpg
   public_assets/redrawn/MANIFEST.json
   public_assets/redrawn/01_flow_endpoints_forest_zh_tw.svg
   public_assets/redrawn/01_flow_endpoints_forest_zh_tw@2x.png
@@ -30,6 +34,19 @@ required=(
   public_assets/redrawn/05_select_soul_pooled_context_zh_tw@2x.png
   public_assets/redrawn/06_flow_safety_dotplot_zh_tw.svg
   public_assets/redrawn/06_flow_safety_dotplot_zh_tw@2x.png
+  public_assets/redrawn_en/MANIFEST.json
+  public_assets/redrawn_en/01_flow_endpoints_forest_en.svg
+  public_assets/redrawn_en/01_flow_endpoints_forest_en@2x.png
+  public_assets/redrawn_en/02_flow_egfr_phases_en.svg
+  public_assets/redrawn_en/02_flow_egfr_phases_en@2x.png
+  public_assets/redrawn_en/03_flow_sglt2_subgroup_forest_en.svg
+  public_assets/redrawn_en/03_flow_sglt2_subgroup_forest_en@2x.png
+  public_assets/redrawn_en/04_flow_mra_subgroup_forest_en.svg
+  public_assets/redrawn_en/04_flow_mra_subgroup_forest_en@2x.png
+  public_assets/redrawn_en/05_select_soul_pooled_context_en.svg
+  public_assets/redrawn_en/05_select_soul_pooled_context_en@2x.png
+  public_assets/redrawn_en/06_flow_safety_dotplot_en.svg
+  public_assets/redrawn_en/06_flow_safety_dotplot_en@2x.png
   chart_data/01_flow_primary_outcomes.csv
   chart_data/02_flow_egfr_uacr.csv
   chart_data/03_flow_background_subgroups.csv
@@ -338,6 +355,13 @@ if grep -Fi 'component' "$context_csv" | grep -Eqi 'unverified|not verified|æœªæ
 fi
 
 if [[ "$failed" -ne 0 ]]; then
+  exit 1
+fi
+
+if [[ -x "$project_root/scripts/verify_english_visual_pack.sh" ]]; then
+  "$project_root/scripts/verify_english_visual_pack.sh"
+else
+  echo "PRESENTATION_ENGLISH_VISUAL_VERIFIER_MISSING_OR_NOT_EXECUTABLE" >&2
   exit 1
 fi
 

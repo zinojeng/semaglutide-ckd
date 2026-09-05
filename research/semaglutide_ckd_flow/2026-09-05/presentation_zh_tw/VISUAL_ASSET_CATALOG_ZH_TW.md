@@ -1,6 +1,6 @@
 # Semaglutide × CKD：投影片視覺素材總目錄
 
-本目錄把「原論文證據定位」轉成可以直接放入演講的圖像。現有公開素材包含 **6 組原創數據重繪圖**（每組 SVG＋3840×2160 PNG）及 **2 張逐圖核實為 CC BY 4.0 的來源圖**；另有 **20 張本機來源頁／裁圖**供數據核對，但不會上傳 GitHub。
+本繁中目錄詳列 **6 組原創數據重繪圖**（每組 SVG＋3840×2160 PNG）及原先 2 張重點 CC BY 4.0 來源圖；專案目前另有 **6 組英文原文忠實重繪圖**與 3 張未修改的 Mann SGLT2i 官方英文 Figure。英文素材、完整 5 張公開原圖清單、same-slide attribution 與英文 speaker cue 見 [`ENGLISH_ORIGINAL_VISUAL_GUIDE.md`](./ENGLISH_ORIGINAL_VISUAL_GUIDE.md)。另有 **20 張本機來源頁／裁圖**供數據核對，但不會上傳 GitHub。
 
 ## 先選哪一種素材
 

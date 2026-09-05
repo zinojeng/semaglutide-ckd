@@ -1,0 +1,98 @@
+{
+  "generator": "scripts/generate_presentation_visuals_en.py",
+  "language": "English",
+  "label_policy": "Official English endpoint, axis, and legend wording is retained. Project interpretation appears only in an explicitly labelled footer.",
+  "common_caption": "Project redraw from verified source data; source wording retained for endpoint labels. Project notes are editorial and are not source quotations.",
+  "evidence_cutoff": "2026-09-05",
+  "generated_for_release": "2026-09-06",
+  "canvas_inches": [
+    13.333333333333334,
+    7.5
+  ],
+  "preview_dpi": 144,
+  "png_dpi": 288,
+  "png_default_for_slides": true,
+  "source_data": [
+    "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/chart_data/01_flow_primary_outcomes.csv",
+    "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/chart_data/02_flow_egfr_uacr.csv",
+    "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/chart_data/03_flow_background_subgroups.csv",
+    "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/chart_data/04_select_soul_pooled.csv",
+    "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/chart_data/05_flow_safety.csv"
+  ],
+  "chart_contracts": {
+    "01": "Uncertainty forest; seven FLOW time-to-event outcomes; 16:9 static SVG and PNG.",
+    "02": "Three-panel comparison; absolute eGFR change and two annual slopes; 16:9 static SVG and PNG.",
+    "03": "Faceted dot-and-interval forest; three outcomes by baseline SGLT2i use; 16:9 static SVG and PNG.",
+    "04": "Faceted dot-and-interval forest; three outcomes by baseline MRA use; 16:9 static SVG and PNG.",
+    "05": "Five-row common-scale forest with two source slope-result bands; SELECT, SOUL, and pooled estimates; 16:9 static SVG and PNG.",
+    "06": "Paired dot plot; seven FLOW safety outcomes; 16:9 static SVG and PNG."
+  },
+  "outputs": [
+    {
+      "stem": "01_flow_endpoints_forest_en",
+      "svg": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/01_flow_endpoints_forest_en.svg",
+      "png": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/01_flow_endpoints_forest_en@2x.png",
+      "svg_sha256": "24235ebee9352c51ac770656329c4a624d7fcd7367ff5f03f23ddf1ae767be11",
+      "png_sha256": "fc02ad5cf02dd531c07f70bf7f5c4b69b7eb5bb235a35b50377e56d930f13c90",
+      "png_pixels": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "stem": "02_flow_egfr_phases_en",
+      "svg": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/02_flow_egfr_phases_en.svg",
+      "png": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/02_flow_egfr_phases_en@2x.png",
+      "svg_sha256": "eb19836f87fb9501045f4a37e3b1cc7c7ffd6dfd5c8f33a53741f99e56cf9883",
+      "png_sha256": "07b124cf028b0ca080e77b0f354b2b8fa8b51c2371cc27badbd238addb92278a",
+      "png_pixels": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "stem": "03_flow_sglt2_subgroup_forest_en",
+      "svg": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/03_flow_sglt2_subgroup_forest_en.svg",
+      "png": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/03_flow_sglt2_subgroup_forest_en@2x.png",
+      "svg_sha256": "997f4b49feeef43f8d344773b9850944380a89414e01980480ff4be8e53d57cb",
+      "png_sha256": "8d36352067df22178f18da33e3f7b35d425cdda0549ccc5dbf52bba3b72fd218",
+      "png_pixels": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "stem": "04_flow_mra_subgroup_forest_en",
+      "svg": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/04_flow_mra_subgroup_forest_en.svg",
+      "png": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/04_flow_mra_subgroup_forest_en@2x.png",
+      "svg_sha256": "3ea6423dc8df84d1bf38684fe067dff5ab74359e387ae1aee87b827251354250",
+      "png_sha256": "13e913aaea11f796f5a8b51ad3e492807da541e368d76b9722917f6b0e6497b5",
+      "png_pixels": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "stem": "05_select_soul_pooled_context_en",
+      "svg": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/05_select_soul_pooled_context_en.svg",
+      "png": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/05_select_soul_pooled_context_en@2x.png",
+      "svg_sha256": "98a101e07ef59390b9a445da87c46aabb11d9ed97a2985dd148d49ef1ef396f6",
+      "png_sha256": "af5cbc98c88fd9eb7acd4b21899648ce179b8de0a6bd1071b4f39d99beb9a0c2",
+      "png_pixels": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "stem": "06_flow_safety_dotplot_en",
+      "svg": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/06_flow_safety_dotplot_en.svg",
+      "png": "research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/06_flow_safety_dotplot_en@2x.png",
+      "svg_sha256": "d35a6750d379718f6830c11e6918283b82707791ac2fb229b99ac5d00c3d95ae",
+      "png_sha256": "211b68b070333ae8d80e0a3cc82b9a4cdc864143ec568a7f1cb1784e7146f15f",
+      "png_pixels": [
+        3840,
+        2160
+      ]
+    }
+  ]
+}

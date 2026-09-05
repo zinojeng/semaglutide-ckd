@@ -21,11 +21,15 @@ required=(
   research/semaglutide_ckd_flow/2026-09-05/articles_zh_tw/README.md
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/README.md
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/VISUAL_ASSET_CATALOG_ZH_TW.md
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/ENGLISH_ORIGINAL_VISUAL_GUIDE.md
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/MANIFEST.json
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/MANIFEST.json
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/source_figures/ATTRIBUTION.md
   scripts/source_corpus_guard.sh
   scripts/generate_presentation_visuals.py
+  scripts/generate_presentation_visuals_en.py
   scripts/verify_presentation_pack.sh
+  scripts/verify_english_visual_pack.sh
 )
 
 for path in "${required[@]}"; do
@@ -57,6 +61,9 @@ fi
 allowed_visuals=(
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/FLOW_CKDSEVERITY_Mahaffey_Figure2.jpg
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/source_figures/SELECT_KIDNEY_Colhoun_2024_Figure1_KM.png
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/source_figures/FLOW_SGLT2_Mann_2024_Figure1.jpg
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/source_figures/FLOW_SGLT2_Mann_2024_Figure2.jpg
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/source_figures/FLOW_SGLT2_Mann_2024_Figure3.jpg
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/01_flow_endpoints_forest_zh_tw.svg
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/01_flow_endpoints_forest_zh_tw@2x.png
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/02_flow_egfr_phases_zh_tw.svg
@@ -69,6 +76,18 @@ allowed_visuals=(
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/05_select_soul_pooled_context_zh_tw@2x.png
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/06_flow_safety_dotplot_zh_tw.svg
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn/06_flow_safety_dotplot_zh_tw@2x.png
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/01_flow_endpoints_forest_en.svg
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/01_flow_endpoints_forest_en@2x.png
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/02_flow_egfr_phases_en.svg
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/02_flow_egfr_phases_en@2x.png
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/03_flow_sglt2_subgroup_forest_en.svg
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/03_flow_sglt2_subgroup_forest_en@2x.png
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/04_flow_mra_subgroup_forest_en.svg
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/04_flow_mra_subgroup_forest_en@2x.png
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/05_select_soul_pooled_context_en.svg
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/05_select_soul_pooled_context_en@2x.png
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/06_flow_safety_dotplot_en.svg
+  research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/public_assets/redrawn_en/06_flow_safety_dotplot_en@2x.png
 )
 while IFS= read -r visual; do
   approved=0
