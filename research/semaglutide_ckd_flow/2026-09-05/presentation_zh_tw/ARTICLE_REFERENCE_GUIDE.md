@@ -67,8 +67,8 @@
 - **穩定 source ID：** `FLOW-PRIMARY-2024`。
 - **Exact locator：** Table 2 與 Results，journal p.116；Discussion，journal pp.119–120；本機 PDF p.8。
 - **投影片視覺：** 可編輯三列 dumbbell／數據表，不憑空畫完整 eGFR 曲線。列出總斜率 −2.19 對 −3.36、0 至 12 週變化 −1.07 對 −1.05、12 週後慢性斜率 −2.36 對 −3.30。
-- **一句圖說：** FLOW 的腎功能訊號主要來自慢性斜率分離，沒有 semaglutide 專屬的差異性 acute dip。
-- **30 秒口述：** 總斜率組間差為每年 +1.16。兩組前 12 週都下降約 1.06，組間差只有 −0.03。第 12 週後的慢性斜率差為 +0.94。這個形態支持較慢的長期 eGFR 流失，但不能單靠軌跡指定唯一機轉。
+- **一句圖說：** FLOW 的腎功能訊號主要來自慢性斜率分離；基線至第 12 週未見 semaglutide 專屬的差異性 acute dip，但不能排除更早且已消退的 transient dip。
+- **30 秒口述：** 總斜率組間差為每年 +1.16。兩組前 12 週都下降約 1.06，組間差只有 −0.03；這只支持「至第 12 週沒有組間差異性 dip」，不是「完全沒有急性變化」。第 12 週後的慢性斜率差為 +0.94。這個形態支持較慢的長期 eGFR 流失，但不能排除更早 transient dip，也不能單靠軌跡指定唯一機轉。
 - **投影片頁腳短引：** Perkovic V, et al. *N Engl J Med*. 2024;391:109–121. Table 2. doi:10.1056/NEJMoa2403347。
 - **授權／公開限制：** 使用自製圖與原始數值。不要從缺少逐時點數值的來源擬合或數位化一條新曲線。
 
@@ -114,9 +114,9 @@
 - **文章插入位置：**「Cystatin-C 分析補的是測量疑慮」段後。
 - **穩定 source ID：** `FLOW-SGLT2-2024`。
 - **Exact locator：** Table 1，p.2853；Results；Extended Data Figures 4–7。
-- **投影片視覺：** 公開版重繪三列測量一致性表，分別呈現修改五項終點、總 cystatin-C 斜率與第 104 週變化。標題寫「測量一致性」，不要寫「加成性證明」。
-- **一句圖說：** Cystatin-C 與 creatinine 方向一致，降低純肌肉量測量假象的疑慮，但仍未回答 SGLT2i 加成性。
-- **30 秒口述：** 事後的 cystatin-C 五項結果在使用者與非使用者分別為 0.74 與 0.70，交互作用 P 值 0.844。這個修改終點取消了確認性測量要求，所以只能當一致性檢查，不能升格為新的確認性結果。
+- **投影片視覺：** 公開版重繪三列 marker／endpoint-dependence 表，分別呈現修改五項終點、總 cystatin-C 斜率與第 104 週變化。標題不要寫「加成性證明」或把 0.74 畫成預設 1.07 的替代值。
+- **一句圖說：** 在基線 SGLT2i 使用者中，預設 creatinine-based 五項 HR 1.07 與事後修改 cystatin-C HR 0.74 是不同 estimand；不可平均、拼成範圍或互相推翻，亦未回答加成性。
+- **30 秒口述：** 事後修改的 cystatin-C 五項結果在使用者與非使用者分別為 0.74 與 0.70，交互作用 P 值 0.844；預設 creatinine-based 使用者估計則是 1.07。修改終點取消了確認性測量要求，且與預設分析使用不同標記／終點定義，因此兩者都不是可任選的唯一真值。它只能呈現 marker／endpoint dependence，不能升格為新的確認性或加成性結果。
 - **投影片頁腳短引：** Mann JFE, et al. *Nat Med*. 2024;30:2849–2856. Table 1 and Extended Data Figures 4–7. doi:10.1038/s41591-024-03133-0. Post hoc analysis。
 - **授權／公開限制：** CC BY 4.0，仍需歸屬與修改說明。
 
@@ -206,9 +206,9 @@
 - **文章插入位置：**「彙總分析」段後。
 - **穩定 source ID：** `SELECT-FLOW-SOUL-POOLED-2026`。
 - **Exact locator：** PubMed structured abstract／Findings，PMID 42567173。全文 Table／Figure locator：`NR`。
-- **投影片視覺：** 自製兩列 forest：含 CV death 的 pooled endpoint HR 0.84，排除 CV death 的 kidney-specific endpoint HR 0.80。每列完整寫出 endpoint 結構。
-- **一句圖說：** 彙總分析增加估計精確度，但沒有消除三項試驗在族群、劑量、途徑與終點上的異質性。
-- **30 秒口述：** 30,787 人的彙總中，含 CV death 的事件為 973 對 1,134，HR 0.84。排除 CV death 為 347 對 416，HR 0.80。這兩列不能互換，也不能當作血糖或體重中介分析。
+- **投影片視覺：** 自製兩列 forest：來源標示為含 CV death 的 pooled aggregate HR 0.84，以及來源標示為排除 CV death 的 aggregate HR 0.80。摘要未列完整 component definitions，故不畫 endpoint composition bars，也不與 FLOW／SOUL 排成 matched triplet。
+- **一句圖說：** 彙總分析增加估計精確度，但完整組成尚未逐項核實，且沒有消除三項試驗在族群、劑量與途徑上的異質性。
+- **30 秒口述：** 30,787 人的彙總中，來源標示為含 CV death 的事件為 973 對 1,134，HR 0.84；來源標示為排除 CV death 的事件為 347 對 416，HR 0.80。兩者只可作該彙總分析的 aggregate estimate；在取得完整全文／附錄並逐項核對組成前，不得與 FLOW 0.76／0.79 或 SOUL 0.91／0.86 排成看似同定義的三數，也不能當作血糖或體重中介分析。
 - **投影片頁腳短引：** Mann JFE, et al. *Lancet Diabetes Endocrinol*. Published online 2026-08-07. PubMed Findings. doi:10.1016/S2213-8587(26)00134-8. Abstract-level evidence。
 - **授權／公開限制：** 摘要層級且無本案已核實全文重用授權。沒有原圖可用，公開版只重繪摘要明載數值。
 

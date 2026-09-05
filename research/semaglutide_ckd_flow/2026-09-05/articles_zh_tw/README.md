@@ -5,10 +5,11 @@
 ## 證據凍結與用途
 
 - 唯一事實來源：`../16_FINAL_SYNTHESIS_ZH_TW.md`
-- 凍結稿 SHA-256：`bd451c8b20d12e5145a2641e2fd892a13a9e5ec90ac834469e9d11c544ddb054`
+- 凍結稿 SHA-256：`75368cbaa0995ec4a811eaf724013a6037841b49ff3fe7630080cd87e998cd56`
 - 證據截止日：2026-09-05
 - 用途：臨床學術整理與證據溝通，不是個人化醫療建議。
 - 分級詞：established（已確立）、strongly supported（強力支持）、suggestive（提示性）、hypothesis-generating（假說生成）、unknown（未知）。
+- 三專業角色的五項跨會話裁決與來源：[`../19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md`](../19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md)。
 
 ## 系列導讀
 

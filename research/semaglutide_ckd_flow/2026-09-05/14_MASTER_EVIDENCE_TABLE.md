@@ -9,14 +9,14 @@ Locator for the block: N and median follow-up are from `FLOW-PRIMARY-2024`, Tabl
 | Outcome | Sema events/value | Placebo events/value | Effect estimate | 95% CI | P | Reported event rate | Risk difference (sema−placebo) | NNT (3y) |
 |---|---:|---:|---:|---:|---:|---|---|---:|
 | **Primary composite (5-component, incl. CV death)** | 331 (18.7%) | 410 (23.2%) | 0.76 | 0.66–0.88 | 0.0003 | 5.8 vs 7.5/100 patient-yr | — | **20 (14–40)** |
-| — Persistent ≥50% eGFR decline | 165 (9.3%) | 213 (12.1%) | 0.73 | 0.59–0.89 | — | — | — | NE (not independently confirmatory; supportive) |
+| — Persistent ≥50% eGFR decline (outside hierarchy; nominal/supportive only; no percentage-reduction headline) | 165 (9.3%) | 213 (12.1%) | 0.73 | 0.59–0.89 | — | — | — | NE (not independently confirmatory; supportive) |
 | — Persistent eGFR<15 | 92 (5.2%) | 110 (6.2%) | 0.80 | 0.61–1.06 | — | — | — | NE |
 | — Chronic KRT initiation | 87 (4.9%) | 100 (5.7%) | 0.84 | 0.63–1.12 | — | — | — | NE |
 | — Kidney death | 5 (0.3%) | 5 (0.3%) | 0.97 | 0.27–3.49 | — | — | — | NE |
 | — CV death | 123 (7.0%) | 169 (9.6%) | 0.71 | 0.56–0.89 | — | — | — | NE |
 | **Kidney-specific composite (4-component, excl. CV death)** | 218 (12.3%) | 260 (14.7%) | 0.79 | 0.66–0.94 | — | — | — | **NE — no NNT published anywhere in this evidence base for this outcome; not back-calculated** |
 | Total eGFR slope (mL/min/1.73m²/yr) | −2.19 | −3.36 | diff +1.16 | 0.86–1.47 | <0.001 | — | — | n/a (continuous) |
-| Baseline→week 12 absolute eGFR change (mL/min/1.73m²) | −1.07 | −1.05 | diff −0.03 | −0.56 to 0.51 | — | no differential acute dip | — | n/a (continuous) |
+| Baseline→week 12 absolute eGFR change (mL/min/1.73m²) | −1.07 | −1.05 | diff −0.03 | −0.56 to 0.51 | — | no semaglutide-specific differential dip through week 12; earlier resolved transient not excluded | — | n/a (continuous) |
 | Chronic eGFR slope, week 12→end (mL/min/1.73m²/yr) | −2.36 | −3.30 | diff +0.94 | 0.62–1.26 | — | — | — | n/a (continuous) |
 | MACE | 212 (12.0%) | 254 (14.4%) | 0.82 | 0.68–0.98 | 0.029 | — | −0.02 (−0.04, −0.002) | **45 (23–623)** |
 | All-cause death | 227 (12.8%) | 279 (15.8%) | 0.80 | 0.67–0.95 | 0.01 | — | −0.03 (−0.05, −0.004) | **39 (21–238)** |
@@ -45,13 +45,15 @@ Locator for the block: Mann et al. Figs. 1–2/Table 1 and Extended Data Figs. 4
 
 ARR/NNT not estimable for either stratum (`07`, `12`).
 
+Among baseline SGLT2i users, the prespecified creatinine-based five-component estimate was HR **1.07 (0.69–1.67)**, whereas the post hoc modified cystatin-C endpoint gave HR **0.74 (0.47–1.16)**. Because the marker and endpoint definitions differ, neither is “the” subgroup estimate; do not average them, join them into a range, or let the post hoc analysis overturn the prespecified analysis. Incremental hard-kidney benefit is not identified from these analyses.
+
 ## FLOW — MRA subgroup (`FLOW-MRA-2025`) — baseline users N=257 vs non-users N=3,276
 
 Locator for the block: Rossing et al. Figs. 1–2/Supplementary Tables 1–2; local source lines 75–219 and 239. Baseline finerenone use was zero.
 
 | Outcome | Users HR (95% CI), events | Non-users HR (95% CI), events | P-interaction | Exploratory 3y NNT |
 |---|---|---|---|---:|
-| FLOW primary five-component composite (including CV death) | 0.51 (0.30–0.86), 59 | 0.79 (0.68–0.92), 682 | 0.12 | Users: 9; Non-users: 23 (exploratory subgroup NNTs, not trial-level) |
+| FLOW primary five-component composite (including CV death) | 0.51 (0.30–0.86), 59 | 0.79 (0.68–0.92), 682 | 0.12 | Users: 9; Non-users: 23 (**MRA-user subgroup only; exploratory nonrandomized stratum; never attach these NNTs to a finerenone statement**) |
 | Kidney-specific composite | 0.38 (0.15–0.84) | 0.82 (0.68–0.99) | 0.068 | NE |
 | RRT-initiation component | 0.18 (0.03–0.71), only 11 total events in MRA-user subgroup | 0.91 (0.68–1.23) | 0.027 (nominal; unadjusted for multiplicity) | NE |
 
@@ -84,6 +86,8 @@ Locator for the block: structured abstract/results, DOI 10.1016/j.jacc.2026.02.5
 | Heart failure (678) | 0.67 (0.49–0.93) | 0.79 (0.67–0.93) | .40 | 13 |
 | High-risk, no established CVD (1,329/2,000) | 0.73 (0.58–0.91) | 0.73 (0.49–1.08) | .99 | 17 |
 
+All three are descriptive 3-year NNTs for the **CV-death-inclusive five-component endpoint**. Their differences are mathematically fully explicable by the strata's differing baseline risks and contain no evidence of differential relative drug efficacy; the magnitude of that explanation cannot be empirically decomposed because phenotype-specific baseline event rates were not reported. No kidney-only NNT exists in this evidence base.
+
 ## FLOW — heart failure analysis (`FLOW-HF-2024`, abstract-level)
 
 Locator for the block: structured abstract/results, DOI 10.1016/j.jacc.2024.08.004, PMID 39217553.
@@ -109,8 +113,8 @@ Row locators: `SUSTAIN6-2016` and `PIONEER6-2019`, primary-publication abstracts
 | SOUL (kidney) | same | same | Five-point kidney/CV-death composite (incl. CV death) | 403/4,825 (8.4%) | 435/4,825 (9.0%) | 0.91 (0.80–1.05) | 0.19 (NS) |
 | SOUL (kidney) | same | same | 4-point composite (excl. CV death) | 112/4,825 (2.3%) | 129/4,825 (2.7%) | 0.86 (0.66–1.10) | 0.22 (NS) |
 | SOUL (kidney) | same | same | Total eGFR slope (formally exploratory after hierarchy gate failed) | −1.67 mL/min/1.73m²/yr | −2.06 mL/min/1.73m²/yr | difference +0.40 (0.27–0.53) mL/min/1.73m²/yr | nominal <0.0001 |
-| Pooled SELECT+FLOW+SOUL | N=30,787, mixed | mixed doses/routes | Primary pooled kidney/CV-death composite (incl. CV death) | 973 | 1,134 | 0.84 (0.77–0.91) | — |
-| Pooled SELECT+FLOW+SOUL | same | same | Kidney-specific (excl. CV death) | 347 | 416 | 0.80 (0.69–0.92) | — |
+| Pooled SELECT+FLOW+SOUL | N=30,787, mixed | mixed doses/routes | Source-labelled primary pooled kidney/CV-death composite (reported as incl. CV death; complete component list not verified from the retrieved abstract) | 973 | 1,134 | 0.84 (0.77–0.91) | Aggregate estimate only; do not arrange as a matched triplet with FLOW/SOUL |
+| Pooled SELECT+FLOW+SOUL | same | same | Source-labelled kidney-specific composite (reported as excl. CV death; complete component list not verified from the retrieved abstract) | 347 | 416 | 0.80 (0.69–0.92) | Aggregate estimate only; do not arrange as a matched triplet with FLOW/SOUL |
 | GLP-1RA class meta-analysis (Badve, T2D-only) | **10 T2D RCTs, N=67,769** | mixed molecules | Kidney composite excluding CV death (kidney failure, sustained ≥50% eGFR decline/nearest equivalent, or kidney-failure death) | — | — | 0.82 (0.73–0.93) | — |
 | GLP-1RA class meta-analysis (Badve, T2D-only) | same | same | Kidney failure | — | — | 0.84 (0.72–0.99) | — |
 | GLP-1RA class meta-analysis (with SELECT post hoc) | **11 RCTs, N=85,373** | mixed molecules | Serious adverse events / AE discontinuation | — | — | RR 0.95 (0.90–1.01) / 1.51 (1.18–1.94) | I² 88.5% / 96.3% |
@@ -147,7 +151,7 @@ Baseline-UACR subgroup treatment differences were −8.1% (−10.6 to −5.6) fo
 
 | Trial | Primary endpoint and HR (95% CI) | Kidney failure result | CV-death result/handling | eGFR slope |
 |---|---|---|---|---|
-| FLOW | Five-component kidney/CV-death composite: 0.76 (0.66–0.88) | KRT 0.84 (0.63–1.12); persistent eGFR<15 0.80 (0.61–1.06), each individually NS | Included; isolated CV death 0.71 (0.56–0.89) | Total +1.16 (0.86–1.47); chronic week 12→end +0.94 (0.62–1.26); no differential acute dip |
+| FLOW | Five-component kidney/CV-death composite: 0.76 (0.66–0.88) | KRT 0.84 (0.63–1.12); persistent eGFR<15 0.80 (0.61–1.06), each individually NS | Included; isolated CV death 0.71 (0.56–0.89) | Total +1.16 (0.86–1.47); chronic week 12→end +0.94 (0.62–1.26); no semaglutide-specific differential dip through week 12, but an earlier resolved transient is not excluded |
 | CREDENCE | ESKD/doubling creatinine/kidney or CV death: 0.70 (0.59–0.82) | ESKD 0.68 (0.54–0.86) | Included; isolated CV death 0.78 (0.61–1.00) | Baseline→week 3 **between-arm difference in absolute eGFR change** −3.17 (−3.87 to −2.47) mL/min/1.73m²; chronic slope difference +2.74 (2.37–3.11) mL/min/1.73m²/yr |
 | DAPA-CKD | ≥50% eGFR decline/ESKD/kidney or CV death: 0.61 (0.51–0.72) | Kidney-specific composite 0.56 (0.45–0.68); ESKD 0.64 (0.50–0.82) | Included; isolated CV death 0.81 (0.58–1.12); CV death/HHF 0.71 (0.55–0.92) | Total +0.93 (0.61–1.25); chronic +1.92 (1.61–2.24) |
 | EMPA-KIDNEY | Kidney-disease progression or CV death: 0.72 (0.64–0.82) | Kidney-disease progression 0.71 (0.62–0.81); kidney-failure composite 0.69 (0.56–0.85) | Included; isolated CV death 0.84 (0.60–1.19) | Total +0.75 (0.54–0.96); chronic from month 2 +1.37 (1.16–1.59) |

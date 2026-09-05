@@ -16,6 +16,7 @@ required=(
   CLAUDE.md
   "Semaglutide ckd and flow evidence prompt.md"
   research/semaglutide_ckd_flow/2026-09-05/16_FINAL_SYNTHESIS_ZH_TW.md
+  research/semaglutide_ckd_flow/2026-09-05/19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md
   research/semaglutide_ckd_flow/2026-09-05/SOURCE_LEDGER.csv
   research/semaglutide_ckd_flow/2026-09-05/articles_zh_tw/README.md
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/README.md

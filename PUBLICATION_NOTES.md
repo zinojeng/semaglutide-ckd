@@ -5,18 +5,18 @@
 
 ## What the public snapshot contains
 
-- The reconciled evidence chapters `01`–`16`, source inventory, and structured source ledger.
+- The reconciled evidence chapters `01`–`16`, the public-safe Wave 4 cross-session peer-review addendum `19`, source inventory, and structured source ledger.
 - A five-part Traditional Chinese clinical series.
 - A Traditional Chinese presentation evidence pack: 25-slide storyboard, dual-specialty speaker notes, exact Table/Figure/page map, article reference guide, editable chart-data CSV files, and visual-rights guide.
 - One unmodified source figure whose CC BY 4.0 status and attribution were independently checked. Its attribution file records the work, DOI, PMCID, license, checksum, and modification status.
-- Acquisition and rights-policy documentation, plus a high-level cross-session workflow description.
+- Acquisition and rights-policy documentation, plus a high-level cross-session workflow description and de-identified clinical adjudication record.
 
 ## What is deliberately excluded
 
 - Publisher PDFs, supplements, protocols, full-text derivatives, and the private `fulltext/` corpus.
 - Rights-restricted source-page screenshots and all files under retrieval/cache paths.
 - API keys, MCP credentials, local absolute paths, and machine-specific configuration.
-- Internal agent transcripts, session UUIDs, worktrees, detailed workstream scratch files, and superseded development history from the curated `main` branch.
+- Internal agent transcripts, session UUIDs, transport receipts, worktrees, detailed dialogue/session logs, detailed workstream scratch files, and superseded development history from the curated `main` branch.
 - Original figures or tables for which public redistribution or adaptation was not verified.
 
 The excluded source-page screenshots remain local research aids only. Public slides should use the supplied editable CSV data or newly redrawn visuals unless the visual-rights guide explicitly authorizes reuse.

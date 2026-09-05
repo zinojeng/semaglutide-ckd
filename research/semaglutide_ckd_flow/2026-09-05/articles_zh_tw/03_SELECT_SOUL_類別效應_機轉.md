@@ -1,6 +1,6 @@
 # 03｜FLOW 之外：SELECT、SOUL、類別效應與腎臟機轉
 
-> 範圍：依 SHA-256 `bd451c8b…ddb054` 的凍結總論精煉；證據截止 2026-09-05。本文是臨床學術整理，不是個人化醫療建議。
+> 範圍：依 SHA-256 `75368cba…98cd56` 的凍結總論精煉；證據截止 2026-09-05。本文是臨床學術整理，不是個人化醫療建議。
 
 ## 一句話先說結論
 
@@ -44,11 +44,11 @@ SOUL 平均基線 eGFR 73.8，沒有收集 UACR；其安慰劑組腎臟複合事
 
 ## 彙總分析：可增加精確度，不能消除異質性
 
-預先設定的 SELECT＋FLOW＋SOUL 參與者層級彙總共 30,787 人。含 CV death 的主要彙總腎臟複合終點為 973 對 1,134 例，HR 0.84（0.77–0.91）；排除 CV death 的腎臟專屬複合終點為 347 對 416 例，HR 0.80（0.69–0.92）。
+預先設定的 SELECT＋FLOW＋SOUL 參與者層級彙總共 30,787 人。結構化摘要將兩個 aggregate outcome 標示為含 CV death 的主要彙總複合終點（973 對 1,134 例，HR 0.84〔0.77–0.91〕），以及排除 CV death 的腎臟專屬複合終點（347 對 416 例，HR 0.80〔0.69–0.92〕）。
 
-這兩個彙總 HR 必須各自與相同結構的試驗終點比較，不能把含 CV death 的 0.84 和不含 CV death 的 0.80 混在一起；後者才可再對齊 FLOW 的四項 HR 0.79。彙總結果提高整體估計精確度，卻沒有把三個不同族群、劑量與途徑變成同一個介入，也不是血糖／體重中介分析。
+本專案取得的摘要未列舉 pooled composite 的完整組成，全文、表格與附錄也未取得，因此 component-by-component matching 尚未核實。兩個 pooled HR 可各自報告，但不可把 pooled 0.84／FLOW 0.76／SOUL 0.91 或 pooled 0.80／FLOW 0.79／SOUL 0.86 排成看似 like-for-like 的三數。各試驗估計應分開呈現並附自己的已核實定義。彙總結果提高整體估計精確度，卻沒有把三個不同族群、劑量與途徑變成同一個介入，也不是血糖／體重中介分析。
 
-定位：`SELECT-FLOW-SOUL-POOLED-2026` PubMed structured abstract／Findings，PMID 42567173；全文未取得，因此不推論摘要未報告的試驗間異質性。
+定位：`SELECT-FLOW-SOUL-POOLED-2026` PubMed structured abstract／Findings，PMID 42567173；全文未取得，因此不推論摘要未報告的試驗間異質性，也不假定完整 endpoint matching 已完成。
 
 ## 是 semaglutide 效應，還是 GLP-1RA 類別效應
 
@@ -71,13 +71,13 @@ SOUL 平均基線 eGFR 73.8，沒有收集 UACR；其安慰劑組腎臟複合事
 
 FLOW 的組間差異包括 HbA1c −0.81 個百分點、體重 −4.10 kg、收縮壓 −2.23 mmHg。非 FLOW 的中介分析估計 HbA1c 中介約 25–26%、收縮壓約 9–22%，但信賴區間寬或無法計算，且使用不同族群與複合終點。
 
-SUSTAIN-6 的 semaglutide 體重中介點估計為 0%，SELECT 則估計 81%；兩者方法、族群與結果不同，不能平均，也不能用其中任一數字宣告「完全與體重無關」或「幾乎全由體重造成」。FLOW 中 creatinine 與 cystatin-C 結果一致，只降低肌肉量造成測量假象的疑慮，不是生物學中介證明。
+SUSTAIN-6 的 semaglutide 體重中介點估計為 0%，但 CI 無法計算，因此不具資訊量；SELECT 的 81%（41–120%）針對不同替代結果。兩者方法、族群與結果不同，不能平均，也不能用其中任一數字宣告「完全與體重無關」或「幾乎全由體重造成」。FLOW 中 creatinine 與 cystatin-C 結果相近，只降低純體重／肌肉量改變造成肌酸酐生成假象的疑慮；未報兩估計差值 CI，且不能證明體重獨立或一般測量誤差已排除。
 
 定位：`FLOW-PRIMARY-2024` Table 2／Results「Other Outcomes」，journal p.116；`SUSTAIN6-MEDIATION-2021` Methods／Figure 1A–F；`SELECT-KIDNEY-2024` Methods／Results「Correlation and mediation analysis」。
 
 ### 腎臟血流動力學與鈉處理：具合理性，尚不能指定主路徑
 
-人體急性輸注生理研究顯示，GLP-1 相關鈉排泄增加可被受體拮抗劑阻斷，但沒有同時量到腎血漿流量或 GFR 改變；這較支持腎小管鈉處理，而不是已證明的主要腎絲球血流動力學效應。FLOW 沒有 semaglutide 專屬差異性 acute dip，慢性斜率才逐步分離，也不同於典型 SGLT2i 軌跡。
+人體急性輸注生理研究顯示，GLP-1 相關鈉排泄增加可被受體拮抗劑阻斷，但沒有同時量到腎血漿流量或 GFR 改變；這較支持腎小管鈉處理，而不是已證明的主要腎絲球血流動力學效應。FLOW **至第 12 週**未見 semaglutide 特異的額外 acute dip，慢性斜率才逐步分離；沒有更早時點，故不排除先前已消退的短暫變化，也不能據此指定唯一機轉。
 
 動物與細胞研究支持抗發炎、抗氧化、抗纖維化與腎絲球回饋假說；FLOW 本身沒有腎切片、腎血流鉗夾或完整纖維化標記研究，這些機轉仍屬假說生成。
 
@@ -101,7 +101,7 @@ SUSTAIN-6 的 semaglutide 體重中介點估計為 0%，SELECT 則估計 81%；�
 | SELECT continuous outcomes | `SELECT-KIDNEY-2024` Table 1；Figs.4–5；PMCID PMC11271413 | 重繪 week-104 eGFR、total/chronic slope、UACR | SELECT 不是專屬非糖尿病 CKD hard-outcome trial。 |
 | SELECT weight mediation | `SELECT-KIDNEY-2024` Methods「Correlation and mediation analysis」／Results | 畫估計對象框：week-104 eGFR change | 81%（41–120%）不適用於 slope 或 hard composite。 |
 | SOUL hierarchy | `SOUL-KIDNEY-2026` PubMed Methods／Results；`SOUL-PROTOCOL-2021` §10.3.2.1 p.50 | 自製 gate 圖，不使用受限原圖 | 五項複合未顯著後，斜率僅名目顯著、形式上探索性。 |
-| 三試驗 pooled | `SELECT-FLOW-SOUL-POOLED-2026` PubMed Findings，PMID 42567173 | 重繪含／排除 CV death 兩列 forest | 提高精確度，不消除族群、劑量、途徑與 endpoint 差異。 |
+| 三試驗 pooled | `SELECT-FLOW-SOUL-POOLED-2026` PubMed Findings，PMID 42567173 | 只重繪兩個 pooled aggregate；不與 FLOW／SOUL 排成 matched triplet | 完整 component definitions 未由摘要核實；提高精確度不代表 endpoint、族群、劑量或途徑等效。 |
 | 類別與機轉 | `GLP1-CLASSMETA-BADVE-2025` PubMed Findings；`GLP1R-LOCALIZATION-2014` Methods／Results | 自製 evidence ladder | 類別訊號受支持；直接腎元 GLP-1R 路徑未確立。 |
 
 完整圖說、30 秒口述與授權模板見 [`../presentation_zh_tw/ARTICLE_REFERENCE_GUIDE.md`](../presentation_zh_tw/ARTICLE_REFERENCE_GUIDE.md)。

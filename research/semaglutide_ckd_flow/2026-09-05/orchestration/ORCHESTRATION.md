@@ -2,7 +2,7 @@
 
 ## Objective
 
-Run independent Claude Code sessions as a structured clinical evidence team. The sessions communicate through durable lane memos, adversarial cross-reviews, and explicit resumed-session handoffs. This preserves provenance and makes disagreements visible before synthesis.
+Run independent Claude Code sessions as a structured clinical evidence team. The sessions communicate through durable lane memos, adversarial cross-reviews, explicit resumed-session handoffs, and receipt-verified live messages. This preserves provenance and makes disagreements visible before synthesis.
 
 ## Roles
 
@@ -34,6 +34,7 @@ Run independent Claude Code sessions as a structured clinical evidence team. The
 5. **Wave 4 – synthesis:** editor reads only reconciled deliverables and writes `16_FINAL_SYNTHESIS_ZH_TW.md`.
 6. **Wave 5 – red team:** a separate session checks every headline number and high-stakes inference. The root coordinator integrates only independently verified corrections; the owning director then receives the report and repair set through a resumed-session prompt and records the final adjudication without retroactively claiming the coordinator's edits.
 7. **Wave 6 – closure and deterministic QA:** after the owning director acknowledges Wave 5, the root coordinator records the finding dispositions and split clinical/process/publication gates in `18_RED_TEAM_CLOSURE.md`; then check required files, links/DOIs, CSV schema, forbidden overclaims, empty placeholders, and Git diff, followed by an independent Claude worktree review.
+8. **Wave 4 Run 2 – remedial live peer dialogue and reopened synthesis:** after the first Wave 4 contact attempt was proven not delivered, this project launched permission-compatible nephrology, endocrinology, methodology, and director sessions on the same frozen evidence base. Two-way delivery was first proven with named preflight messages and replies. Each disputed claim then completed a question → challenge → response/counterpoint → method check → rejoinder → closed chain. The coordinator integrated the corrections, reran all gates, and published the clinically relevant, public-safe adjudications in `19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md`; the failed first attempt remains in provenance rather than being rewritten. Future runs should perform this receipt-verified dialogue before the red-team gate.
 
 ## Cross-session message protocol
 
@@ -43,6 +44,8 @@ Every handoff must name exact files and ask for one of these message types:
 - `CONFLICT`: list two inconsistent numbers/definitions with exact source locators.
 - `CONFIRM`: independently reproduce a number or classification.
 - `GAP`: identify a population, endpoint, guideline, or safety issue still unsupported.
+
+For live dialogue, transport success alone is insufficient. Each message must carry a unique logical ID and `in_reply_to`; the receiving session must return a reply or receipt that names that ID. The methodology auditor receives each original chain message—not a coordinator paraphrase—as it arrives. A dispute may be marked `CLOSED` only after the final rejoinder and a receipt-linked closure; routing omissions and later repairs remain visible in the durable internal log.
 
 Reviews must separate factual corrections from interpretive disagreements. The director records each material dispute and resolution in `12_EVIDENCE_GAPS_AND_CONTROVERSIES.md` or `15_CLAIM_EVIDENCE_MAP.md`.
 
