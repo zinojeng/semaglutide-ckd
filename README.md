@@ -2,7 +2,15 @@
 
 This repository contains a source-grounded, multi-session clinical evidence review of semaglutide in chronic kidney disease, centered on FLOW and updated through 2026-09-05.
 
-The research brief is [`Semaglutide ckd and flow evidence prompt.md`](./Semaglutide%20ckd%20and%20flow%20evidence%20prompt.md). Read either the single merged Traditional Chinese article, [`16_FINAL_SYNTHESIS_ZH_TW.md`](./research/semaglutide_ckd_flow/2026-09-05/16_FINAL_SYNTHESIS_ZH_TW.md), or the [five-part Traditional Chinese clinical series](./research/semaglutide_ckd_flow/2026-09-05/articles_zh_tw/README.md). The public-safe [`19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md`](./research/semaglutide_ckd_flow/2026-09-05/19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md) records the five issues resolved through genuine nephrology, endocrinology, and methodology cross-session dialogue. A separate [Traditional Chinese presentation evidence pack](./research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/README.md) provides a 25-slide storyboard, dual-specialty speaker notes, exact Table/Figure/page locators, editable chart-data CSVs, image-rights rules, and a small set of explicitly licensed public visuals.
+## 主要產出（繁體中文）
+
+- **[公開繁中同儕校讀增補](./research/semaglutide_ckd_flow/2026-09-05/19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md)**：腎臟科、內分泌科與方法學角色完成的五項真實跨會話裁決。
+- **[更新後完整繁中總論](./research/semaglutide_ckd_flow/2026-09-05/16_FINAL_SYNTHESIS_ZH_TW.md)**：FLOW、SELECT、SOUL、組合治療、安全性、機轉與雙專科觀點的整合文章。
+- **[五篇繁中系列文章](./research/semaglutide_ckd_flow/2026-09-05/articles_zh_tw/README.md)**：可分篇閱讀或用於教學與演講準備。
+- **[繁中演講投影片證據包](./research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/README.md)**：25 張投影片 storyboard、雙專科講稿、Table／Figure／page 定位、可編輯圖表資料與圖像授權指引。
+- **[結構化來源帳本](./research/semaglutide_ckd_flow/2026-09-05/SOURCE_LEDGER.csv)**：來源識別碼、研究設計、終點、結果、限制與證據分級。
+
+研究任務原始規格見 [`Semaglutide ckd and flow evidence prompt.md`](./Semaglutide%20ckd%20and%20flow%20evidence%20prompt.md)。
 
 Local primary papers, supplements, and authorized PDF-to-Markdown parses are deliberately Git-ignored and are not included in this public repository. Public availability of this synthesis does not grant reuse rights to any cited third-party article, guideline, label, protocol, or supplement.
 
