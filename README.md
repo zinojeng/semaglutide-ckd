@@ -4,6 +4,7 @@ This repository contains a source-grounded, multi-session clinical evidence revi
 
 ## 主要產出（繁體中文）
 
+- **[ARB＋SGLT2i 之後：Semaglutide 或 Finerenone？](./research/semaglutide_ckd_flow/2026-09-05/22_FINERENONE_VS_SEMAGLUTIDE_AFTER_RASI_SGLT2I_ZH_TW.md)**：整合 FLOW、FIDELIO／FIGARO／FIDELITY、CONFIDENCE、FIND-CKD／INFINITY 與 2026 ADA／CKM 指引，提供表現型導向的先後選擇、監測流程與 Claude Code 跨 session 裁決。
 - **[FLOW 後引文、評論、作者回覆與新證據深讀](./research/semaglutide_ckd_flow/2026-09-05/21_POST_FLOW_CITATION_COMMENT_REPLY_REVIEW_ZH_TW.md)**：區分 cited-in、正式 CommentIn 與實質回應鏈，並整理背景治療、HR 解讀、mGFR、MRA、SGLT2i、透析與 meta-analysis 的可說／不可說邊界。
 - **[腎臟科演講 Cross Sessions 辯論整合](./research/semaglutide_ckd_flow/2026-09-05/20_NEPHROLOGIST_TALK_DEBATE_SYNTHESIS_ZH_TW.md)**：五個獨立 AI 角色針對六個高爭議主題完成交叉詰問，整理成 20／40 分鐘架構、逐題講稿、視覺建議與尖銳 Q&A。
 - **[公開繁中同儕校讀增補](./research/semaglutide_ckd_flow/2026-09-05/19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md)**：腎臟科、內分泌科與方法學角色完成的五項真實跨會話裁決。
