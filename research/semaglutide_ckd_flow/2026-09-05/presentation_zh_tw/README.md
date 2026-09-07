@@ -1,8 +1,8 @@
 # Semaglutide × CKD：繁體中文投影片證據包
 
-這個資料夾把已完成的 FLOW／semaglutide CKD 證據綜述，轉成可直接準備學術演講的素材。除了 25 張 storyboard 與逐張講稿，現在另含 **6 組繁中與 6 組英文重繪圖（每組 SVG＋3840×2160 PNG）**、**5 張逐圖核實為 CC BY 4.0 的原始英文出版圖**，以及 **20 張僅供本機來源核對的 PDF 頁面／裁圖**。建議主版本為 **25 張、20–25 分鐘**；若只有 12–15 分鐘，可保留 Slide 1、3–7、9、11、14–16、19、21、23、25。
+這個資料夾把已完成的 FLOW／semaglutide CKD 證據綜述，轉成可直接準備學術演講的素材。除了 25 張 storyboard 與逐張講稿，現在另含 **6 組繁中與 6 組英文重繪圖（每組 SVG＋3840×2160 PNG）**、**5 張逐圖核實為 CC BY 4.0 的原始英文出版圖**、**8 張可插拔的 post-FLOW 腎臟科增補投影片**，以及 **20 張僅供本機來源核對的 PDF 頁面／裁圖**。建議主版本為 **25 張、20–25 分鐘**；若只有 12–15 分鐘，可保留 Slide 1、3–7、9、11、14–16、19、21、23、25。
 
-投影片中的高風險論述已由不同臨床、方法學與演講角色完成真實跨會話校讀。五項基礎證據裁決見 [`../19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md`](../19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md)；進一步針對腎臟科聽眾完成的六題辯論、20／40 分鐘編排、講稿與 Q&A 見 [`../20_NEPHROLOGIST_TALK_DEBATE_SYNTHESIS_ZH_TW.md`](../20_NEPHROLOGIST_TALK_DEBATE_SYNTHESIS_ZH_TW.md)。
+投影片中的高風險論述已由不同臨床、方法學與演講角色完成真實跨會話校讀。五項基礎證據裁決見 [`../19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md`](../19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md)；進一步針對腎臟科聽眾完成的六題辯論、20／40 分鐘編排、講稿與 Q&A 見 [`../20_NEPHROLOGIST_TALK_DEBATE_SYNTHESIS_ZH_TW.md`](../20_NEPHROLOGIST_TALK_DEBATE_SYNTHESIS_ZH_TW.md)。FLOW 發表後的引文、正式評論、作者回覆與新研究深讀見 [`../21_POST_FLOW_CITATION_COMMENT_REPLY_REVIEW_ZH_TW.md`](../21_POST_FLOW_CITATION_COMMENT_REPLY_REVIEW_ZH_TW.md)，對應的講者模組見 [`POST_FLOW_NEPHROLOGIST_SPEAKER_ADDENDUM_ZH_TW.md`](./POST_FLOW_NEPHROLOGIST_SPEAKER_ADDENDUM_ZH_TW.md)。
 
 ## 交付內容
 
@@ -12,6 +12,7 @@
 - [`ENGLISH_ORIGINAL_VISUAL_GUIDE.md`](./ENGLISH_ORIGINAL_VISUAL_GUIDE.md)：英文原文忠實版；區分 source-locked wording、project redraw 與 project note，並附 20–30 秒英文 speaker cue。
 - `FIGURE_TABLE_SOURCE_MAP.md`：原論文 Table／Figure／頁碼到投影片用途的逐項對照。
 - `ARTICLE_REFERENCE_GUIDE.md`：五篇文章應放置的 reference 輔助與投影片跳轉。
+- [`POST_FLOW_NEPHROLOGIST_SPEAKER_ADDENDUM_ZH_TW.md`](./POST_FLOW_NEPHROLOGIST_SPEAKER_ADDENDUM_ZH_TW.md)：8 張可插拔的 post-FLOW 腎臟科模組；含原始英文 Table／Figure locator、內部截圖條件、公開重繪建議、逐張講稿與解讀禁區。
 - `PRIVATE_ASSET_MANIFEST.md`：本機截圖清單、SHA-256、授權界線與公開替代方案。
 - [`public_assets/redrawn/`](./public_assets/redrawn/)：6 組原創重繪圖，每組有 SVG 與 2× PNG；可由 repository root 的 [`scripts/generate_presentation_visuals.py`](../../../../scripts/generate_presentation_visuals.py) 重製。
 - [`public_assets/redrawn_en/`](./public_assets/redrawn_en/)：6 組英文原文忠實重繪圖；endpoint／axis／legend 採來源英文，計畫解讀另置於 `Project note`；可由 [`scripts/generate_presentation_visuals_en.py`](../../../../scripts/generate_presentation_visuals_en.py) 重製。
@@ -23,6 +24,8 @@
 1. **演講投影優先用重繪圖。** 可放大、可改字體，也能保留 endpoint 邊界與 CI。
 2. **原文截圖用於證據追溯。** 一張只聚焦一個 Table／Figure，旁邊加來源、頁碼與一句解讀；不把整頁密集表格當主要視覺。
 3. **公開 GitHub 不收受限制全文或截圖。** NEJM、ADA、AHA／ACC 等來源頁面只保留在 gitignored 本機 cache；公開版放 source map、官方連結與可重繪資料。CC BY 圖像也必須保留完整 attribution。
+
+2026-09-07 的 post-FLOW 私有研究快取另含 27 個 unique full-text sources、27 份 canonical Markdown、同一來源的 1 份 LlamaParse comparator（共 28 份 Markdown artifacts），以及 24 份有效 PDF。這些數量是本機流程事件清冊；來源檔係由未繞過 access control 的管道取得，但不表示每一項自動解析、TDM／ML 或第三方雲端處理均已獲授權。PDF、全文解析、private manifest、失敗下載回應與受限制 Table／Figure 截圖均不公開，也不因「可在內部演講閱讀」而取得解析、公開重製或錄影散布權。
 
 ## 統一頁腳格式
 
@@ -62,4 +65,4 @@ SELECT Figure 1 的 Kaplan–Meier 圖另見 [`public_assets/source_figures/SELE
 
 Mann 等人 FLOW SGLT2i 次族群的官方英文 Figures 1–3 也收在 [`public_assets/source_figures/`](./public_assets/source_figures/)；三檔皆為官方 PMC JPEG、未修改。Figure 2 的出版圖本身存在 231 對 213 的事件數差異，請保留原圖並在旁邊加獨立說明，或改用已核對數據的英文 V03 重繪圖。
 
-證據截止日為 2026-09-05；本資料包不構成個人化醫療建議。
+核心證據綜述截止日為 2026-09-05；post-FLOW PubMed 引文／評論／回覆盤點更新至 2026-09-07，該盤點屬動態檢索，不代表 01–16 全套核心綜述改以後一日期重新凍結。本資料包不構成個人化醫療建議。

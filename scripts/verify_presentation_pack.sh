@@ -10,6 +10,7 @@ required=(
   SPEAKER_NOTES_ZH_TW.md
   FIGURE_TABLE_SOURCE_MAP.md
   ARTICLE_REFERENCE_GUIDE.md
+  POST_FLOW_NEPHROLOGIST_SPEAKER_ADDENDUM_ZH_TW.md
   VISUAL_ASSET_CATALOG_ZH_TW.md
   ENGLISH_ORIGINAL_VISUAL_GUIDE.md
   VISUAL_RIGHTS_GUIDE.md
@@ -58,6 +59,23 @@ failed=0
 for file in "${required[@]}"; do
   if [[ ! -s "$pack/$file" ]]; then
     echo "PRESENTATION_MISSING_OR_EMPTY $file" >&2
+    failed=1
+  fi
+done
+
+addendum="$pack/POST_FLOW_NEPHROLOGIST_SPEAKER_ADDENDUM_ZH_TW.md"
+linked_assets=(
+  public_assets/redrawn_en/03_flow_sglt2_subgroup_forest_en@2x.png
+  public_assets/redrawn_en/04_flow_mra_subgroup_forest_en@2x.png
+)
+for asset in "${linked_assets[@]}"; do
+  if ! grep -Fq "./$asset" "$addendum"; then
+    echo "PRESENTATION_ADDENDUM_ASSET_LINK_MISSING $asset" >&2
+    failed=1
+  fi
+  repo_path="research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/$asset"
+  if ! git -C "$project_root" ls-files --error-unmatch -- "$repo_path" >/dev/null 2>&1; then
+    echo "PRESENTATION_ADDENDUM_ASSET_NOT_TRACKED $asset" >&2
     failed=1
   fi
 done

@@ -316,7 +316,7 @@
 - **投影片視覺：** 上半部自製時間線，下半部兩欄問題清單。內分泌欄聚焦血糖、體重與 ASCVD，腎臟欄聚焦終點是否含 CV death、腎衰竭組成、容量與營養。
 - **一句圖說：** 指引時序解釋 FLOW 前後定位差異，雙專科則用不同問題共同校正同一份證據。
 - **30 秒口述：** KDIGO 2022 與 2024 都早於 FLOW 完整納入。ADA 2026 已把具證據效益的 GLP-1RA 放入 CKD 進展與 CV 風險建議，同時保留 SGLT2i 的基礎地位。CKM 2026 的「或」不能讀成等效或頭對頭排序，KDIGO 2026 截止日仍是草案。
-- **投影片頁腳短引：** KDIGO 2022 Figure 23/Rec 4.2.1；ADA Standards 2026, 11.7a–b and 9.10–9.11；2026 CKM guideline official AHA summary；KDIGO 2026 public-review status。
+- **投影片頁腳短引：** KDIGO 2022 Figure 23/Rec 4.2.1；ADA Standards 2026, 11.7a–b, 11.11b, and 9.10–9.11；2026 CKM guideline official AHA summary；KDIGO 2026 public-review status。
 - **授權／公開限制：** 只短引官方建議與自製時間線。CKM 快取稿有 AHA 再利用限制且解析 QA 不完整，不重製原圖、表或長段文字。
 
 ---

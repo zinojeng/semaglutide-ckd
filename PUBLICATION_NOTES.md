@@ -1,13 +1,14 @@
 # Public release notes
 
-**Evidence cutoff:** 2026-09-05<br>
+**Core evidence-synthesis cutoff:** 2026-09-05<br>
+**Dynamic PubMed citation/comment/reply inventory cutoff:** 2026-09-07<br>
 **Release purpose:** academic research, teaching, journal-club discussion, and preparation of source-grounded presentations.
 
 ## What the public snapshot contains
 
-- The reconciled evidence chapters `01`–`16`, the public-safe Wave 4 cross-session peer-review addendum `19`, the nephrologist-talk six-topic cross-session debate synthesis `20`, source inventory, and structured source ledger.
+- The reconciled evidence chapters `01`–`16`, the public-safe Wave 4 cross-session peer-review addendum `19`, the nephrologist-talk six-topic cross-session debate synthesis `20`, the post-FLOW citation/comment/reply deep review `21`, source inventory, and structured source ledger.
 - A five-part Traditional Chinese clinical series.
-- A Traditional Chinese presentation evidence pack: 25-slide storyboard, dual-specialty speaker notes, exact Table/Figure/page map, article reference guide, editable chart-data CSV files, visual-rights guide, and a visual catalog with captions and speaking cues.
+- A Traditional Chinese presentation evidence pack: 25-slide storyboard, dual-specialty speaker notes, exact Table/Figure/page map, article reference guide, editable chart-data CSV files, visual-rights guide, a visual catalog with captions and speaking cues, and an eight-slide post-FLOW nephrologist speaker addendum.
 - Six Traditional Chinese and six English newly redrawn, reproducible slide graphics, each supplied as SVG and 3840×2160 PNG. They are newly designed from verified numerical facts and do not reproduce publisher figure or table layouts. In the English set, source wording is locked inside data panels and project interpretation is explicitly separated.
 - Five source figures whose CC BY 4.0 status and attribution were independently checked: an unmodified Mahaffey Figure 2, a crop-only SELECT Figure 1, and three unmodified official PMC figures from the FLOW baseline-SGLT2i analysis. Their attribution files record the work, DOI, PMCID, license, checksum, and modification status.
 - Acquisition and rights-policy documentation, plus a high-level cross-session workflow description and de-identified clinical adjudication record.
@@ -21,6 +22,8 @@
 - Original figures or tables for which public redistribution or adaptation was not verified.
 
 The excluded source-page screenshots remain local research aids only. Public slides should use the supplied editable CSV data or newly redrawn visuals unless the visual-rights guide explicitly authorizes reuse. The private manifest records 20 local source-page assets, but neither those images nor their cache directory are part of the public snapshot.
+
+The separate 2026-09-07 post-FLOW research cache contains 27 unique full-text sources, 27 canonical Markdown conversions plus one alternate LlamaParse comparator (28 Markdown artifacts total), and 24 valid PDFs. These counts inventory local workflow events, not redistributable repository contents or a claim that every conversion was rights-authorized. A source may be lawfully readable by an authorized human for an internal academic presentation while automated parsing, TDM/ML, cloud transfer, reproduction, or recording remains restricted or unresolved. All PDFs, source JATS/XML or HTML, full-text Markdown, private artifact manifests, failed retrieval responses, and rights-restricted table/figure captures remain excluded.
 
 ## Rights and interpretation
 
@@ -38,7 +41,7 @@ Before release, the curated snapshot is checked for:
 
 - absence of tracked PDF, XML, full-text, cache, private screenshot, and secret-like files;
 - synchronized master-article SHA-256 references;
-- presentation file completeness, FLOW Table/Figure/page locators, and public-image checksum;
+- presentation file completeness, including the post-FLOW speaker addendum, FLOW Table/Figure/page locators, and public-image checksum;
 - CSV row-width consistency and Git whitespace errors.
 
 The release gate is executable with `./scripts/verify_public_snapshot.sh --strict-curated` from the curated public branch.

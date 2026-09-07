@@ -27,7 +27,7 @@ This project uses the already configured and health-checked user-scope MCPs:
 - `paper-search` for Crossref, PubMed, Europe PMC, and related metadata/search routes;
 - `google-scholar` as supplemental discovery;
 - `openevidence` only for orientation, never as the primary evidence source;
-- `llamaparse` for authorized PDF-to-Markdown conversion.
+- `llamaparse` only when both the source-access basis and third-party automated-processing basis have been documented; lawful human reading access alone is insufficient.
 
 Primary identifiers and outcomes are independently checked against publisher, PubMed/PMC, trial registry, guideline society, or regulator sources. No Sci-Hub or access-control circumvention is permitted.
 

@@ -115,8 +115,8 @@ claude --bg --resume "<FULL_SESSION_UUID>" \
 任何 PDF 上傳到 LlamaParse 或其他 cloud parser 前，都必須完成：
 
 1. 核對 DOI、題名、版本與正式來源，排除錯檔。
-2. 記錄取得路徑、access status、license／授權依據與檢查日期。
-3. 僅允許 open-access、publisher-authorized、institution/user-authorized 或其他明確合法路徑；restricted、條款不明或僅因可登入取得者，一律停止雲端上傳並改採本機閱讀或 metadata-only。
+2. 分別記錄 `access_basis`、`processing_basis`、`redistribution_basis`、來源條款與檢查日期；三者不得互相替代。
+3. 僅在逐篇授權、契約、明示許可或已記錄的適用法定例外允許第三方 automated processing 時才可雲端上傳。Open access、institution/user-authorized access、PMC 可讀、可登入或 internal academic purpose 都不能單獨通過 cloud-upload gate；未釐清者改採已授權的人工作讀、metadata／abstract 與一般短篇學術筆記，並標記 `manual_rights_review_required`。
 4. 解析產物保存在 ignored cache；除非有再散布權，不把全文或完整解析內容 commit 到公開 repo。
 5. 完成頁碼／表格／圖表 locator QA，並把 parser、輸入雜湊、來源與授權狀態寫入 acquisition ledger。
 

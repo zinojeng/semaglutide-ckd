@@ -9,7 +9,7 @@ Build the evidence review defined in `Semaglutide ckd and flow evidence prompt.m
 1. Start with the local prompt and local fulltexts. Use primary publications, supplements, protocols, trial registries, official guidelines, and official regulatory labels before reviews or commentary.
 2. For a current or missing source, search the web and verify the bibliographic record and result against a primary or official source. Do not invent inaccessible results.
    - Prefer the configured `research_hub`, `paper-search`, and `google-scholar` MCPs for discovery and lawful full-text routes. `openevidence` may orient a clinical question but never substitutes for the primary source.
-   - Use `llamaparse` only on a PDF already obtained through an open-access, publisher-authorized, institutional/user-authorized, or otherwise lawful route. Record the route and license/access status.
+   - Use `llamaparse` only when both the source-access basis and the third-party cloud-processing basis have been established separately. Open access, subscription/institutional access, or an internal academic purpose alone is not a cloud-upload authorization. Record access, processing, and redistribution status independently.
    - Do not use Sci-Hub or another circumvention source. Do not claim that access implies permission to republish.
 3. Every quantitative claim must carry a locator: source ID plus table, figure, supplement section, page, or exact local line range when available.
 4. Keep endpoint wording exact. Never call FLOW's CV-death-inclusive primary composite a purely kidney endpoint. Separate the five-component primary outcome from kidney-specific outcomes.
@@ -26,7 +26,7 @@ Build the evidence review defined in `Semaglutide ckd and flow evidence prompt.m
 - Keep downloaded PDFs and full-text parses under the ignored `sources/retrieved/cache/`; the public repository receives only metadata, provenance, short evidence notes, and links unless redistribution rights are explicit.
 - During Wave 1, write only to your assigned file in `research/semaglutide_ckd_flow/2026-09-05/lanes/` and, if needed, add retrieved-source notes under `sources/retrieved/` using a role-prefixed filename.
 - During Wave 2, read the named peer memo and write only to your assigned file in `cross_reviews/`. Address the peer's strongest and weakest claim, unresolved numerical conflicts, and exact correction wording.
-- Only the director/reconciler may write required numbered deliverables `01_...` through `15_...` and `SOURCE_LEDGER.csv`.
+- Only the director/reconciler may write required numbered deliverables `01_...` through `15_...`, post-review extension deliverables `19_...` through `21_...`, their presentation addenda, and `SOURCE_LEDGER.csv`. Parallel specialty/methodology sessions may propose evidence or review text, but the named director/reconciler owns final integration of those files.
 - `16_FINAL_SYNTHESIS_ZH_TW.md` may be written only after `15_CLAIM_EVIDENCE_MAP.md` and the explicit “What we know / What we think / What we still do not know” gate exist.
 - `17_RED_TEAM_QA.md` belongs only to the independent Wave 5 red-team reviewer. After the owning director acknowledges that report, the root coordinator may write `18_RED_TEAM_CLOSURE.md` solely to record verified dispositions and the separate clinical, process, and publication gates; it must not introduce or re-adjudicate clinical claims.
 - Do not commit, push, delete, rename, or rewrite other sessions' files.

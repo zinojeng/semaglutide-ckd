@@ -4,6 +4,8 @@
 
 Run independent Claude Code sessions as a structured clinical evidence team. The sessions communicate through durable lane memos, adversarial cross-reviews, explicit resumed-session handoffs, and receipt-verified live messages. This preserves provenance and makes disagreements visible before synthesis.
 
+The core `01`–`16` synthesis remains frozen at the 2026-09-05 evidence cutoff. A later extension inventories dynamic PubMed citations, comments, replies, and post-FLOW evidence through 2026-09-07; its later search date does not silently change the cutoff of the core synthesis.
+
 ## Roles
 
 | Session | Role | Wave 1 artifact | Main responsibility |
@@ -35,6 +37,28 @@ Run independent Claude Code sessions as a structured clinical evidence team. The
 6. **Wave 5 – red team:** a separate session checks every headline number and high-stakes inference. The root coordinator integrates only independently verified corrections; the owning director then receives the report and repair set through a resumed-session prompt and records the final adjudication without retroactively claiming the coordinator's edits.
 7. **Wave 6 – closure and deterministic QA:** after the owning director acknowledges Wave 5, the root coordinator records the finding dispositions and split clinical/process/publication gates in `18_RED_TEAM_CLOSURE.md`; then check required files, links/DOIs, CSV schema, forbidden overclaims, empty placeholders, and Git diff, followed by an independent Claude worktree review.
 8. **Wave 4 Run 2 – remedial live peer dialogue and reopened synthesis:** after the first Wave 4 contact attempt was proven not delivered, this project launched permission-compatible nephrology, endocrinology, methodology, and director sessions on the same frozen evidence base. Two-way delivery was first proven with named preflight messages and replies. Each disputed claim then completed a question → challenge → response/counterpoint → method check → rejoinder → closed chain. The coordinator integrated the corrections, reran all gates, and published the clinically relevant, public-safe adjudications in `19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md`; the failed first attempt remains in provenance rather than being rewritten. Future runs should perform this receipt-verified dialogue before the red-team gate.
+9. **Post-FLOW citation/response extension:** source-librarian, nephrology, methodology, CKM, and director roles independently examine formal comments, author replies, later analyses, measured-GFR studies, citation overlap, and clinical translation. Six disputes are routed through the same challenge/response/method-check/rejoinder protocol. Public conclusions are synthesized in `21_POST_FLOW_CITATION_COMMENT_REPLY_REVIEW_ZH_TW.md`; an eight-slide, nephrologist-facing application layer is provided in `presentation_zh_tw/POST_FLOW_NEPHROLOGIST_SPEAKER_ADDENDUM_ZH_TW.md`. A role chain is reported as closed only after the director verifies the complete receipt-linked sequence against the source record.
+
+### Post-FLOW cross-session 實際結果（2026-09-07）
+
+四個專家角色均完成 PREFLIGHT／ACK，六個正式 CHALLENGE 也都有送達紀錄；但只有 MRA／finerenone 爭點完成全部 `RESPONSE → METHOD_CHECK → CLINICAL_TRANSLATION → REJOINDER` 並由 director 關閉。最終裁決為 **1 CLOSED、4 PARTIALLY RESOLVED、1 OPEN**：
+
+| Issue | Disposition | Closure boundary |
+|---|---|---|
+| 1. NEJM criticism/reply | OPEN | 正文未取得；只確認書目關係，不重建具體主張。 |
+| 2. Kidney protection vs measurement artifact | PARTIALLY RESOLVED | FLOW marker data 與 mGFR studies 可核實；KI correspondence 原文仍不可讀。 |
+| 3. MRA/finerenone additivity | CLOSED | 三角色完成全文核對與完整往返；不宣稱 synergy，baseline finerenone 為 0/257。 |
+| 4. Baseline SGLT2i/modern combinations | PARTIALLY RESOLVED | subgroup 與一項 citation overclaim 已重核；完整對話鏈未完成。 |
+| 5. Advanced CKD/dialysis/safety | PARTIALLY RESOLVED | 收案外族群的結構性限制已確認；部分評論正文不可讀。 |
+| 6. Citation echo/meta-analysis/fourth-pillar claims | PARTIALLY RESOLVED | 一項 overclaim 已由兩角色確認；另兩項候選因角色端工具存取限制未裁決。 |
+
+這些狀態只描述 AI 角色對話的完成度，不改變來源本身的證據階級。Raw session identifiers、逐字訊息與 private logs 留在非公開稽核層；公開版不得用角色共識取代 primary-source verification。
+
+## Post-FLOW acquisition and publication boundary
+
+The 2026-09-07 extension maintains a Git-ignored private cache of 27 unique full-text sources, 27 canonical Markdown conversions plus one alternate LlamaParse comparator (28 Markdown artifacts total), and 24 valid PDFs. Source access did not bypass access controls, but access, automated processing, cloud transfer, and republication are separate rights determinations. Rights-restricted or uncleared conversions remain disclosed processing incidents and are excluded from AI/RAG use; private storage does not cure missing authorization. PDFs, source JATS/XML or HTML, full-text derivatives, private manifests, failed retrieval responses, rights-restricted table/figure captures, credentials, and raw session logs are never added to the public snapshot.
+
+The public extension therefore contains source identities, short paraphrases, verified numerical facts, Table/Figure locators, rights boundaries, and independently designed redraw instructions. Cross-session agreement is an audit mechanism, not a new unit of medical evidence; claims remain limited to the strongest source actually checked.
 
 ## Cross-session message protocol
 
