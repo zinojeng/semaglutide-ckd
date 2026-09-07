@@ -5,7 +5,7 @@
 
 ## What the public snapshot contains
 
-- The reconciled evidence chapters `01`–`16`, the public-safe Wave 4 cross-session peer-review addendum `19`, source inventory, and structured source ledger.
+- The reconciled evidence chapters `01`–`16`, the public-safe Wave 4 cross-session peer-review addendum `19`, the nephrologist-talk six-topic cross-session debate synthesis `20`, source inventory, and structured source ledger.
 - A five-part Traditional Chinese clinical series.
 - A Traditional Chinese presentation evidence pack: 25-slide storyboard, dual-specialty speaker notes, exact Table/Figure/page map, article reference guide, editable chart-data CSV files, visual-rights guide, and a visual catalog with captions and speaking cues.
 - Six Traditional Chinese and six English newly redrawn, reproducible slide graphics, each supplied as SVG and 3840×2160 PNG. They are newly designed from verified numerical facts and do not reproduce publisher figure or table layouts. In the English set, source wording is locked inside data panels and project interpretation is explicitly separated.

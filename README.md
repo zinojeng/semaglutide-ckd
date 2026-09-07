@@ -4,6 +4,7 @@ This repository contains a source-grounded, multi-session clinical evidence revi
 
 ## 主要產出（繁體中文）
 
+- **[腎臟科演講 Cross Sessions 辯論整合](./research/semaglutide_ckd_flow/2026-09-05/20_NEPHROLOGIST_TALK_DEBATE_SYNTHESIS_ZH_TW.md)**：五個獨立 AI 角色針對六個高爭議主題完成交叉詰問，整理成 20／40 分鐘架構、逐題講稿、視覺建議與尖銳 Q&A。
 - **[公開繁中同儕校讀增補](./research/semaglutide_ckd_flow/2026-09-05/19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md)**：腎臟科、內分泌科與方法學角色完成的五項真實跨會話裁決。
 - **[更新後完整繁中總論](./research/semaglutide_ckd_flow/2026-09-05/16_FINAL_SYNTHESIS_ZH_TW.md)**：FLOW、SELECT、SOUL、組合治療、安全性、機轉與雙專科觀點的整合文章。
 - **[五篇繁中系列文章](./research/semaglutide_ckd_flow/2026-09-05/articles_zh_tw/README.md)**：可分篇閱讀或用於教學與演講準備。

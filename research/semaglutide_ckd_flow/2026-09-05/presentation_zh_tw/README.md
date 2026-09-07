@@ -2,7 +2,7 @@
 
 這個資料夾把已完成的 FLOW／semaglutide CKD 證據綜述，轉成可直接準備學術演講的素材。除了 25 張 storyboard 與逐張講稿，現在另含 **6 組繁中與 6 組英文重繪圖（每組 SVG＋3840×2160 PNG）**、**5 張逐圖核實為 CC BY 4.0 的原始英文出版圖**，以及 **20 張僅供本機來源核對的 PDF 頁面／裁圖**。建議主版本為 **25 張、20–25 分鐘**；若只有 12–15 分鐘，可保留 Slide 1、3–7、9、11、14–16、19、21、23、25。
 
-投影片中的五個高風險論述（終點、疊加治療、晚期 CKD／透析、機轉、表現型）已由腎臟科、內分泌科與方法學角色完成真實跨會話校讀；公開裁決與可直接使用的繁中措辭見 [`../19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md`](../19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md)。
+投影片中的高風險論述已由不同臨床、方法學與演講角色完成真實跨會話校讀。五項基礎證據裁決見 [`../19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md`](../19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md)；進一步針對腎臟科聽眾完成的六題辯論、20／40 分鐘編排、講稿與 Q&A 見 [`../20_NEPHROLOGIST_TALK_DEBATE_SYNTHESIS_ZH_TW.md`](../20_NEPHROLOGIST_TALK_DEBATE_SYNTHESIS_ZH_TW.md)。
 
 ## 交付內容
 
