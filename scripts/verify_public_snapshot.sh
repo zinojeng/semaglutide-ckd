@@ -28,10 +28,13 @@ required=(
   research/semaglutide_ckd_flow/2026-09-05/19_WAVE4_PEER_REVIEW_ADDENDUM_ZH_TW.md
   research/semaglutide_ckd_flow/2026-09-05/20_NEPHROLOGIST_TALK_DEBATE_SYNTHESIS_ZH_TW.md
   research/semaglutide_ckd_flow/2026-09-05/21_POST_FLOW_CITATION_COMMENT_REPLY_REVIEW_ZH_TW.md
+  research/semaglutide_ckd_flow/2026-09-05/22_FINERENONE_VS_SEMAGLUTIDE_AFTER_RASI_SGLT2I_ZH_TW.md
+  research/semaglutide_ckd_flow/2026-09-05/23_FLOW_CENTERED_REVIEW_PUBLICATION_AGENDA_ZH_TW.md
   research/semaglutide_ckd_flow/2026-09-05/SOURCE_LEDGER.csv
   research/semaglutide_ckd_flow/2026-09-05/sources/ACADEMIC_RESEARCH_AGENTS_AUDIT.md
   research/semaglutide_ckd_flow/2026-09-05/sources/ACQUISITION_POLICY.md
   research/semaglutide_ckd_flow/2026-09-05/sources/LITERATURE_INGEST_REPORT.md
+  research/semaglutide_ckd_flow/2026-09-05/sources/NEW_FULLTEXT_BOUNDARY_AUDIT_2026-09-09.md
   research/semaglutide_ckd_flow/2026-09-05/sources/SOURCE_ACQUISITION_LOG.csv
   research/semaglutide_ckd_flow/2026-09-05/articles_zh_tw/README.md
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/README.md
@@ -74,6 +77,34 @@ if git ls-files -s | awk '$1 == 120000 {print $4}' | grep -q .; then
   failed=1
 fi
 
+# Top-level source documentation is metadata-only and explicitly allowlisted.
+# This prevents a rights-restricted raw article Markdown from being staged next
+# to an approved audit memo and bypassing the broader sources/retrieved ban.
+source_metadata_dir="research/semaglutide_ckd_flow/2026-09-05/sources"
+allowed_source_metadata=(
+  "$source_metadata_dir/ACADEMIC_RESEARCH_AGENTS_AUDIT.md"
+  "$source_metadata_dir/ACQUISITION_POLICY.md"
+  "$source_metadata_dir/LITERATURE_INGEST_REPORT.md"
+  "$source_metadata_dir/NEW_FULLTEXT_BOUNDARY_AUDIT_2026-09-09.md"
+  "$source_metadata_dir/SOURCE_ACQUISITION_LOG.csv"
+)
+while IFS= read -r -d '' source_path; do
+  if [[ "$(dirname "$source_path")" != "$source_metadata_dir" ]]; then
+    continue
+  fi
+  approved=0
+  for allowed_path in "${allowed_source_metadata[@]}"; do
+    if [[ "$source_path" == "$allowed_path" ]]; then
+      approved=1
+      break
+    fi
+  done
+  if [[ "$approved" -ne 1 ]]; then
+    echo "PUBLIC_SNAPSHOT_UNAPPROVED_SOURCE_METADATA $source_path" >&2
+    failed=1
+  fi
+done < <(git ls-files -z -- "$source_metadata_dir")
+
 if git grep -nI -E '/Users/|llx-[A-Za-z0-9_-]{10,}|sk-[A-Za-z0-9_-]{12,}|gh[pousr]_[A-Za-z0-9_]{20,}|AKIA[0-9A-Z]{16}|-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----' -- . ':(exclude)scripts/verify_public_snapshot.sh'; then
   echo "PUBLIC_SNAPSHOT_PRIVATE_PATH_OR_SECRET_PATTERN" >&2
   failed=1
@@ -86,6 +117,9 @@ rights_docs=(
   research/semaglutide_ckd_flow/2026-09-05/sources/ACQUISITION_POLICY.md
   "$rights_report"
   research/semaglutide_ckd_flow/2026-09-05/21_POST_FLOW_CITATION_COMMENT_REPLY_REVIEW_ZH_TW.md
+  research/semaglutide_ckd_flow/2026-09-05/22_FINERENONE_VS_SEMAGLUTIDE_AFTER_RASI_SGLT2I_ZH_TW.md
+  research/semaglutide_ckd_flow/2026-09-05/23_FLOW_CENTERED_REVIEW_PUBLICATION_AGENDA_ZH_TW.md
+  research/semaglutide_ckd_flow/2026-09-05/sources/NEW_FULLTEXT_BOUNDARY_AUDIT_2026-09-09.md
   research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/README.md
 )
 legacy_rights_claims=(
@@ -113,6 +147,17 @@ if ! grep -Fq '不等於自動解析、TDM／ML 或第三方雲端處理的授�
   echo "PUBLIC_SNAPSHOT_ZH_TW_ACCESS_PROCESSING_BOUNDARY_MISSING" >&2
   failed=1
 fi
+
+new_fulltext_audit="research/semaglutide_ckd_flow/2026-09-05/sources/NEW_FULLTEXT_BOUNDARY_AUDIT_2026-09-09.md"
+for marker in \
+  'EXCLUDE_WRONG_ARTICLE' \
+  '未納入既有 27-source cache' \
+  '不可整檔直接進入 RAG'; do
+  if ! grep -Fq "$marker" "$new_fulltext_audit"; then
+    echo "PUBLIC_SNAPSHOT_NEW_FULLTEXT_AUDIT_MARKER_MISSING $marker" >&2
+    failed=1
+  fi
+done
 
 if ! python3 - "$rights_report" <<'PY'
 import sys

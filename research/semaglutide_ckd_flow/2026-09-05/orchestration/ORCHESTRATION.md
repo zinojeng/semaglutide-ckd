@@ -4,7 +4,7 @@
 
 Run independent Claude Code sessions as a structured clinical evidence team. The sessions communicate through durable lane memos, adversarial cross-reviews, explicit resumed-session handoffs, and receipt-verified live messages. This preserves provenance and makes disagreements visible before synthesis.
 
-The core `01`–`16` synthesis remains frozen at the 2026-09-05 evidence cutoff. A later extension inventories dynamic PubMed citations, comments, replies, and post-FLOW evidence through 2026-09-07; its later search date does not silently change the cutoff of the core synthesis.
+The core `01`–`16` synthesis remains frozen at the 2026-09-05 evidence cutoff. A later extension inventories dynamic PubMed citations, comments, replies, and post-FLOW evidence through 2026-09-07; a second extension maps review-publication opportunities through 2026-09-09. Neither later search date silently changes the cutoff of the core synthesis.
 
 ## Roles
 
@@ -53,6 +53,23 @@ The core `01`–`16` synthesis remains frozen at the 2026-09-05 evidence cutoff.
 | 6. Citation echo/meta-analysis/fourth-pillar claims | PARTIALLY RESOLVED | 一項 overclaim 已由兩角色確認；另兩項候選因角色端工具存取限制未裁決。 |
 
 這些狀態只描述 AI 角色對話的完成度，不改變來源本身的證據階級。Raw session identifiers、逐字訊息與 private logs 留在非公開稽核層；公開版不得用角色共識取代 primary-source verification。
+
+### FLOW-centered review publication extension（2026-09-09）
+
+本輪不是規劃新 RCT，而是替一篇以 FLOW 為主軸、面向腎臟科讀者的 review article 找出仍可投稿的問題。Coordinator 重新啟動原有 nephrology、endocrinology 與 methodology 三個持久角色，而非建立同名假會話。流程依序完成：各角色獨立選題、將臨床角色的主張逐字送給另一角色挑戰、methodology session 對實際新全文區段作 article-boundary 與 claim-level adjudication，再把兩個必答問題送回原臨床角色取得明確同意／不同意與理由。
+
+三方最後收斂為 **two-gate critical review**：
+
+1. **Gate 1 — 單藥證據鏈的內部效度：** filtration-marker validity（creatinine、cystatin C、mGFR、BSA）→ eGFR slope／UACR surrogate → hard outcomes／statistical hierarchy。
+2. **Gate 2 — 合併療法的加成效度：** 單藥 trial、背景治療 subgroup、短期 biomarker combination 與 factorial／direct randomized evidence 必須分級；Gate 1 已通過不能自動讓 Gate 2 通過。
+
+實際對話造成三項具體修正：
+
+- 把 FLOW 未公開的 cystatin-C 結果標成 `data on file`／未閉環缺口；BSA 校正前後的 1.16 與 1.04 只回答 BSA 分母敏感度，不能替代 lean-mass／creatinine-generation 問題。
+- 把「null interaction」「方向一致」「機轉互補」「add-on biomarker effect」與「additive／synergistic hard-outcome effect」拆成不同層級。
+- 將 finerenone versus semaglutide 保留為臨床 application section；主稿的新穎性改由 endpoint／measurement validity 與 combination-inference validity 的正交矩陣承擔。
+
+2026-09-07 表格中的 `OPEN`／`PARTIALLY RESOLVED` 是當時對話與取文完成度的歷史快照。使用者後續提供的 NEJM correspondence、Kidney International letter–reply 與一篇 review 已於本輪作邊界稽核；其中一檔實為完全無關的錯誤文章。受限制原文仍只留在本機，公開版只發布短摘要、數值、stable identifiers、方法學判定與 rights boundary。完整投稿藍圖見 `23_FLOW_CENTERED_REVIEW_PUBLICATION_AGENDA_ZH_TW.md`，逐檔 QA 見 `sources/NEW_FULLTEXT_BOUNDARY_AUDIT_2026-09-09.md`。
 
 ## Post-FLOW acquisition and publication boundary
 

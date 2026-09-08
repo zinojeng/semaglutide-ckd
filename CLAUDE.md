@@ -2,7 +2,7 @@
 
 ## Mission
 
-Build the evidence review defined in `Semaglutide ckd and flow evidence prompt.md`. The evidence cutoff is 2026-09-05. Final prose is primarily Traditional Chinese (zh-TW), retaining standard English clinical terms.
+Build the evidence review defined in `Semaglutide ckd and flow evidence prompt.md`. The base evidence package is frozen at 2026-09-05; post-review extensions must state their own dynamic search cutoff (the newest extension is 2026-09-09) rather than silently inheriting the base date. Final prose is primarily Traditional Chinese (zh-TW), retaining standard English clinical terms.
 
 ## Non-negotiable evidence rules
 
@@ -24,9 +24,10 @@ Build the evidence review defined in `Semaglutide ckd and flow evidence prompt.m
 
 - Never modify `fulltext/` or the master prompt.
 - Keep downloaded PDFs and full-text parses under the ignored `sources/retrieved/cache/`; the public repository receives only metadata, provenance, short evidence notes, and links unless redistribution rights are explicit.
+- The director/reconciler may publish a metadata-only source QA memo directly under `research/semaglutide_ckd_flow/2026-09-05/sources/` when the release contract explicitly requires it. Such a memo may contain identities, hashes, article boundaries, short paraphrases, and rights decisions, but never source text, restricted figures/tables, private paths, credentials, or raw session records. Parallel lane sessions must still use the role-prefixed `sources/retrieved/` path below.
 - During Wave 1, write only to your assigned file in `research/semaglutide_ckd_flow/2026-09-05/lanes/` and, if needed, add retrieved-source notes under `sources/retrieved/` using a role-prefixed filename.
 - During Wave 2, read the named peer memo and write only to your assigned file in `cross_reviews/`. Address the peer's strongest and weakest claim, unresolved numerical conflicts, and exact correction wording.
-- Only the director/reconciler may write required numbered deliverables `01_...` through `15_...`, post-review extension deliverables `19_...` through `21_...`, their presentation addenda, and `SOURCE_LEDGER.csv`. Parallel specialty/methodology sessions may propose evidence or review text, but the named director/reconciler owns final integration of those files.
+- Only the director/reconciler may write required numbered deliverables `01_...` through `15_...`, post-review extension deliverables `19_...` through `23_...`, their presentation addenda, and `SOURCE_LEDGER.csv`. Parallel specialty/methodology sessions may propose evidence or review text, but the named director/reconciler owns final integration of those files.
 - `16_FINAL_SYNTHESIS_ZH_TW.md` may be written only after `15_CLAIM_EVIDENCE_MAP.md` and the explicit “What we know / What we think / What we still do not know” gate exist.
 - `17_RED_TEAM_QA.md` belongs only to the independent Wave 5 red-team reviewer. After the owning director acknowledges that report, the root coordinator may write `18_RED_TEAM_CLOSURE.md` solely to record verified dispositions and the separate clinical, process, and publication gates; it must not introduce or re-adjudicate clinical claims.
 - Do not commit, push, delete, rename, or rewrite other sessions' files.

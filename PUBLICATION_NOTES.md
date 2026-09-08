@@ -2,11 +2,13 @@
 
 **Core evidence-synthesis cutoff:** 2026-09-05<br>
 **Dynamic PubMed citation/comment/reply inventory cutoff:** 2026-09-07<br>
+**FLOW-centered review-publication landscape cutoff:** 2026-09-09<br>
 **Release purpose:** academic research, teaching, journal-club discussion, and preparation of source-grounded presentations.
 
 ## What the public snapshot contains
 
-- The reconciled evidence chapters `01`–`16`, the public-safe Wave 4 cross-session peer-review addendum `19`, the nephrologist-talk six-topic cross-session debate synthesis `20`, the post-FLOW citation/comment/reply deep review `21`, source inventory, and structured source ledger.
+- The reconciled evidence chapters `01`–`16`, the public-safe Wave 4 cross-session peer-review addendum `19`, the nephrologist-talk six-topic cross-session debate synthesis `20`, the post-FLOW citation/comment/reply deep review `21`, the finerenone-versus-semaglutide clinical review `22`, the FLOW-centered review-publication agenda `23`, source inventory, and structured source ledger.
+- A public-safe boundary audit of five later user-supplied Markdown artifacts. It records one wrong-article retrieval, two issue-level composite files, parsing defects, stable identifiers, and reuse constraints without publishing the source text.
 - A five-part Traditional Chinese clinical series.
 - A Traditional Chinese presentation evidence pack: 25-slide storyboard, dual-specialty speaker notes, exact Table/Figure/page map, article reference guide, editable chart-data CSV files, visual-rights guide, a visual catalog with captions and speaking cues, and an eight-slide post-FLOW nephrologist speaker addendum.
 - Six Traditional Chinese and six English newly redrawn, reproducible slide graphics, each supplied as SVG and 3840×2160 PNG. They are newly designed from verified numerical facts and do not reproduce publisher figure or table layouts. In the English set, source wording is locked inside data panels and project interpretation is explicitly separated.
@@ -24,6 +26,8 @@
 The excluded source-page screenshots remain local research aids only. Public slides should use the supplied editable CSV data or newly redrawn visuals unless the visual-rights guide explicitly authorizes reuse. The private manifest records 20 local source-page assets, but neither those images nor their cache directory are part of the public snapshot.
 
 The separate 2026-09-07 post-FLOW research cache contains 27 unique full-text sources, 27 canonical Markdown conversions plus one alternate LlamaParse comparator (28 Markdown artifacts total), and 24 valid PDFs. These counts inventory local workflow events, not redistributable repository contents or a claim that every conversion was rights-authorized. A source may be lawfully readable by an authorized human for an internal academic presentation while automated parsing, TDM/ML, cloud transfer, reproduction, or recording remains restricted or unresolved. All PDFs, source JATS/XML or HTML, full-text Markdown, private artifact manifests, failed retrieval responses, and rights-restricted table/figure captures remain excluded.
+
+Five later user-supplied Markdown artifacts were audited separately on 2026-09-09 and are deliberately not added to those frozen cache counts. A one-time, isolated identity/boundary/claim QA event is disclosed in the audit; it is not a grant of processing rights or permission for reusable AI/RAG indexing. The raw files, issue-level mixed content, and publisher text remain local and untracked.
 
 ## Rights and interpretation
 

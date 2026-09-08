@@ -1,6 +1,6 @@
 # ARB＋SGLT2i 之後：Semaglutide 或 Finerenone？
 
-> 證據更新：2026-09-07。對象為臨床專業人員；本文是學術證據整理，不是個別病人的醫療建議。ACEi 與 ARB 以下合稱 RASi。請勿在 ACEi 與 ARB 之間做雙重 RAS blockade。
+> 證據更新：2026-09-09。對象為臨床專業人員；本文是學術證據整理，不是個別病人的醫療建議。ACEi 與 ARB 以下合稱 RASi。請勿在 ACEi 與 ARB 之間做雙重 RAS blockade。
 
 ## 先說結論
 
@@ -15,7 +15,7 @@
 
 2026 AHA/ACC/ADA/ASN CKM 指引給出目前最直接的表現型語句：在 RASi＋SGLT2i 後仍有 persistent albuminuria，可增加 finerenone 和／或具有實證的 GLP-1–based therapy；若另有 uncontrolled hyperglycemia、obesity 或 MASLD，可優先 semaglutide。這是 guideline-directed prioritization，仍不是 head-to-head superiority proof。[CKM-GUIDELINE-2026, §5.5.4, pp.40–43；DOI 10.1016/j.jacc.2026.03.056](https://www.jacc.org/doi/10.1016/j.jacc.2026.03.056)
 
-核對紀錄：2026-09-07 重新開啟 JACC accepted author manuscript，直接核對 §5.5.4 的 recommendations、Synopsis 與 recommendation-specific supportive text（pp.40–43）；公開文件只轉述決策邏輯，不重製受限制全文。
+核對紀錄：2026-09-07 重新開啟 JACC accepted author manuscript，直接核對 §5.5.4 的 recommendations、Synopsis 與 recommendation-specific supportive text（pp.40–43）；2026-09-09 納入 CONFIDENCE 依 baseline GLP-1RA 分層的預設分析。公開文件只轉述決策邏輯，不重製受限制全文。
 
 ## 研究結果到底差在哪裡？
 
@@ -81,6 +81,10 @@ FINEARTS-HF 定位：[NEJM 2024，DOI 10.1056/NEJMoa2407107](https://www.nejm.or
 CONFIDENCE 將已用 RASi、eGFR 30–90、UACR 100–5,000 mg/g 的 T2D＋CKD 病人隨機分為 finerenone、empagliflozin 或兩者同步起始。818 人隨機化，800 人進入 efficacy analysis；180 天時，合併組的 UACR 降幅較 finerenone 單藥多 29%（ratio 0.71，95% CI 0.61–0.82），較 empagliflozin 單藥多 32%（0.68，0.59–0.79），均 P<.001。[CONFIDENCE-2025, NEJM, DOI 10.1056/NEJMoa2410659](https://www.nejm.org/doi/full/10.1056/NEJMoa2410659)
 
 它直接支持的是 **180 天 albuminuria surrogate 與短期 safety**，因此促成 ADA 2026 Recommendation 11.9：特定 RASi 背景、UACR≥100、eGFR 30–90 的成人可考慮同步 SGLT2i＋finerenone。它沒有 semaglutide arm，也沒有檢定 kidney failure、MACE 或 mortality 的長期加成效益；不能用來宣稱 finerenone「打敗」semaglutide。
+
+一項預設分析再依 baseline GLP-1RA 使用分層：800 名 efficacy population 中，182 人（22.8%）在基線使用 GLP-1RA，其中 102 人使用 semaglutide。Day 180 的 UACR 相對 baseline 變化，在 baseline GLP-1RA users 為合併組 −51%（95% CI −59% 至 −40%）、finerenone −34%（−48% 至 −18%）、empagliflozin −36%（−48% 至 −21%）；在 nonusers 分別為 −56%（−62% 至 −50%）、−37%（−45% 至 −28%）與 −33%（−41% 至 −23%）。整段 UACR trajectory 的 treatment-by-baseline-GLP-1RA interaction P=.93，支持短期 UACR 反應未見可辨識的異質性。[CONFIDENCE-GLP1-SUBGROUP-2025, Table 1、Table 2、Figure 1；Diabetes Care, PMID 40968755／DOI 10.2337/dc25-1673](https://pubmed.ncbi.nlm.nih.gov/40968755/)
+
+這項分析仍不能回答「已用 semaglutide 後，再加 finerenone 或 empagliflozin 的因果增量是多少」：baseline GLP-1RA 不是隨機分派，類別與劑量不一，觀察期只有 180 天，而且 UACR 是 surrogate。P-interaction=.93 不是等效性、協同作用或四支柱 additivity 的證明，也不能建立 semaglutide 與 finerenone 的 sequencing 或 hard-outcome 排名。
 
 ## 2026 新資料：FIND-CKD 與 INFINITY
 

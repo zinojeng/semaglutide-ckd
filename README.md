@@ -1,9 +1,10 @@
 # Semaglutide in CKD: FLOW evidence project
 
-This repository contains a source-grounded, multi-session clinical evidence review of semaglutide in chronic kidney disease, centered on FLOW. The core evidence synthesis is frozen at 2026-09-05; a separate, dynamic PubMed citation/comment/reply inventory was updated through 2026-09-07.
+This repository contains a source-grounded, multi-session clinical evidence review of semaglutide in chronic kidney disease, centered on FLOW. The core evidence synthesis is frozen at 2026-09-05; a separate PubMed citation/comment/reply inventory was updated through 2026-09-07, and a review-publication landscape extension was updated through 2026-09-09. Later extensions do not silently change the core cutoff.
 
 ## 主要產出（繁體中文）
 
+- **[FLOW 為主軸的高影響力 Review 投稿藍圖](./research/semaglutide_ckd_flow/2026-09-05/23_FLOW_CENTERED_REVIEW_PUBLICATION_AGENDA_ZH_TW.md)**：把主稿收斂為 two-gate critical review，分開檢查 filtration-marker／endpoint validity 與 combination additivity，並提供題名、章節、原創圖表、文獻飽和度、替代題目與投稿路徑。
 - **[ARB＋SGLT2i 之後：Semaglutide 或 Finerenone？](./research/semaglutide_ckd_flow/2026-09-05/22_FINERENONE_VS_SEMAGLUTIDE_AFTER_RASI_SGLT2I_ZH_TW.md)**：整合 FLOW、FIDELIO／FIGARO／FIDELITY、CONFIDENCE、FIND-CKD／INFINITY 與 2026 ADA／CKM 指引，提供表現型導向的先後選擇、監測流程與 Claude Code 跨 session 裁決。
 - **[FLOW 後引文、評論、作者回覆與新證據深讀](./research/semaglutide_ckd_flow/2026-09-05/21_POST_FLOW_CITATION_COMMENT_REPLY_REVIEW_ZH_TW.md)**：區分 cited-in、正式 CommentIn 與實質回應鏈，並整理背景治療、HR 解讀、mGFR、MRA、SGLT2i、透析與 meta-analysis 的可說／不可說邊界。
 - **[腎臟科演講 Cross Sessions 辯論整合](./research/semaglutide_ckd_flow/2026-09-05/20_NEPHROLOGIST_TALK_DEBATE_SYNTHESIS_ZH_TW.md)**：五個獨立 AI 角色針對六個高爭議主題完成交叉詰問，整理成 20／40 分鐘架構、逐題講稿、視覺建議與尖銳 Q&A。
@@ -15,6 +16,7 @@ This repository contains a source-grounded, multi-session clinical evidence revi
 - **[繁中投影片視覺素材總目錄](./research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/VISUAL_ASSET_CATALOG_ZH_TW.md)**：6 組可直接投影的繁中原創重繪圖，以及逐圖 caption、講稿、source locator 與不可越過的解讀邊界。
 - **[英文原文／重繪視覺指南](./research/semaglutide_ckd_flow/2026-09-05/presentation_zh_tw/ENGLISH_ORIGINAL_VISUAL_GUIDE.md)**：6 組英文重繪圖、5 張可依法公開的原始英文 Figure，以及每張的來源原文、授權、圖說與 20–30 秒英文講稿。
 - **[結構化來源帳本](./research/semaglutide_ckd_flow/2026-09-05/SOURCE_LEDGER.csv)**：來源識別碼、研究設計、終點、結果、限制與證據分級。
+- **[2026-09-09 新全文邊界與錯檔稽核](./research/semaglutide_ckd_flow/2026-09-05/sources/NEW_FULLTEXT_BOUNDARY_AUDIT_2026-09-09.md)**：逐檔記錄文章身分、有效區段、解析錯位、錯誤抓取與公開／內部使用邊界；原始受限制檔案沒有進入 GitHub。
 
 ### 投影片視覺預覽
 

@@ -1,6 +1,8 @@
 # 21｜FLOW 之後：引文、評論、作者回覆與新證據的深讀整合
 
-> 證據與檢索截點：2026-09-07。本文以 PubMed／PubMed Central／Europe PMC、出版社官方頁面與具授權的人類讀者可合法閱讀之全文為主。合法閱讀／存取本身不等於自動解析、TDM／ML 或第三方雲端處理的授權；權利未釐清或 notice 明示限制的既存解析檔只列為隔離的流程事件，不作 AI／RAG、不視為獲授權衍生品，也不隨 GitHub 公開。本篇是文獻評論與 AI 多角色交叉校讀，不是人類專家同儕審查，也不取代原始論文、現行標籤或臨床指引。
+> 核心 PubMed 檢索截點：2026-09-07；correspondence 全文增補核對至 2026-09-09。本文以 PubMed／PubMed Central／Europe PMC、出版社官方頁面與具授權的人類讀者可合法閱讀之全文為主。合法閱讀／存取本身不等於自動解析、TDM／ML 或第三方雲端處理的授權；權利未釐清或 notice 明示限制的既存解析檔只列為隔離的流程事件，不作 AI／RAG、不視為獲授權衍生品，也不隨 GitHub 公開。本篇是文獻評論與 AI 多角色交叉校讀，不是人類專家同儕審查，也不取代原始論文、現行標籤或臨床指引。
+
+> **2026-09-09 增補（請優先讀）：** 本文的「對話 1」、「對話 3」、正式 `CommentIn` 表與權利界線已依新增 NEJM／Kidney International correspondence 更新；只有第十一節的 **2026-09-07 Wave 4 完成度表**刻意保留當時「完整正文未取得」的歷史狀態，不能拿來代表 2026-09-09 的最新取文結果。最新投稿解讀見 [23｜FLOW-centered review 投稿議程](23_FLOW_CENTERED_REVIEW_PUBLICATION_AGENDA_ZH_TW.md)，artifact 身分與邊界見[新增全文邊界稽核](sources/NEW_FULLTEXT_BOUNDARY_AUDIT_2026-09-09.md)。原始受限制全文仍只供本機學術核對，不在公開 repository 重製或散布；本增補也不把「可讀取」改寫成「可公開再利用」。
 
 ## 先講結論
 
@@ -35,8 +37,8 @@ FLOW 發表後，真正值得腎臟科醫師追問的並不是「又有多少篇
 | PMID | 類型 | 對演講的用途 | 全文界線 |
 |---|---|---|---|
 | 39222509 | ACP Journal Club comment | 早停、停藥／耐受性、eGFR<30 與 SGLT2i 代表性 | 可讀摘要／評論頁；不是新 trial data |
-| 39504528 | NEJM letter | 官方 preview 可核實 modern background-therapy representation 與 adherence／discontinuation concerns | 完整正文受限；preview 未顯示的論點不重建 |
-| 39504529 | NEJM author reply | 確認正式作者回覆存在；背景治療數字改由可讀的 FLOW/SGLT2i 原始分析核對 | 同 DOI、受限；完整回答／讓步未取得 |
+| 39504528 | NEJM letter | 2026-09-07 先由官方 preview 核實 modern background-therapy representation 與 adherence／discontinuation concerns；2026-09-09 再以使用者提供的本機 bundle 核對完整來函邊界 | 全文受限制且不公開；更新後的短篇轉述見第 23 篇與 source audit |
+| 39504529 | NEJM author reply | 2026-09-09 已在同一 bundle 核對作者回覆，並確認與來函共用 DOI | 全文受限制且不公開；數字仍回到 FLOW primary／SGLT2i analysis 獨立核對 |
 | 39511083 | MMW comment | 證明 PubMed formal-comment 關聯完整性 | PubMed 無可用英語摘要；不讓低資訊 record 主導結論 |
 
 正式掛接之外，另有 Kidney International letters、MRA comment–reply、dialysis comment–reply、editorials、guidelines 與 post hoc analyses。本文稱它們為「實質回應鏈」，但不冒充 PubMed formal `CommentIn`。
@@ -60,15 +62,15 @@ FLOW 發表後，真正值得腎臟科醫師追問的並不是「又有多少篇
 
 ## 三、最有價值的六條文獻對話
 
-### 對話 1｜NEJM letter–reply：官方 preview 可讀，完整正文仍受限
+### 對話 1｜NEJM letter–reply：內容後來補齊，外推限制沒有因此消失
 
-**可核實邊界：** NEJM 官方頁的 `Abstract` preview 可核實兩類批評：modern background therapy（SGLT2i、MRA 等）的低使用／代表程度，以及 adherence／notable treatment discontinuation 對解讀的影響。完整 letter 與 reply 正文仍未取得，因此不把 preview 未顯示的族群多樣性、advanced CKD、GI／specific safety concerns 或任何作者讓步歸給 correspondence。FLOW 招募始於 2019；低使用率限制的是「incremental effect on fully layered therapy」，不是 FLOW 隨機比較本身的 internal validity。
+**可核實邊界：** 2026-09-07 時只能由 NEJM 官方 `Abstract` preview 核實 modern background therapy 與 adherence／discontinuation concerns。2026-09-09 取得的本機 correspondence bundle 顯示，來函把 SGLT2i／MRA 描述為未使用；作者回覆則更正 baseline SGLT2i 為 15.6%，指出追蹤中亦有參與者開始使用，並交代 FLOW 自 2019 年開始招募。這解決了「作者實際回了什麼」的內容缺口，卻沒有讓 550 名 baseline SGLT2i users 變成足以回答完整現代疊加治療的 factorial evidence。低使用率限制的是「incremental effect on fully layered therapy」，不是 FLOW 隨機比較本身的 internal validity。
 
 **必須更正的說法：** FLOW 並非「無 SGLT2i」。15.6% 於基線使用，追蹤中也有人開始使用；但開始使用並非隨機，而且 placebo 組較常新增 SGLT2i。因而應說「基線使用者少、次族群不精確且 post-baseline exposure 不平衡」，而不是「沒有背景 SGLT2i」或「已充分代表現代疊加治療」。
 
 **現有可讀證據未消除的問題：** 低 baseline exposure、較早的 treatment era、停藥與 GI tolerability、eGFR<30 及族群多樣性，仍限制現代 clinic 的精確外推；後三項來自 ACP commentary、FLOW 原始／次族群資料等可讀來源，不是 NEJM preview 的內容。這些限制不把 HR 0.76 變成無效，而是決定我們能否承諾「已用足新式治療後再加 semaglutide」仍有同樣 absolute／incremental benefit。
 
-**來源狀態：** letter 與 reply 共用 DOI 10.1056/NEJMc2410532；本輪只讀得官方 preview，未讀得完整正文。本節的 15.6%、postbaseline SGLT2i 不平衡與次族群精確度來自 FLOW primary／可讀 SGLT2i analysis，而不是對受限 correspondence 的內容轉述。
+**來源狀態：** letter 與 reply 共用 DOI 10.1056/NEJMc2410532。9 月 9 日新增全文只供本機內容／邊界核對，不在公開 repository 重製；本節的 15.6%、postbaseline SGLT2i 不平衡與次族群精確度仍以 FLOW primary／SGLT2i analysis 為數值權威，而不是以 correspondence 取代原始分析。
 
 ### 對話 2｜HR 0.76：hazard 不是 risk
 
@@ -83,15 +85,15 @@ Kidney International 的 clarification letter（PMID 40254368）直接把「inte
 
 ### 對話 3｜直接腎保護，還是 eGFR 測量 artifact？
 
-Ayoub、Wong、Glassock 的 letter 以「direct kidney protection or an artifact?」提出問題，之後有 FLOW 作者回覆；兩篇 Kidney International correspondence 全文均未由本輪合法取得，因此本文不把標題推論成作者逐字主張。可核實的科學問題是：體重、lean mass、BSA indexing 與不同 endogenous filtration markers 會不會影響 eGFR。
+Ayoub、Wong、Glassock 的 letter 以「direct kidney protection or an artifact?」提出問題，之後有 FLOW 作者回覆。9 月 7 日時兩篇全文未取得；9 月 9 日使用者提供的本機 Markdown 已完成 article-boundary 與主張核對。來函明確提出體重、lean mass／creatinine generation 與 BSA indexing 問題；作者回覆的 individual-participant reanalysis 顯示原分析 slope difference 為 1.16（0.86–1.47），文中稱「without BSA correction」的分析為 1.04（0.71–1.37）。原文仍替兩者印出 `/1.73m²/year`，因此正式稿應保留作者的分析標籤並另註 unit／index wording 待釐清，而不自行把第二項改寫成絕對 mL/min/year。結果削弱「全部由 BSA indexing 造成」的解釋，但沒有關閉 lean-mass／marker-specific bias。
 
 目前至少要分開三層：
 
 1. **FLOW clinical outcomes：** 不是只靠 continuous eGFR；包含 sustained threshold、KRT、kidney／CV death。這使「全部只是 creatinine artifact」難以成立，但 composite 又含 CV death，仍不能以 headline 證明 direct intrarenal action。
-2. **FLOW marker robustness：** creatinine 與 post hoc cystatin-C analyses 大致同方向，減少單一 creatinine-generation artifact 的說服力；它不完成 causal mediation。
+2. **FLOW marker robustness：** 作者回覆只把 cystatin-C 結果定性描述為相近，並標示 `data on file`；沒有點估計、CI 或表格可獨立核對。因此它目前不能被寫成已關閉 creatinine-generation artifact，也不完成 causal mediation。
 3. **兩個 2026 mGFR 分析回答不同問題：**
    - SMART prespecified analysis（PMID 42308057；101 名無 T2D、overweight/obesity CKD，24 weeks，semaglutide 2.4 mg）以 iohexol mGFR；體重差 −9.1 kg（95% CI −11.0 至 −7.2），lean-mass 差 −2.5 kg（−6.6 至 1.6，CI 跨 0），且 body-composition change 與 creatinine/cystatin-C eGFR 或 mGFR change 無明顯相關。
-   - 另一個 48 人 post hoc RCT（PMID 42397155；T2D＋albuminuria、全部加在 empagliflozin 上、semaglutide 1 mg、26 weeks）以 99mTc-DTPA mGFR；creatinine 與 beta-trace protein 小幅增加，cystatin C／beta-2 microglobulin 未顯著改變；mGFR change 0 [−7.5, 10.3] 對 −2 [−11.3, 3.0]，組間未顯著，而 combined-marker equations 表現較佳。
+   - EmpaSema 母 RCT 納入 60 人；其中 48 人的 post hoc analysis（PMID 42397155；T2D＋albuminuria、全部加在 empagliflozin 上、semaglutide 1 mg、26 weeks）以 99mTc-DTPA mGFR；creatinine 與 beta-trace protein 小幅增加，cystatin C／beta-2 microglobulin 未顯著改變；mGFR change 0 [−7.5, 10.3] 對 −2 [−11.3, 3.0]，組間未顯著，而 combined-marker equations 表現較佳。
 
 兩研究都樣本小、時間短、不是 FLOW，也沒有 hard kidney endpoint。最穩健的結論是「單一 marker 可能受非 GFR 因素影響，combined-marker 或 mGFR 有助機轉研究」；不是「FLOW 被推翻」，也不是「直接腎保護已證實」。
 
@@ -157,7 +159,7 @@ Comment 區分 participant-level SAE proportion 與 recurrent-event burden，並
 
 本輪全文 audit 也發現數篇不宜拿來作主要確認性證據的 meta-analysis：
 
-- PMID 40047207 的 PubMed abstract 把 background-medication subgroup 延伸為 additive cardiorenal benefit。這是典型 citation echo：背景藥物不是 factorial randomization，interaction 未顯著也不是 additivity test；全文未取得，僅作 abstract-level overclaim audit。
+- PMID 40047207 的摘要與 2026-09-09 新增本機全文都把 background-medication subgroup 延伸為 independent／synergistic cardiorenal benefit，並用跨試驗 slope 情境圖支持多支柱敘事。這是 citation-echo／inference-escalation 的教學例：背景藥物不是 factorial randomization，interaction 未顯著也不是 additivity test；公開版只評論推論形式，不重製其受限制圖表。
 - PMC12584374／PMID 41188987 宣稱 17 reports／40,632 人，但文中明列 4 篇 SUSTAIN-6 與 4 篇 FLOW 衍生報告並分別計入；這是 publication count，不是 unique participants。它同時混合 RCT／observational、SC／oral 與不同 endpoints，PRISMA 流程的數字無法閉合，並出現 CI 與 P value 不相容的結果；不可引用其「CKD benefit amplified」或 pooled precision。
 - PMC12640882 宣稱 5 RCTs／12,785 人，但 forest plot denominator 為 13,646，並把 FLOW primary 與同一 FLOW cohort 的另一篇 analysis 當成兩個 RCT；另把完整 SUSTAIN-6／PIONEER-6 populations 標為 CKD。其 RR 0.79 不應作「FLOW 之外又一份獨立確認」。
 - PMC13037467 宣稱 19 trials／90,882 人，但 Table 1／arm totals 可得 93,154；renal composite 混合 albuminuria、kidney-function decline 與 kidney failure。Kidney failure 單項 RR 0.86（0.71–1.05），I²=95%，未提供精確一致的 kidney-failure benefit。
@@ -268,18 +270,18 @@ KDIGO commentary 強調 phenotype、cost、preference 與既有 SGLT2i/metformin
 
 本輪建立 source librarian、nephrologist、methodologist、CKM clinician 與 director 五個持續性角色會話。四個專家角色均完成可送達性 PREFLIGHT／ACK；六個爭點皆有實際 `CHALLENGE`，角色之間也確實交換 `RESPONSE`、`METHOD_CHECK`、`CLINICAL_TRANSLATION` 與 `REJOINDER`。主編依 receipt-linked 訊息與來源逐項裁決，而不是把訊息「已送出」冒充為同儕同意。
 
-Director 的最終統計為：**1 項 CLOSED、4 項 PARTIALLY RESOLVED、1 項 OPEN**。
+截至 2026-09-07 的對話完成度統計為：**1 項 CLOSED、4 項 PARTIALLY RESOLVED、1 項 OPEN**。這是當時角色鏈的歷史狀態，不是 2026-09-09 的最新取文狀態。
 
 | 爭點 | 最終狀態 | 可稽核的理由 |
 |---|---|---|
-| 1. NEJM criticism／reply | **OPEN** | 書目關係與官方 preview 的 background-therapy／adherence concerns 可核實，但完整 letter／reply 正文仍未取得；因此不重建 preview 未顯示的批評或任何作者讓步。 |
-| 2. direct kidney protection vs measurement artifact | **PARTIALLY RESOLVED** | FLOW 的 creatinine／cystatin-C 一致性與兩個 mGFR 研究可核實；KI 三篇 correspondence 的具體論證仍受全文存取限制。 |
+| 1. NEJM criticism／reply | **OPEN** | 書目關係與官方 preview 的 background-therapy／adherence concerns 可核實，但完整 letter／reply 正文仍未取得；因此不重建 preview 未顯示的批評或任何作者讓步。**這是 2026-09-07 狀態；後續全文裁決見[第 23 篇](23_FLOW_CENTERED_REVIEW_PUBLICATION_AGENDA_ZH_TW.md)。** |
+| 2. direct kidney protection vs measurement artifact | **PARTIALLY RESOLVED** | FLOW 的 creatinine／cystatin-C 一致性與兩個 mGFR 研究可核實；KI 三篇 correspondence 的具體論證仍受全文存取限制。**這是 2026-09-07 狀態；後續邊界與 BSA 數字核對見[新增全文稽核](sources/NEW_FULLTEXT_BOUNDARY_AUDIT_2026-09-09.md)。** |
 | 3. MRA／finerenone additivity | **CLOSED** | 完整 `RESPONSE → METHOD_CHECK → CLINICAL_TRANSLATION → REJOINDER` 收齊，三個角色以 main analysis、comment、reply 全文交叉核對；共識是不宣稱 synergy，且以 baseline finerenone 0/257 為外推上限。 |
 | 4. baseline SGLT2i／modern combination | **PARTIALLY RESOLVED** | SGLT2i subgroup 數字與把 nonsignificant interaction 說成 additive benefit 的一個 citation-echo 例子已獨立重核；完整角色鏈及若干評論全文仍未補齊。 |
 | 5. advanced CKD／dialysis／safety | **PARTIALLY RESOLVED** | eGFR<25、透析與移植不在 FLOW 隨機收案範圍是已核實的設計事實；部分評論正文不可讀，故不宣稱完整重建評論者立場。 |
 | 6. citation echo／meta-analysis／fourth pillar | **PARTIALLY RESOLVED** | PMID 40047207 對 additivity 的過度推論由兩個角色獨立確認；PMID 41188987 與 41479840 在 Claude 對話結案時仍受工具存取限制，故該角色鏈未關閉。 |
 
-公開文件只保留可由來源重核的裁決，不公開 session identifier、逐字 transcript、傳輸收據或含本機路徑的工作紀錄。這是 AI 多角色的可稽核交叉校讀，不是人類專家同儕審查；角色共識也不是新的醫學證據。未取得正文者一律維持 metadata／abstract-level，只有爭點 3 符合預先指定的完整關閉條件。
+公開文件只保留可由來源重核的裁決，不公開 session identifier、逐字 transcript、傳輸收據或含本機路徑的工作紀錄。這是 AI 多角色的可稽核交叉校讀，不是人類專家同儕審查；角色共識也不是新的醫學證據。2026-09-07 未取得正文者在當時一律維持 metadata／abstract-level；後來補得的來源只能更新 evidence record，不能倒寫成舊角色鏈當時已完成。
 
 **對話後 release audit：** 為補足來源帳本，主線其後從官方 PMC 取得 PMID 41188987／41479840 全文並獨立重核。41188987 把同一 SUSTAIN-6 與 FLOW 母試驗的多篇報告重複計入、混合 RCT／observational 與不同 formulation／endpoint，且 PRISMA arithmetic 不閉合；41479840 是 narrative fourth-pillar framework，並有 Figure 1／5 endpoint mislabel 與 UACR／CI 表述問題。兩者因此只列 negative-audit examples，不能當成 FLOW 的獨立複製或組合治療 additivity 證明。這項事後核對不回寫成「Claude 角色鏈已完成」。
 
@@ -292,9 +294,9 @@ Director 的最終統計為：**1 項 CLOSED、4 項 PARTIALLY RESOLVED、1 項 
 - 六份 ADA artifact 的嵌入 notice 明示未經書面許可不得 TDM／ML；PMC12583412 的 artifact notice 只明示 educational／nonprofit／unaltered，automated-processing authorization 仍未建立。既有轉檔列為 rights incident／manual-review-only，不宣稱合規，也不作 AI/RAG 或唯一證據；公開數字以 official HTML／table／abstract 的人工重核為權威。
 - PMC12640882 的一次 LlamaParse MCP comparator 成功，但 MCP 未回傳 parser version、engine metadata 或 job ID。其 identity、摘要與 Table／forest text 已回讀抽查；它只用來比較解析品質，不能修補原研究的 cohort double-counting 與 denominator mismatch。
 - GitHub 不含 PDF、JATS/XML、全文 Markdown、受限圖表截圖、API key 或 session log；公開版只含短篇幅 paraphrase、結構化數值、來源連結與重新設計的圖表建議。
-- 未繞過 paywall、CAPTCHA 或 access control；未取得的 Kidney International／NEJM correspondence 全文明確標記為受限，而不是推測其內容。
+- 未繞過 paywall、CAPTCHA 或 access control；2026-09-09 由使用者提供的 Kidney International／NEJM correspondence 仍明確標記為受限，只作隔離的內容／邊界核對，不公開全文或推定取得其他再利用權利。
 
-完整 artifact 與 rights audit 追加於 [`sources/LITERATURE_INGEST_REPORT.md`](./sources/LITERATURE_INGEST_REPORT.md)，來源身份與推論層級見 [`01_SOURCE_INVENTORY.md`](./01_SOURCE_INVENTORY.md)及 [`SOURCE_LEDGER.csv`](./SOURCE_LEDGER.csv)。
+既有 cache／parser incident 的完整 rights audit 見 [`sources/LITERATURE_INGEST_REPORT.md`](./sources/LITERATURE_INGEST_REPORT.md)；2026-09-09 五個新 artifact 的身分、文章邊界與權利處置另見 [`sources/NEW_FULLTEXT_BOUNDARY_AUDIT_2026-09-09.md`](./sources/NEW_FULLTEXT_BOUNDARY_AUDIT_2026-09-09.md)。來源身份與推論層級見 [`01_SOURCE_INVENTORY.md`](./01_SOURCE_INVENTORY.md)及 [`SOURCE_LEDGER.csv`](./SOURCE_LEDGER.csv)。
 
 ## 核心來源
 
